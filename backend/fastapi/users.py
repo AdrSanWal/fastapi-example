@@ -1,8 +1,18 @@
 from pydantic import BaseModel
 
-from main import app
+from fastapi import APIRouter
+
+router = APIRouter()
 
 
-@app.get("/users")
+class User(BaseModel):
+    name: str
+    surname: str
+    url: str
+    age: int
+
+
+
+@router.get("/users")
 async def users():
     return "!Hola Mundo!"

@@ -1,14 +1,34 @@
 version: '3'
 services:
 
+  mongo:
+    container_name: mongodb
+    image: mongo:5.0
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password
+  mongo-express:
+    image: mongo-express:0.54.0
+    container_name: mongoexpress
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: admin
+      ME_CONFIG_MONGODB_ADMINPASSWORD: password
+      ME_CONFIG_MONGODB_URL: mongodb://admin:password@mongo:27017/
+
   fastapi:
     build: .
-    container_name: "fastapi"
+    container_name: fastapi
     command: bash -c "uvicorn backend.fastapi.main:app --reload --host 0.0.0.0 --port 8000"
     restart: on-failure
     volumes:
       - .:/code
     ports:
       - "8000:8000"
-    # depends_on:
-    #   - db
+    depends_on:
+      - mongo
+volumes:
+    mongodb:

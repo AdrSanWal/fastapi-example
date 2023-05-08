@@ -5,19 +5,27 @@ services:
     container_name: mongodb
     image: mongo:5.0
     restart: always
+    env_file:
+      - .env
     environment:
-      MONGO_INITDB_ROOT_USERNAME: admin
-      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_ROOT_USERNAME: "${MONGO_USER}"
+      MONGO_INITDB_ROOT_PASSWORD: "${MONGO_PASS}"
+      MONGO_INITDB_DATABASE: "${MONGO_DB}"
+    volumes:
+      - ./db:/var/lib/db
+      - ./init.js:/docker-entrypoint-initdb.d/init.js
   mongo-express:
     image: mongo-express:0.54.0
     container_name: mongoexpress
+    env_file:
+      - .env
     restart: always
     ports:
       - 8081:8081
     environment:
-      ME_CONFIG_MONGODB_ADMINUSERNAME: admin
-      ME_CONFIG_MONGODB_ADMINPASSWORD: password
-      ME_CONFIG_MONGODB_URL: mongodb://admin:password@mongo:27017/
+      ME_CONFIG_MONGODB_ADMINUSERNAME: "${MONGO_USER}"
+      ME_CONFIG_MONGODB_ADMINPASSWORD: "${MONGO_PASS}"
+      ME_CONFIG_MONGODB_URL: mongodb://${MONGO_USER}:${MONGO_PASS}@${MONGO_HOSTNAME}:${MONGO_PORT}/
 
   fastapi:
     build: .
@@ -30,5 +38,6 @@ services:
       - "8000:8000"
     depends_on:
       - mongo
+
 volumes:
-    mongodb:
+    db:

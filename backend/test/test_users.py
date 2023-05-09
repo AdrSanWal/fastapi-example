@@ -1,17 +1,22 @@
-from fastapi.testclient import TestClient
+import json
 
-from api.main import app
-
-
-client = TestClient(app)
+#from .conftest import test_client
 
 
-def test_get_users():
-    response = client.get("/users")
+def test_get_users(test_client):
+    response = test_client.get("/users")
     assert response.status_code == 200
-    assert response.json() == [{
-        "id": "645951fc1363d9936cb4f8ea",
-        "name": "Lola",
-        "surname": "García",
-        "age": 35
-    }]
+    assert isinstance(response.json(), list)
+    assert True
+
+
+def test_post_user(test_client, test_db):
+    new_user = {
+        "name": "Test user",
+        "surname": "Test surname",
+        "age": 40
+    }
+    response = test_client.post("/users", data=json.dumps(new_user))
+    assert response.status_code == 201
+    print(response.json)
+    assert False

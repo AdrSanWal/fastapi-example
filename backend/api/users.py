@@ -2,11 +2,11 @@ from bson import ObjectId
 from bson.errors import InvalidId
 from typing import List
 
-from fastapi import APIRouter, status, Response, HTTPException
+from fastapi import APIRouter, status, HTTPException
 
-from ..db.client import client
-from ..db.models import User
-from ..db.schemas import user_schema
+from db.client import client
+from db.models import User
+from db.schemas import user_schema
 
 router = APIRouter(prefix='/users')
 

@@ -6,9 +6,9 @@ from .crud import get_all, post_instance, get_instance, delete_instance, put_ins
 from ..db.models import User
 
 
-router = APIRouter(prefix='/users')
-
 collection = 'users'
+
+router = APIRouter(prefix=f'/{collection}')
 
 
 @router.get("/")

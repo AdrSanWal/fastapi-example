@@ -9,10 +9,14 @@ from ..db.schemas import model_schema
 from .settings import Settings
 
 
-db = Settings._db
+def get_db():
+    """Check if the data dump has to be in the test database"""
+    settings = Settings()
+    return settings._db
 
 
 def search_element_in_db(collection: str, field: str, value: str | ObjectId):
+    db = get_db()
     try:
         user = client[db][collection].find_one({field: value})
         return user
@@ -21,21 +25,29 @@ def search_element_in_db(collection: str, field: str, value: str | ObjectId):
 
 
 def id_is_valid_ObjectId(id: str):
+    """Attempts to convert a string to an ObjectId.
+    If it can't, raise an exception.
+    """
     try:
         id = ObjectId(id)
         return id
     except InvalidId:
-        e = f"{id} is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string"
+        e = f"{id} is not a valid ObjectId, it must be a 12-byte input or" \
+            + "a 24-character hex string"
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
                             detail=e)
 
 
 async def get_all(collection: str):
+    """Given a collection, tries to return all the elements it contains."""
+    db = get_db()
     elements = client[db][collection].find()
     return [model_schema(collection, _) for _ in elements]
 
 
 async def post_instance(collection: str, instance):
+    """Given a collection, tries to insert a document into it."""
+    db = get_db()
     instance = instance.dict(exclude={'id'})
     id = client[db][collection].replace_one(instance,
                                             instance,
@@ -51,6 +63,7 @@ async def post_instance(collection: str, instance):
 
 
 async def get_instance(collection: str, id: str):
+    """Given a collection, returns a document by it's id."""
     id = id_is_valid_ObjectId(id)
     element = search_element_in_db(collection, "_id", id)
 
@@ -61,11 +74,15 @@ async def get_instance(collection: str, id: str):
 
 
 async def delete_instance(collection: str, id: str):
+    """Given a collection, delete a document by it's id."""
+    db = get_db()
     id = id_is_valid_ObjectId(id)
     client[db][collection].delete_one({"_id": id})
 
 
 async def put_instance(collection: str, id: str, instance):
+    """Given a collection, update a document by it's id."""
+    db = get_db()
     id = id_is_valid_ObjectId(id)
     client[db][collection].find_one_and_replace({"_id": id},
                                                 instance.dict(exclude={'id'}))

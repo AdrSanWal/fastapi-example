@@ -2,6 +2,7 @@ import os
 from pydantic import BaseSettings
 
 from dotenv import load_dotenv
+from fastapi.testclient import TestClient
 
 
 load_dotenv()

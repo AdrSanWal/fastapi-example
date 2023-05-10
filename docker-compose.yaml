@@ -12,7 +12,7 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: "${MONGO_PASS}"
       MONGO_INITDB_DATABASE: "${MONGO_DB}"
     volumes:
-      - ./db:/var/lib/db
+      - ./data:/var/lib/data
       - ./init.js:/docker-entrypoint-initdb.d/init.js
   mongo-express:
     image: mongo-express:0.54.0
@@ -40,4 +40,4 @@ services:
       - mongo
 
 volumes:
-    db:
+    data:

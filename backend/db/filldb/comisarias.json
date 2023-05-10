@@ -1,0 +1,630 @@
+
+{
+	"@context": {
+		"c": "http://www.w3.org/2002/12/cal#",
+		"dcterms": "http://purl.org/dc/terms/",
+		"geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+		"loc": "http://purl.org/ctic/infraestructuras/localizacion#",
+		"org": "http://purl.org/ctic/infraestructuras/organizacion#",
+		"vcard": "http://www.w3.org/2006/vcard/ns#",
+		"schema": "https://schema.org/",
+		"title": "vcard:fn",
+		"id": "dcterms:identifier",
+		"relation": "dcterms:relation",
+		"references": "dcterms:references",
+		"address": "vcard:adr",
+		"area": "loc:barrio",
+		"district": "loc:distrito",
+		"locality": "vcard:locality",
+		"postal-code": "vcard:postal-code",
+		"street-address": "vcard:street-address",
+		"location": "vcard:geo",
+		"latitude": "geo:lat",
+		"longitude": "geo:long",
+		"organization": "vcard:org",
+		"organization-desc": "dcterms:description",
+		"accesibility": "org:accesibilidad",
+		"services": "org:servicios",
+		"schedule": "org:horario",
+		"organization-name": "vcard:organization-name",
+		"description": "c:summary",
+		"link": "c:url",
+		"uid": "c:uid",
+		"dtstart": "c:dtstart",
+		"dtend": "c:dtend",
+		"time": "c:time",
+		"excluded-days": "c:exdate",
+		"event-location": "c:location",
+		"free": "schema:free",
+		"price": "c:resource",
+		"recurrence": "c:rrule",
+		"days": "c:byday",
+		"frequency": "c:freq",
+		"interval": "c:interval",
+		"audience": "dc:audience"
+	},
+	"@graph": [
+	
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12334-comisaria-policia-madrid-arganzuela-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ComisariasOficinasPolicia",
+		"id": "12334",
+		"title": "Comisaría de Policía Madrid (Arganzuela)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e08766051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Arganzuela"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Arganzuela/Barrio/Acacias"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28005",
+			"street-address": "RONDA TOLEDO 26"
+		},
+		"location": {
+			"latitude": 40.40546921844932,
+			"longitude": -3.706133100996351
+		},
+		"organization": {
+			"organization-desc": " Denuncias: pueden presentarse por internet y en comisaría. Metro: Embajadores (línea 3), Acacias (línea 5).  Bus: 148, 41, 60, C03, C1, C2, 119, 34, 36, 116, 118, 62.  Cercanías Renfe: Embajadores (línea C5).  Bicimad: Estaciones 46 (calle Ribera de Curtidores, 28), 163 (paseo de la Esperanza, 2), 47 (glorieta de Embajadores, 6).  Aparcamiento: Casino de la Reina (19) calle del Casino.",
+			"accesibility": "3",
+			"schedule": "Ininterrumpido.",
+			"services": "",
+			"organization-name": "Comisaría de Policía Madrid (Arganzuela)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12329-comisaria-policia-madrid-centro-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ComisariasOficinasPolicia",
+		"id": "12329",
+		"title": "Comisaría de Policía Madrid (Centro)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=caa766051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Palacio"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28013",
+			"street-address": "CALLE LEGANITOS 19"
+		},
+		"location": {
+			"latitude": 40.42154122155197,
+			"longitude": -3.7101413569005515
+		},
+		"organization": {
+			"organization-desc": " Denuncias: pueden presentarse por internet y en comisaría. Metro: Santo Domingo (línea 2), Plaza de España (líneas 3 y 10).  Bus: 133, 148, 44, 75, 3, 46, 74, 001, 1, 2, 25, 39.  Bicimad: Estaciones 23 (plaza de Santo Domingo, 1), 116b (calle Princesa, 5), 16 (calle San Bernardo, 22), 30 (calle Pavía, 6).  Aparcamiento: Isabel la Católica (98).",
+			"accesibility": "3,6",
+			"schedule": "Servicio ininterrumpido.",
+			"services": "",
+			"organization-name": "Comisaría de Policía Madrid (Centro)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12337-comisaria-policia-madrid-chamberi-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ComisariasOficinasPolicia",
+		"id": "12337",
+		"title": "Comisaría de Policía Madrid (Chamberí)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=a4d766051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi/Barrio/Almagro"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28010",
+			"street-address": "CALLE RAFAEL CALVO 33"
+		},
+		"location": {
+			"latitude": 40.43410421469796,
+			"longitude": -3.6918185186141024
+		},
+		"organization": {
+			"organization-desc": " Denuncias: pueden presentarse por internet y en comisaría. Metro: Rubén Darío (línea 5), Iglesia (línea 1), Gregorio Marañón (líneas 7 y 10).  Bus: 147, 40, 16, 5, 61, 7.  Bicimad: Estaciones 198 (glorieta Rubén Dario, 2), 141 (paseo de la Castellana, 43).",
+			"accesibility": "3",
+			"schedule": "Comisaría: ininterrumpido.",
+			"services": "",
+			"organization-name": "Comisaría de Policía Madrid (Chamberí)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12325-comisaria-policia-madrid-moncloa-aravaca-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ComisariasOficinasPolicia",
+		"id": "12325",
+		"title": "Comisaría de Policía Madrid (Moncloa - Aravaca)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=7828efeac361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca/Barrio/Arguelles"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28008",
+			"street-address": "CALLE REY FRANCISCO 15"
+		},
+		"location": {
+			"latitude": 40.427059364893964,
+			"longitude": -3.7164891639681725
+		},
+		"organization": {
+			"organization-desc": " Denuncias: pueden presentarse por internet y en comisaría. Metro: Ventura Rodríguez (línea 3).  Bus: 74, 62, 001, 1, 133, 138, 2, 44, C2.  Bicimad: Estación 114 (calle Quintana, 11).",
+			"accesibility": "3",
+			"schedule": "Comisaría: ininterrumpido.",
+			"services": "",
+			"organization-name": "Comisaría de Policía Madrid (Moncloa - Aravaca)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12342-comisaria-policia-madrid-moratalaz-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ComisariasOficinasPolicia",
+		"id": "12342",
+		"title": "Comisaría de Policía Madrid (Moratalaz)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=6d38efeac361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moratalaz"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moratalaz/Barrio/Fontarron"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28030",
+			"street-address": "CALLE LA TACONA  sin número"
+		},
+		"location": {
+			"latitude": 40.39740315041475,
+			"longitude": -3.6396356155435257
+		},
+		"organization": {
+			"organization-desc": " Denuncias: pueden presentarse por internet y en comisaría. Metro: Pavones (línea 9).  Bus: 20, 63, 145, E, 142, 144.",
+			"accesibility": "3",
+			"schedule": "Comisaría: ininterrumpido.",
+			"services": "",
+			"organization-name": "Comisaría de Policía Madrid (Moratalaz)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12339-comisaria-policia-madrid-puente-vallecas-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ComisariasOficinasPolicia",
+		"id": "12339",
+		"title": "Comisaría de Policía Madrid (Puente de Vallecas)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ffc8efeac361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas/Barrio/PalomerasBajas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28018",
+			"street-address": "CALLE PE&amp;Ntilde;A TREVINCA 1"
+		},
+		"location": {
+			"latitude": 40.39220562394054,
+			"longitude": -3.660577823588684
+		},
+		"organization": {
+			"organization-desc": " Denuncias: pueden presentarse por internet y en comisaría. Metro: Portazgo (línea 1).  Bus: 10, 103, 57, 136, 54, 58.",
+			"accesibility": "3",
+			"schedule": "Comisaría: ininterrumpido.",
+			"services": "",
+			"organization-name": "Comisaría de Policía Madrid (Puente de Vallecas)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12330-comisaria-policia-madrid-retiro-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ComisariasOficinasPolicia",
+		"id": "12330",
+		"title": "Comisaría de Policía Madrid (Retiro)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=4768efeac361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Cortes"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28014",
+			"street-address": "CALLE HUERTAS 76"
+		},
+		"location": {
+			"latitude": 40.4128573567106,
+			"longitude": -3.694967866182062
+		},
+		"organization": {
+			"organization-desc": " Denuncias: pueden presentarse por internet y en comisaría. Metro: Antón Martín (línea 1).  Bus: 001, 10, 14, 27, 34, 37, 45, C03.  Bicimad: Estación 27 (calle Jesús, 1).",
+			"accesibility": "3",
+			"schedule": "Comisaría: ininterrumpido.",
+			"services": "",
+			"organization-name": "Comisaría de Policía Madrid (Retiro)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12335-comisaria-policia-madrid-salamanca-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ComisariasOficinasPolicia",
+		"id": "12335",
+		"title": "Comisaría de Policía Madrid (Salamanca)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=3c78efeac361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca/Barrio/Goya"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28006",
+			"street-address": "CALLE PRINCIPE DE ASTURIAS 8"
+		},
+		"location": {
+			"latitude": 40.42788564915413,
+			"longitude": -3.6716549448733042
+		},
+		"organization": {
+			"organization-desc": " Denuncias: pueden presentarse por internet y en comisaría. Metro: Manuel Becerra (líneas 2 y 6), Lista (línea 4).  Bus: 146, 21, 43, 53, 12, 210, 56, C1.  Bicimad: Estaciones 108 (calle Mártires Concepcionistas, 2), 145 (calle Ortega y Gasset, 87), 99 (calle Alcántara, 2).",
+			"accesibility": "3",
+			"schedule": "Comisaría: Ininterrumpido.",
+			"services": "",
+			"organization-name": "Comisaría de Policía Madrid (Salamanca)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12323-comisaria-policia-madrid-tetuan-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ComisariasOficinasPolicia",
+		"id": "12323",
+		"title": "Comisaría de Policía Madrid (Tetuán)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=16a8efeac361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Tetuan"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Tetuan/Barrio/Valdeacederas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28039",
+			"street-address": "PASAJE MAESTROS LADRILLEROS 2"
+		},
+		"location": {
+			"latitude": 40.46444843289433,
+			"longitude": -3.6984832979173037
+		},
+		"organization": {
+			"organization-desc": " Denuncias: pueden presentarse por internet y en comisaría. Metro: Valdeacederas (línea 1).  Bus: 49, 124, 66.  Bicimad: Estación 207 (calle Azucenas, 1).",
+			"accesibility": "3",
+			"schedule": "Comisaría: Ininterrumpido.",
+			"services": "",
+			"organization-name": "Comisaría de Policía Madrid (Tetuán)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11575010-comisaria-policia-madrid-villaverde-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ComisariasOficinasPolicia",
+		"id": "11575010",
+		"title": "Comisaría de Policía Madrid (Villaverde)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8ec2337060d6e710VgnVCM2000001f4a900aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde/Barrio/LosAngeles"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28041",
+			"street-address": "PASEO GIGANTES Y CABEZUDOS 30"
+		},
+		"location": {
+			"latitude": 40.35757134350266,
+			"longitude": -3.693857087552941
+		},
+		"organization": {
+			"organization-desc": " Denuncias: pueden presentarse por internet y en comisaría. Metro: Ciudad de los Ángeles (línea 3).  Bus: 22, 59, 79, 85, 18, 86.",
+			"accesibility": "3",
+			"schedule": "Comisaría: Ininterrumpido.",
+			"services": "",
+			"organization-name": "Comisaría de Policía Madrid (Villaverde)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/5900261-comisaria-policia-oficina-tramitacion-dni-pasaporte-usera-villaverde-2-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/OficinasDNIPasaporte",
+		"id": "5900261",
+		"title": "Comisaría de Policía y Oficina de Tramitación del DNI y Pasaporte (Usera-Villaverde 2)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=acd07b86c030d210VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Usera"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Usera/Barrio/Pradolongo"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28026",
+			"street-address": "CALLE PRIMITIVA GA&amp;Ntilde;AN 6"
+		},
+		"location": {
+			"latitude": 40.38071166272933,
+			"longitude": -3.7092651262474137
+		},
+		"organization": {
+			"organization-desc": " Denuncias:  pueden presentarse  en la página web de la Dirección General de Policía  y en comisaría. Bus: 6, 60, 81.",
+			"accesibility": "1,6",
+			"schedule": "Comisaría:  Ininterrunpido.   DNI y Pasaporte: Lunes a viernes de 9 a 14:30 horas. Con Cita Previa. Los horarios puede sufrir modificaciones puntuales, confirmar en el siguiente enlace.",
+			"services": "",
+			"organization-name": "Comisaría de Policía y Oficina de Tramitación del DNI y Pasaporte (Usera-Villaverde 2)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12331-comisaria-policia-oficina-tramitacion-dni-pasaporte-chamartin-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/OficinasDNIPasaporte",
+		"id": "12331",
+		"title": "Comisaría de Policía y Oficina de Tramitación DNI y Pasaporte (Chamartín)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=bfb766051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamartin"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamartin/Barrio/Castilla"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28016",
+			"street-address": "AVENIDA PIO XII 48"
+		},
+		"location": {
+			"latitude": 40.46915689606766,
+			"longitude": -3.6729694095528673
+		},
+		"organization": {
+			"organization-desc": " Denuncias:  pueden presentarse en la  página web de la Dirección General de Policia  y en comisaría. Metro: Duque de Pastrana (línea 9).  Bus: 150, 16.",
+			"accesibility": "1",
+			"schedule": "Comisaría: ininterrumpido.   DNI y Pasaporte: Lunes a viernes de 9 a 14:30 horas. Con Cita Previa. Los horarios puede sufrir modificaciones puntuales, confirmar en el siguiente enlace.",
+			"services": "",
+			"organization-name": "Comisaría de Policía y Oficina de Tramitación DNI y Pasaporte (Chamartín)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12328-comisaria-policia-oficina-tramitacion-dni-pasaporte-ciudad-lineal-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/OficinasDNIPasaporte",
+		"id": "12328",
+		"title": "Comisaría de Policía y Oficina de Tramitación DNI y Pasaporte (Ciudad Lineal)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=99e766051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal/Barrio/Concepcion"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28027",
+			"street-address": "TRAVESIA VIRGEN DE LA ROCA 25 posterior"
+		},
+		"location": {
+			"latitude": 40.43520269593105,
+			"longitude": -3.6564092217855446
+		},
+		"organization": {
+			"organization-desc": " Denuncias:  pueden presentarse  en la página web de la Dirección General de Policía  y en comisaría. Metro: El Carmen (línea 5).  Bus: 21, 48, 146.  Bicimad: Estación 189 (calle Virgen de la Alegría, 18).",
+			"accesibility": "1,6",
+			"schedule": "Comisaría: ininterrumpido.   DNI y Pasaporte: Lunes a viernes de 9 a 14:30 y de 16 a 20, sábados de 9 a 124 horas. Con Cita Previa. Los horarios puede sufrir modificaciones puntuales, confirmar en el siguiente enlace.",
+			"services": "",
+			"organization-name": "Comisaría de Policía y Oficina de Tramitación DNI y Pasaporte (Ciudad Lineal)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/7935374-comisaria-policia-oficina-tramitacion-dni-pasaporte-fuencarral-pardo-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ComisariasOficinasPolicia",
+		"id": "7935374",
+		"title": "Comisaría de Policía y Oficina de Tramitación DNI y Pasaporte (Fuencarral - El Pardo)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=7815e686d680c410VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo/Barrio/Mirasierra"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28035",
+			"street-address": "CALLE MIRADOR DE LA REINA 4"
+		},
+		"location": {
+			"latitude": 40.4881100148485,
+			"longitude": -3.7261926711119475
+		},
+		"organization": {
+			"organization-desc": " Denuncias: pueden presentarse por internet y en comisaría. Metro: Lacoma (línea 7).  Bus: 49.",
+			"accesibility": "1",
+			"schedule": "Comisaría: ininterrumpido.   DNI y Pasaporte: Lunes a viernes de 9 a 14:30 horas. Con Cita Previa. Los horarios puede sufrir modificaciones puntuales, confirmar en el siguiente enlace.",
+			"services": "",
+			"organization-name": "Comisaría de Policía y Oficina de Tramitación DNI y Pasaporte (Fuencarral - El Pardo)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/43979-comisaria-policia-oficina-tramitacion-dni-pasaporte-hortaleza-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/OficinasDNIPasaporte",
+		"id": "43979",
+		"title": "Comisaría de Policía y Oficina de Tramitación DNI y Pasaporte (Hortaleza)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e3887589f451c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza/Barrio/Canillas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28043",
+			"street-address": "CALLE JAVIER DEL QUINTO "
+		},
+		"location": {
+			"latitude": 40.46850680550201,
+			"longitude": -3.642345049181705
+		},
+		"organization": {
+			"organization-desc": " Denuncias:  pueden presentarse  en la página web de la Dirección General de Policía  y en comisaría. Metro: Mar de Cristal (líneas 4 y 8).  Bus: 87, 120, 125, 172.",
+			"accesibility": "1,6",
+			"schedule": "Comisaría: Ininterrumpido.   DNI: Lunes a viernes, 9 a 14:30 y de 16 a 20 horas. Con Cita Previa.  Pasaporte: Lunes a viernes, 9 a 14:30 horas. Con Cita Previa. Los horarios puede sufrir modificaciones, ver en enlace.",
+			"services": "",
+			"organization-name": "Comisaría de Policía y Oficina de Tramitación DNI y Pasaporte (Hortaleza)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12343-comisaria-policia-oficina-tramitacion-dni-pasaporte-latina-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/OficinasDNIPasaporte",
+		"id": "12343",
+		"title": "Comisaría de Policía y Oficina de Tramitación DNI y Pasaporte (Latina)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8318efeac361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel/Barrio/VistaAlegre"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28047",
+			"street-address": "AVENIDA POBLADOS 51"
+		},
+		"location": {
+			"latitude": 40.38233079912446,
+			"longitude": -3.757489014363299
+		},
+		"organization": {
+			"organization-desc": " Denuncias:  pueden presentarse  en la página web de la Dirección General de Policía  y en comisaría. Metro: Aluche (línea 5).  Bus: 121, 131, 139.  Cercanías Renfe: Aluche (línea C5).",
+			"accesibility": "1",
+			"schedule": "Comisaría: ininterrumpido.   DNI y pasaporte: Lunes a viernes de 9 a 14:30 horas. Con Cita Previa.  Los horarios puede sufrir modificaciones puntuales, confirmar en el siguiente  enlace .",
+			"services": "",
+			"organization-name": "Comisaría de Policía y Oficina de Tramitación DNI y Pasaporte (Latina)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12327-comisaria-policia-oficina-tramitacion-dni-pasaporte-san-blas-canillejas-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/OficinasDNIPasaporte",
+		"id": "12327",
+		"title": "Comisaría de Policía y Oficina de Tramitación DNI y Pasaporte (San Blas - Canillejas)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=2198efeac361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/SanBlas-Canillejas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/SanBlas-Canillejas/Barrio/Amposta"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28037",
+			"street-address": "CALLE ALBERIQUE 20"
+		},
+		"location": {
+			"latitude": 40.429239862474745,
+			"longitude": -3.6159089904147423
+		},
+		"organization": {
+			"organization-desc": " Denuncias:  pueden presentarse  en la página de la Dirección General de Policía  y en comisaría. Metro: San Blas (línea 7).  Bus: 153, 38, 165, 167, 48.",
+			"accesibility": "1",
+			"schedule": "Comisaría: ininterrumpido.   DNI y Pasaporte: Lunes a viernes de 9 a 14:30 horas. Con Cita Previa. Los horarios puede sufrir modificaciones puntuales, confirmar en el siguiente enlace.",
+			"services": "",
+			"organization-name": "Comisaría de Policía y Oficina de Tramitación DNI y Pasaporte (San Blas - Canillejas)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4648324-comisaria-policia-oficina-tramitacion-dni-pasaporte-villa-vallecas-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/OficinasDNIPasaporte",
+		"id": "4648324",
+		"title": "Comisaría de Policía y Oficina de Tramitación DNI y Pasaporte (Villa de Vallecas)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e12ab40380725110VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas/Barrio/Entrevias"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28053",
+			"street-address": "PLAZA REGIONES  sin número"
+		},
+		"location": {
+			"latitude": 40.37969736641701,
+			"longitude": -3.6705986546441793
+		},
+		"organization": {
+			"organization-desc": " Denuncias:  pueden presentarse  en la página web de la Dirección General de Policia  y en comisaría. Bus: 103, 111, 24, 144.  Cercanías Renfe: Asamblea de Madrid Entrevías (líneas C2, C7 y Regional).",
+			"accesibility": "3",
+			"schedule": "Comisaría: Ininterrumpido.  DNI: Lunes a viernes de 9 a 14:30 y de 16 a 20 horas. Con Cita Previa. Los horarios puede sufrir modificaciones puntuales, confirmar en el siguiente enlace.",
+			"services": "",
+			"organization-name": "Comisaría de Policía y Oficina de Tramitación DNI y Pasaporte (Villa de Vallecas)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12336-comisaria-policia-carabanchel-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/OficinasDNIPasaporte",
+		"id": "12336",
+		"title": "Comisaría de Policía (Carabanchel)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=d59766051361c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel/Barrio/PuertaBonita"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28025",
+			"street-address": "CALLE PADRE AMIGO 3"
+		},
+		"location": {
+			"latitude": 40.379768113568105,
+			"longitude": -3.739993262053216
+		},
+		"organization": {
+			"organization-desc": " Denuncias: pueden presentarse en la página web de la Dirección General de Policía y en comisaría. Bus :   108.",
+			"accesibility": "1,6",
+			"schedule": "Comisaría: ininterrumpido.",
+			"services": "",
+			"organization-name": "Comisaría de Policía (Carabanchel)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/36083-oficina-tramitacion-dni-pasaporte-usera-villaverde-1-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/OficinasDNIPasaporte",
+		"id": "36083",
+		"title": "Oficina de Tramitación de DNI y Pasaporte (Usera-Villaverde 1)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5958444a2951c010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde/Barrio/LosAngeles"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28041",
+			"street-address": "PASEO GIGANTES Y CABEZUDOS 30"
+		},
+		"location": {
+			"latitude": 40.35756885956982,
+			"longitude": -3.6938620027962017
+		},
+		"organization": {
+			"organization-desc": "  Metro: Ciudad de los Ángeles (línea 3).  Bus: 22, 59, 79, 85, 18, 86.",
+			"accesibility": "1",
+			"schedule": "DNI y pasaporte: Lunes a viernes de 9 a 14:30 horas. Con Cita Previa.  Los horarios puede sufrir modificaciones puntuales, confirmar en el siguiente  enlace .",
+			"services": "",
+			"organization-name": "Oficina de Tramitación de DNI y Pasaporte (Usera-Villaverde 1)"
+		}
+	}	  
+  ]
+}
+

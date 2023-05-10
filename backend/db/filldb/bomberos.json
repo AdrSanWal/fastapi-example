@@ -1,0 +1,425 @@
+{
+	"@context": {
+		"c": "http://www.w3.org/2002/12/cal#",
+		"dcterms": "http://purl.org/dc/terms/",
+		"geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+		"loc": "http://purl.org/ctic/infraestructuras/localizacion#",
+		"org": "http://purl.org/ctic/infraestructuras/organizacion#",
+		"vcard": "http://www.w3.org/2006/vcard/ns#",
+		"schema": "https://schema.org/",
+		"title": "vcard:fn",
+		"id": "dcterms:identifier",
+		"relation": "dcterms:relation",
+		"references": "dcterms:references",
+		"address": "vcard:adr",
+		"area": "loc:barrio",
+		"district": "loc:distrito",
+		"locality": "vcard:locality",
+		"postal-code": "vcard:postal-code",
+		"street-address": "vcard:street-address",
+		"location": "vcard:geo",
+		"latitude": "geo:lat",
+		"longitude": "geo:long",
+		"organization": "vcard:org",
+		"organization-desc": "dcterms:description",
+		"accesibility": "org:accesibilidad",
+		"services": "org:servicios",
+		"schedule": "org:horario",
+		"organization-name": "vcard:organization-name",
+		"description": "c:summary",
+		"link": "c:url",
+		"uid": "c:uid",
+		"dtstart": "c:dtstart",
+		"dtend": "c:dtend",
+		"time": "c:time",
+		"excluded-days": "c:exdate",
+		"event-location": "c:location",
+		"free": "schema:free",
+		"price": "c:resource",
+		"recurrence": "c:rrule",
+		"days": "c:byday",
+		"frequency": "c:freq",
+		"interval": "c:interval",
+		"audience": "dc:audience"
+	},
+	"@graph": [
+	
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12350-parque-bomberos-01-chamberi.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ParquesBomberos",
+		"id": "12350",
+		"title": "Parque de Bomberos 01. Chamberí",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=cf0e72081661c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi/Barrio/RiosRosas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28003",
+			"street-address": "CALLE SANTA ENGRACIA 118"
+		},
+		"location": {
+			"latitude": 40.44022117656201,
+			"longitude": -3.7008188436972183
+		},
+		"organization": {
+			"organization-desc": "  Metro: Rios Rosas Bus: 3 , 12 , 37 , 45 , 149 BICIMAD: Estación 130 (Calle Santa Engracia, 127)",
+			"accesibility": "2",
+			"schedule": "",
+			"services": "",
+			"organization-name": "Parque de Bomberos 01. Chamberí"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12349-parque-bomberos-02-salamanca.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ParquesBomberos",
+		"id": "12349",
+		"title": "Parque de Bomberos 02. Salamanca",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=09ae72081661c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca/Barrio/FuenteBerro"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28028",
+			"street-address": "CALLE RUFINO BLANCO 2"
+		},
+		"location": {
+			"latitude": 40.42851068346943,
+			"longitude": -3.667110358891228
+		},
+		"organization": {
+			"organization-desc": "  Metro: Manuel Becerra Bus: 12 , 21 , 38 , 53 , 43 , 106 , 110 , 146 BICIMAD: Estación 187 (Calle Alejandro González, 1)",
+			"accesibility": "2",
+			"schedule": "",
+			"services": "",
+			"organization-name": "Parque de Bomberos 02. Salamanca"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12347-parque-bomberos-03-centro.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ParquesBomberos",
+		"id": "12347",
+		"title": "Parque de Bomberos 03. Centro",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5fce72081661c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Palacio"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28005",
+			"street-address": "RONDA SEGOVIA 95"
+		},
+		"location": {
+			"latitude": 40.406979862465434,
+			"longitude": -3.7122827517211396
+		},
+		"organization": {
+			"organization-desc": "  Metro: Puerta de Toledo Bus: 17 , 18 , 23 , 35 , 41 , 60 , 148 BICIMAD: Estación 45 (Glorieta Puerta de Toledo, 45)",
+			"accesibility": "2",
+			"schedule": "",
+			"services": "",
+			"organization-name": "Parque de Bomberos 03. Centro"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12354-parque-bomberos-04-tetuan.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ParquesBomberos",
+		"id": "12354",
+		"title": "Parque de Bomberos 04. Tetuán",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=a5fe72081661c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Tetuan"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Tetuan/Barrio/Almenara"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28029",
+			"street-address": "CALLE EMILIA 40"
+		},
+		"location": {
+			"latitude": 40.47073638501196,
+			"longitude": -3.696051732686216
+		},
+		"organization": {
+			"organization-desc": "  Metro: Ventilla Bus: 42",
+			"accesibility": "2",
+			"schedule": "",
+			"services": "",
+			"organization-name": "Parque de Bomberos 04. Tetuán"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12353-parque-bomberos-05-usera.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ParquesBomberos",
+		"id": "12353",
+		"title": "Parque de Bomberos 05. Usera",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=fb1f72081661c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Usera"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Usera/Barrio/Moscardo"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28026",
+			"street-address": "PASEO SANTA MARIA DE LA CABEZA 95"
+		},
+		"location": {
+			"latitude": 40.3920312875048,
+			"longitude": -3.706823031743194
+		},
+		"organization": {
+			"organization-desc": " Accesible sólo planta baja. Bus: 23 , 55 , 60",
+			"accesibility": "2",
+			"schedule": "",
+			"services": "",
+			"organization-name": "Parque de Bomberos 05. Usera"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12348-parque-bomberos-06-centro.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ParquesBomberos",
+		"id": "12348",
+		"title": "Parque de Bomberos 06. Centro",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=424f72081661c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Universidad"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28015",
+			"street-address": "CALLE SAN BERNARDO 68"
+		},
+		"location": {
+			"latitude": 40.42673583114157,
+			"longitude": -3.7065496222694208
+		},
+		"organization": {
+			"organization-desc": "  Metro: Noviciado, San Bernardo Bus: 3, 147 BICIMAD: Estación 15 (Calle San Vicente Ferrer, 64)",
+			"accesibility": "0",
+			"schedule": "",
+			"services": "",
+			"organization-name": "Parque de Bomberos 06. Centro"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12352-parque-bomberos-07-san-blas.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ParquesBomberos",
+		"id": "12352",
+		"title": "Parque de Bomberos 07. San Blas",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=986f72081661c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/SanBlas-Canillejas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/SanBlas-Canillejas/Barrio/Amposta"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28037",
+			"street-address": "AVENIDA HELLIN 52"
+		},
+		"location": {
+			"latitude": 40.42832883917418,
+			"longitude": -3.6154373664644375
+		},
+		"organization": {
+			"organization-desc": "  Metro: San Blas Bus: 4 , 38 , 48 , 153",
+			"accesibility": "2",
+			"schedule": "",
+			"services": "",
+			"organization-name": "Parque de Bomberos 07. San Blas"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12355-parque-bomberos-08-puente-vallecas.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ParquesBomberos",
+		"id": "12355",
+		"title": "Parque de Bomberos 08. Puente de Vallecas",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ee8f72081661c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas/Barrio/Numancia"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28038",
+			"street-address": "CALLE PIO FELIPE 24"
+		},
+		"location": {
+			"latitude": 40.39461731837056,
+			"longitude": -3.6531308970881393
+		},
+		"organization": {
+			"organization-desc": "  Metro: Portazgo , Buenos Aires Bus: 54 , 141 , 143",
+			"accesibility": "0",
+			"schedule": "",
+			"services": "",
+			"organization-name": "Parque de Bomberos 08. Puente de Vallecas"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12351-parque-bomberos-09-fuencarral-pardo.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ParquesBomberos",
+		"id": "12351",
+		"title": "Parque de Bomberos 09. Fuencarral - El Pardo",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=35bf72081661c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo/Barrio/LaPaz"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28029",
+			"street-address": "AVENIDA MONFORTE DE LEMOS 20"
+		},
+		"location": {
+			"latitude": 40.48008388609038,
+			"longitude": -3.699664083422411
+		},
+		"organization": {
+			"organization-desc": "  Metro: Barrio del Pilar Bus: 83 , 132 , 134 , 135",
+			"accesibility": "0",
+			"schedule": "",
+			"services": "",
+			"organization-name": "Parque de Bomberos 09. Fuencarral - El Pardo"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12357-parque-bomberos-10-villaverde.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ParquesBomberos",
+		"id": "12357",
+		"title": "Parque de Bomberos 10. Villaverde",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=163e72081661c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde/Barrio/SanAndres"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28021",
+			"street-address": "CALLE SAN NORBERTO 54"
+		},
+		"location": {
+			"latitude": 40.33986735099649,
+			"longitude": -3.70700829179349
+		},
+		"organization": {
+			"organization-desc": "  Bus: 79",
+			"accesibility": "0",
+			"schedule": "",
+			"services": "",
+			"organization-name": "Parque de Bomberos 10. Villaverde"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12356-parque-bomberos-11-hortaleza.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ParquesBomberos",
+		"id": "12356",
+		"title": "Parque de Bomberos 11. Hortaleza",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=6c5e72081661c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza/Barrio/ApostolSantiago"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28033",
+			"street-address": "CALLE MESENA 146"
+		},
+		"location": {
+			"latitude": 40.47409889540651,
+			"longitude": -3.665083966588485
+		},
+		"organization": {
+			"organization-desc": "  Bus: 7 , 107 , 125",
+			"accesibility": "0",
+			"schedule": "",
+			"services": "",
+			"organization-name": "Parque de Bomberos 11. Hortaleza"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12358-parque-bomberos-12-latina.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/ParquesBomberos",
+		"id": "12358",
+		"title": "Parque de Bomberos 12. Latina",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=b28e72081661c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Latina"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Latina/Barrio/LasAguilas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28044",
+			"street-address": "AVENIDA POBLADOS 48"
+		},
+		"location": {
+			"latitude": 40.38798474057904,
+			"longitude": -3.7650894764871374
+		},
+		"organization": {
+			"organization-desc": "  Metro: Aluche Bus: 17, 117 , 131 Renfe: Aluche",
+			"accesibility": "2",
+			"schedule": "",
+			"services": "",
+			"organization-name": "Parque de Bomberos 12. Latina"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11551259-parque-bomberos-13-vicalvaro.json",
+		"id": "11551259",
+		"title": "Parque de Bomberos 13. Vicálvaro",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=a070d8747a8bd710VgnVCM1000001d4a900aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Vicalvaro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Vicalvaro/Barrio/CascoHVicalvaro"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28052",
+			"street-address": "CALLE LAS SANTERAS 39"
+		},
+		"location": {
+			"latitude": 40.39121099231847,
+			"longitude": -3.589642922477532
+		},
+		"organization": {
+			"organization-desc": "  Metro: Puerta de Arganda Bus: 145, 287, 58, E5 Cercanias: C2-C7 Puerta de Arganda / Rivas-Avenida del Parque",
+			"accesibility": "2",
+			"schedule": "",
+			"services": "",
+			"organization-name": "Parque de Bomberos 13. Vicálvaro"
+		}
+	}	  
+  ]
+}
+

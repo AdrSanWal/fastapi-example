@@ -160,7 +160,7 @@ cython_debug/
 #.idea/
 
 # database
-db
+data
 
 # Personal
 Notes

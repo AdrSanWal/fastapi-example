@@ -1,0 +1,2020 @@
+{
+	"@context": {
+		"c": "http://www.w3.org/2002/12/cal#",
+		"dcterms": "http://purl.org/dc/terms/",
+		"geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+		"loc": "http://purl.org/ctic/infraestructuras/localizacion#",
+		"org": "http://purl.org/ctic/infraestructuras/organizacion#",
+		"vcard": "http://www.w3.org/2006/vcard/ns#",
+		"schema": "https://schema.org/",
+		"title": "vcard:fn",
+		"id": "dcterms:identifier",
+		"relation": "dcterms:relation",
+		"references": "dcterms:references",
+		"address": "vcard:adr",
+		"area": "loc:barrio",
+		"district": "loc:distrito",
+		"locality": "vcard:locality",
+		"postal-code": "vcard:postal-code",
+		"street-address": "vcard:street-address",
+		"location": "vcard:geo",
+		"latitude": "geo:lat",
+		"longitude": "geo:long",
+		"organization": "vcard:org",
+		"organization-desc": "dcterms:description",
+		"accesibility": "org:accesibilidad",
+		"services": "org:servicios",
+		"schedule": "org:horario",
+		"organization-name": "vcard:organization-name",
+		"description": "c:summary",
+		"link": "c:url",
+		"uid": "c:uid",
+		"dtstart": "c:dtstart",
+		"dtend": "c:dtend",
+		"time": "c:time",
+		"excluded-days": "c:exdate",
+		"event-location": "c:location",
+		"free": "schema:free",
+		"price": "c:resource",
+		"recurrence": "c:rrule",
+		"days": "c:byday",
+		"frequency": "c:freq",
+		"interval": "c:interval",
+		"audience": "dc:audience"
+	},
+	"@graph": [
+	
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4847190-casa-museo-lope-vega.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "4847190",
+		"title": "Casa Museo Lope de Vega",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=4eff8c46145e8110VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Cortes"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28014",
+			"street-address": "CALLE CERVANTES 11"
+		},
+		"location": {
+			"latitude": 40.414358466555235,
+			"longitude": -3.6974741545860015
+		},
+		"organization": {
+			"organization-desc": "'Mi casilla, mi quietud, mi g&amp;uuml;ertecillo y estudio'. Así define su casa Félix Lope de Vega (1562-1635) en una carta dirigida a un amigo. Situada en pleno centro histórico, en el Barrio de las Letras, la Casa Museo Lope de Vega se ubica en el edificio donde el escritor vivió sus últimos 25 años. La recreación de ambientes, cuyo objetivo es que se respire la presencia de Lope, evoca la vida cotidiana del Siglo de Oro y nos acerca a su intimidad. El equipamiento de la casa incorpora obras de arte, mobiliario, enseres y ediciones bibliográficas vinculadas al literato y su tiempo.  Metro: Antón Martín (línea 1), Sevilla (línea 2), Sol (líneas 1, 2 y 3).  Bus: 002, M1, 001, 10, 14, 27, 34, 37, 45, C03, 26, 32, 6, 51,   Cercanías Renfe:  Sol (líneas C3 y C4).   Bicimad: Estaciones 27 (calle Jesús), 52 (plaza de Santa Ana, 10), 29 (calle Marqués de Cubas, 25).  Aparcamientos: Cortes (46), plaza de las Cortes; plaza de Santa Ana (77).",
+			"accesibility": "0,4",
+			"schedule": "De martes a domingo, de 10 a 18 horas.  Cerrado los lunes, días 1 y 6 de enero, 1 de mayo, 9 de noviembre y 24, 25 y 31 de diciembre. El acceso al museo se hace mediante visitas guiadas en grupo. Es imprescindible reservar con antelación, por teléfono o correo electrónico.",
+			"services": "",
+			"organization-name": "Casa Museo Lope de Vega"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4949641-casita-museo-raton-perez.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "4949641",
+		"title": "Casita - Museo del Ratón Pérez",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=990950e86d4ca110VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Sol"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28013",
+			"street-address": "CALLE ARENAL 8 PLANTA 1.ª"
+		},
+		"location": {
+			"latitude": 40.4170597715272,
+			"longitude": -3.7055199334442492
+		},
+		"organization": {
+			"organization-desc": "La Casita-Museo de Ratón Pérez, constituye un singular lugar que da la bienvenida a cuantos visitantes allí acuden con el deseo de conocer y encontrarse con este extraordinario, único, madrileño y universal ratón. Reserva de entradas presicialmente y a través de  whatsapp  634 742 768. Metro: Sol (líneas: 1, 2 y 3), Ópera (líneas 2, 5 y Ramal Ópera Príncipe Pío), Callao (líneas 3, 5).  Bus: 50.  Cercanías Renfe: Sol (líneas C3, C4, C4a, C4b y Regional).  Bicimad: Estaciones 31 (calle Mayor, 20), 25 a y b (Plaza Celenque, 1).  Aparcamientos: El Core Inglés Preciados (93) calle Preciados; Descalzas (20) plaza Descalzas y plaza San Martín; plaza del Carmen (8); plaza Mayor (55).",
+			"accesibility": "0",
+			"schedule": "Visitas:     Lunes: 11 a 14 horas.   Martes a viernes: 11 a 14 y 17 a 20 horas.   Sábados: 11 a 14:30 y 16 a 20 horas.   Domingos y festivos: 11 a 14:30 y 16 a 20 horas (cerrado 25 de diciembre y 1 y 6 de enero).",
+			"services": "",
+			"organization-name": "Casita - Museo del Ratón Pérez"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/5682031-castillo-alameda.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "5682031",
+		"title": "Castillo de la Alameda",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=fe43c4be8e688210VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Barajas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Barajas/Barrio/AlamedaOsuna"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28042",
+			"street-address": "CALLE ANTONIO SANCHA 1"
+		},
+		"location": {
+			"latitude": 40.45835460563491,
+			"longitude": -3.5932903820278788
+		},
+		"organization": {
+			"organization-desc": "El Castillo de la Alameda o de Barajas se trata de uno de los escasos vestigios de la arquitectura militar del pasado siglo XV y uno de los pocos castillos que ha sobrevivido al paso del tiempo. Bajo él y su entorno, existen restos de asentamientos antiguos desde la Edad del Bronce hasta la Época Romana.En el edificio se realizan talleres para escolares y actividades en verano. Accesibilidad   Rampas de acceso. Aseos adaptados para personas con movilidad reducida. Información en Braille para personas con discapacidad visual. Metro: Alameda de Osuna y El Capricho (línea 5). Bus: 101, 105, 112, 114, 115 y 151.",
+			"accesibility": "1,6",
+			"schedule": "Abierto solo en fin de semana (sábado y domingo) y festivos (lunes festivos incluidos)  Del 1 de abril al 15 de junio de 10 a 21 horas. Del 16 de junio al 15 de septiembre de 10 a 20 horas. Del 15 al 30 de septiembre de 10 a 21 horas. De octubre a marzo de 10 a 18 horas.  Cerrado: 1 y 6 de enero, 1 de mayo, 24, 25 y 31 de diciembre.",
+			"services": "",
+			"organization-name": "Castillo de la Alameda"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2064-cason-buen-retiro-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "2064",
+		"title": "Casón del Buen Retiro.",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=f0443d0b5e71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Retiro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Retiro/Barrio/LosJeronimos"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28014",
+			"street-address": "CALLE ALFONSO XII 28"
+		},
+		"location": {
+			"latitude": 40.41527545361461,
+			"longitude": -3.689222446432277
+		},
+		"organization": {
+			"organization-desc": "El Centro de Estudios del Prado está ubicado en el Casón del Buen Retiro, que aloja además la Biblioteca, el Archivo, el Centro de Documentación y los Departamentos de Conservación del Museo Nacional del Prado. Descripción monumental  El Casón o Salón de Baile es el único volumen que permanece del antiguo Palacio del buen Retiro, ejecutado en 1637 con un proyecto de Alonso Carbonel. Aún se conserva la bóveda de cañon con lunetas, pintada al fresco por Lucas Jordán en 1692 con la Alegoría del Toisón de Oro. Su fachada principal, a poniente, arrasada la primitiva en 1886 por un ciclón, es de Velázquez Bosco. La última rehabilitación ha sido realizada por Jaime Torruell. Metro: Estación del Arte (línea 1), Banco de España (línea 2).  Bus: 19.  Cercanías Renfe: Atocha (líneas C1, C2, C3, C4, C4a, C4b, C5, C7 y C10).  Bicimad: Estación 65 (calle Antonio Maura, 15).  Parking: Montalbán (49), C/ Montalbán (entre C/ Alfonso XI y Paseo del Prado).",
+			"accesibility": "1",
+			"schedule": "",
+			"services": "",
+			"organization-name": "Casón del Buen Retiro."
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2069-centro-cultural-corrala-museo-artes-tradiciones-populares.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2069",
+		"title": "Centro Cultural La Corrala. Museo de Artes y Tradiciones Populares",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5c39ef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Embajadores"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28005",
+			"street-address": "CALLE CARLOS ARNICHES 3"
+		},
+		"location": {
+			"latitude": 40.408827275648434,
+			"longitude": -3.7083241323093614
+		},
+		"organization": {
+			"organization-desc": "  Metro: La Latina (línea 5)  Bus: 002, 17, 18, 23, 35, 60.  Bicimad: Estaciones 39 (plaza de la Cebada, 16), 45 (glorieta de la Puerta de Toledo, 1), 44 (calle Mesón de Paredes, 35).",
+			"accesibility": "3",
+			"schedule": "Lunes a viernes de 10 a 20 horas. Sábados de 10 a 14 horas. Cerrado domingos, festivos y mes de agosto, 24 y 31 diciembre.",
+			"services": "Las visitas individuales (grupos inferiores a 7 personas) no necesitan reserva previa. Reservas (Grupos de 8 a 20 personas máximo).",
+			"organization-name": "Centro Cultural La Corrala. Museo de Artes y Tradiciones Populares"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/6469186-ermita-san-antonio-florida-museo-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "6469186",
+		"title": "Ermita de San Antonio de la Florida (Museo)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=75950204770e7310VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca/Barrio/CasaCampo"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28008",
+			"street-address": "GLORIETA SAN ANTONIO DE LA FLORIDA 5"
+		},
+		"location": {
+			"latitude": 40.425256682855846,
+			"longitude": -3.725725718176111
+		},
+		"organization": {
+			"organization-desc": "Ermita dedicada a San Antonio de Padua y pequeño museo. Las pinturas murales que la decoran son de Francisco de Goya. Alberga los restos mortales del artista desde 1919. Para preservar sus pinturas, en 1929 se trasladó el culto a una ermita gemela construida a su lado, dejando el edificio original como museo.  Metro: Príncipe Pío (líneas 5, 10 y ramal Ópera - Príncipe Pío)  Bus: 41, 46 y 75 (Intercambiador Príncipe Pío)  Renfe: Príncipe Pío  BICIMAD: Estación 161 (Paseo de la Florida 8)",
+			"accesibility": "2,6",
+			"schedule": "General   De martes a domingos de 9:30 a 20 horas.   Verano (del 15 de junio al 15 de septiembre)   De martes a domingos de 9:30 a 19 horas.   Cerrado:  lunes (incluidos festivos), 1 y 6 de enero, 1 de mayo, 24, 25 y 31 de diciembre.  Último pase de visita: 20 minutos antes del cierre (el desalojo de las salas comenzará 10 minutos antes) Este horario y la apertura de salas pueden sufrir modificaciones.",
+			"services": "Tienda, en la que se pueden adquirir las guías y publicaciones sobre la ermita editadas por el Museo y otros organismos públicos, así como catálogos y publicaciones de instituciones culturales del Ayuntamiento de Madrid.",
+			"organization-name": "Ermita de San Antonio de la Florida (Museo)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/58353-espacio-fundacion-telefonica.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "58353",
+		"title": "Espacio Fundación Telefónica",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=87748ed67151c010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Universidad"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28004",
+			"street-address": "CALLE FUENCARRAL 3"
+		},
+		"location": {
+			"latitude": 40.42042493125648,
+			"longitude": -3.701594573150366
+		},
+		"organization": {
+			"organization-desc": "  Metro: Gran Vía (líneas 1 y 5).  Bus: 001, 002, 1, 146, 2, 46, 74, 3.  Bicimad: Estaciones 211 (calle Desengaño, 1), 210 (calle Tres Cruces, 7), 18 (plaza de Pedro Zerolo, 1).  Aparcamientos: Barco 1 (88), Calle Barco; Pedro Zerolo (71), plaza Pedro Zerolo sin número; plaza del Carmen (8).",
+			"accesibility": "1",
+			"schedule": "De martes a domingo, de 10 a 20 horas. Cerrado al público todos los lunes y días 25 de diciembre, 1 y 6 de enero.",
+			"services": "",
+			"organization-name": "Espacio Fundación Telefónica"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/6017808-fundacion-amyc-arte-moderno-contemporaneo-casa-museo-fuente-rey.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/FundacionesCulturales",
+		"id": "6017808",
+		"title": "Fundación AMYC (Arte Moderno y Contemporáneo). Casa Museo Fuente del Rey",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5c1260101310f210VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca/Barrio/Aravaca"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28023",
+			"street-address": "CALLE FUENTE DEL REY 11"
+		},
+		"location": {
+			"latitude": 40.45546866305681,
+			"longitude": -3.7705716814130965
+		},
+		"organization": {
+			"organization-desc": "  Bus: 161.",
+			"accesibility": "3",
+			"schedule": "Martes a sábado, de 10 a 19 horas. Lunes, domingos y festivos cerrado. Visitas para grupos de hasta 25 personas dentro de los horarios de apertura. Pueden ser con guía propio o con guía de la Fundación, y la duración de la misma es de una hora, previa reserva telefónica o por email.",
+			"services": "",
+			"organization-name": "Fundación AMYC (Arte Moderno y Contemporáneo). Casa Museo Fuente del Rey"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/103331-casa-encendida-fundacion-montemadrid.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "103331",
+		"title": "La Casa Encendida de la Fundación Montemadrid",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c27f8899fc81c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Embajadores"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28012",
+			"street-address": "RONDA VALENCIA 2"
+		},
+		"location": {
+			"latitude": 40.40596221830597,
+			"longitude": -3.6997720739017033
+		},
+		"organization": {
+			"organization-desc": "Edificio de carácter monumental. De estilo neomudéjar, fue diseñado por el arquitecto Fernando Arbós e inaugurado en el año 1913. Cuenta con más de 6000 metros cuadrados de instalaciones divididas en 4 plantas y una azotea. Centro social y cultural.  Metro: Embajadores (línea 3)  Bus: 119, 27, 34, 36, 41, C03, C2, C1, 148, 60, 75, M1  Cercanías Renfe: Embajadores (línea C5)  Bicimad: Estación 49 (ronda de Atocha, 34)  Aparcamiento: Garaje Amparo (75), calle Amparo",
+			"accesibility": "1,4,6",
+			"schedule": "De martes a domingo de 10 a 22 horas.",
+			"services": "Biblioteca,mediateca, hemeroteca, laboratorio de radio, fotográfico y multimedia Cafetería Terraza &amp;ndash; café bar Ecotienda solidaria Visitas guiadas",
+			"organization-name": "La Casa Encendida de la Fundación Montemadrid"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/5873478-museo-abc.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "5873478",
+		"title": "Museo ABC",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=f0103fee6537c210VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Universidad"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28015",
+			"street-address": "CALLE AMANIEL 29 -31"
+		},
+		"location": {
+			"latitude": 40.42741121610518,
+			"longitude": -3.709539260414957
+		},
+		"organization": {
+			"organization-desc": "Centro de arte, dibujo e ilustración.  Metro: San Bernardo (líneas 2, 4), Noviciado (línea 2), Ventura Rodríguez (línea 3), Plaza de España (líneas 3, 10)  Bus: M2, C1, C3, 1, 2, 3, 21, 44, 133, 147, 001, 002   Bicimad: Estación 13 (calle Conde Duque 22)",
+			"accesibility": "1",
+			"schedule": "Consultar.",
+			"services": "",
+			"organization-name": "Museo ABC"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2067-museo-africano-misioneros-combonianos.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2067",
+		"title": "Museo Africano Misioneros Combonianos",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=6ab8ef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal/Barrio/SanJuanBautista"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28043",
+			"street-address": "CALLE ARTURO SORIA 101"
+		},
+		"location": {
+			"latitude": 40.44946738556641,
+			"longitude": -3.651489872602189
+		},
+		"organization": {
+			"organization-desc": "  Bus: 11, 70, 114, 122, 115, 200.",
+			"accesibility": "3",
+			"schedule": "Grupos con cita previa telefónica o en la su web : de lunes a viernes de 9:30 a 13:30 horas.  Individuales: Visitas guiadas sin cita previa los domingos a las 11:30 horas.",
+			"services": "",
+			"organization-name": "Museo Africano Misioneros Combonianos"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2050-museo-arqueologico-nacional.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2050",
+		"title": "Museo Arqueológico Nacional",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8fd8ef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca/Barrio/Recoletos"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28001",
+			"street-address": "CALLE SERRANO 13"
+		},
+		"location": {
+			"latitude": 40.4232789604228,
+			"longitude": -3.6884121235090532
+		},
+		"organization": {
+			"organization-desc": "Fundado en 1867, el MAN se inauguró en 1895 en su actual sede, en el Palacio de Biblioteca y Museos, edificio proyectado por Francisco Jareño y terminado por Antonio Ruiz de Salces.  Metro: Serrano (línea 4), Retiro (línea 2)  Bus: 1, 9, 19, 51, 74  Cercanías Renfe: Recoletos (línea C1, C2, C7, C10 y Regional)  Bicimad: Estaciones 95 (calle Claudio Coello 109), 94 (paseo de Recoletos, 20), 107 (calle Serrano, 8), 106 a y b (calle Serrano, 34).  Aparcamiento: Colón (2), Plaza de Colón",
+			"accesibility": "1,6",
+			"schedule": "De martes a sábados de 9:30 a 20 horas. Domingos y festivos de 9:30 a 15 horas.   Cerrado   Todos los lunes del año. 1 y 6 de enero, 1 de mayo, 9 de noviembre, 24, 25 y 31 de diciembre.  Más información horarios.",
+			"services": "",
+			"organization-name": "Museo Arqueológico Nacional"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2072-museo-casa-moneda.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2072",
+		"title": "Museo Casa de la Moneda",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=12f8ef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca/Barrio/Goya"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28028",
+			"street-address": "CALLE DOCTOR ESQUERDO 36"
+		},
+		"location": {
+			"latitude": 40.42260021542579,
+			"longitude": -3.669139860245996
+		},
+		"organization": {
+			"organization-desc": "  Metro: O&amp;acute;Donnell (línea 6), Goya (líneas 2 y 4).  Bus: 143, 156, 2, 30, 56, 71, C2, 28, 203.   Bicimad: Estación 101 (calle Jorge Juan, 131).",
+			"accesibility": "1,4",
+			"schedule": "De martes a viernes ininterrumpidamente de 10 a 17:30. Sábados, domingos y festivos de 10 a 14:15 horas. Cerrado los lunes (incluidos festivos), y los días 1 y 6 de enero; 1 de mayo; 24, 25 y 31 de diciembre.",
+			"services": "",
+			"organization-name": "Museo Casa de la Moneda"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4112-museo-cerralbo.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "4112",
+		"title": "Museo Cerralbo",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=a4efb0c40971c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca/Barrio/Arguelles"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28008",
+			"street-address": "CALLE VENTURA RODRIGUEZ 17"
+		},
+		"location": {
+			"latitude": 40.423779252051425,
+			"longitude": -3.7145996063573756
+		},
+		"organization": {
+			"organization-desc": "Este Palacio, construido entre 1883 y 1893, fue concebido como vivienda y como museo para sede de las obras de arte reunidas por los Marqueses de Cerralbo y sus hijos, los Marqueses de Villa Huerta, durante los numerosos viajes que realizaron por España y Europa.  Metro: Plaza de España (líneas 3, 10), Príncipe Pío (líneas 6 y 10)  Bus: 62, 74  Cercanías Renfe: Príncipe Pio (líneas C1, C7 y C10)  Bicimad: Estación 14 (calle Ventura Rodríguez, 2)",
+			"accesibility": "2,6",
+			"schedule": "De martes a sábado de 9:30 a 15 horas. Jueves, apertura extraordinaria por la tarde, de 17 a 20 horas, excepto festivos. Entrada gratuita. Domingos y festivos de 10 a 15 horas. Domingos, entrada gratuita para todo el público. Cerrado: todos los lunes, 1 y 6 de enero, 1 de mayo, 24, 25 y 31 de diciembre, una fiesta local.",
+			"services": "",
+			"organization-name": "Museo Cerralbo"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/10091450-museo-emt.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/AyuntamientoMadrid/OrganismosEmpresasMunicipales",
+		"id": "10091450",
+		"title": "Museo EMT",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=d56ad05b2a255510VgnVCM2000001f4a900aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamartin"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamartin/Barrio/Castilla"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28046",
+			"street-address": "CALLE MAURICIO LEGENDRE 40"
+		},
+		"location": {
+			"latitude": 40.480173612860305,
+			"longitude": -3.6831595451893273
+		},
+		"organization": {
+			"organization-desc": "El Museo de la EMT se ha convertido en realidad tras una década de duro trabajo de recuperación, restauración y reparación del patrimonio histórico de la Empresa Municipal de Transportes de Madrid, especialmente, material móvil, mobiliario, piezas mecánicas, maquinaria y otros elementos inherentes a la actividad de la EMT en sus 70 años de historia.  Metro: Begoña (línea 10). Bus: 66, 173, 174, 176, 191, 193, 194, 195, 196, 197, 712, 713, 714, 716, L171.",
+			"accesibility": "0",
+			"schedule": "Visitas (con cita previa)  Apertura estacional durante seis meses al año: todos los sábados de abril, mayo, junio, julio, septiembre y octubre), a las 10, a las 11:30 y a las 13 horas. Por ser un centro de trabajo únicamente pueden realizarse de forma organizada, previamente concertadas y limitadas a un máximo de 40 personas por turno. Duración: 60 minutos aproximadamente. Compra de entradas y reserva de horarios a través de la web: http://tienda.emtmadrid.es (a partir del 1 de marzo de 2018).",
+			"services": "Si tiene una discapacidad física o sensorial, contacta con el Museo antes de reservar la visita y le informarán de la accesibilidad a la instalación.",
+			"organization-name": "Museo EMT"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/10237457-museo-felix-canada.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "10237457",
+		"title": "Museo Félix Cañada",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=cb22820a52799510VgnVCM1000001d4a900aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi/Barrio/RiosRosas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28003",
+			"street-address": "CALLE ALENZA 1"
+		},
+		"location": {
+			"latitude": 40.442581673356834,
+			"longitude": -3.700796192332983
+		},
+		"organization": {
+			"organization-desc": "Una selección de más de quinientas obras de arte de entre las cerca de mil de la donación original, constituyen la Colección Permanente que se puede visitar en las salas del Museo Félix Cañada de la Fundación Gómez Pardo, adscrita a la Escuela Técnica Superior de Ingenieros de Minas y Energía de la Universidad Politécnica de Madrid. Donada por el ingeniero de minas Doctor Félix Cañada Guerrero a la Fundación Gómez Pardo, reúne una amplia representación de trabajos de destacados artistas, pintores, escultores, ilustradores, grabadores, orfebres, ceramistas, etc. abarcando diferentes periodos desde el siglo XI hasta nuestros días.  Metro: Rios Rosas (línea 1).  Bus: 45, 12, 149, 3, 37.  Bicimad: Estación 130 (calle Santa Engracia, 127).",
+			"accesibility": "3",
+			"schedule": "Lunes, miércoles y viernes, de 10 a 13 horas. .",
+			"services": "",
+			"organization-name": "Museo Félix Cañada"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2074-museo-geominero.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2074",
+		"title": "Museo Geominero",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ff0bef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi/Barrio/RiosRosas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28003",
+			"street-address": "CALLE RIOS ROSAS 23"
+		},
+		"location": {
+			"latitude": 40.442047952073665,
+			"longitude": -3.699670468881422
+		},
+		"organization": {
+			"organization-desc": "Los objetivos del Museo Geominero son conservar, investigar y difundir la riqueza y diversidad del patrimonio geológico, paleontológico y mineralógico a través de las importantes colecciones de minerales, rocas y fósiles procedentes de todas las regiones españolas y de antiguos territorios coloniales, así como de yacimientos significados del registro mundial.  Metro: Ríos Rosas (línea 1), Alonso Cano (línea 7), Cuatro Caminos (líneas 1, 2 y 6).  Bus: 45, 12, 149, 3, 37, 5.  Bicimad: Estación 130 (calle Santa Engracia, 127).",
+			"accesibility": "3",
+			"schedule": "De lunes a domingo y festivos de 9 a 14 horas. Cerrado los días 1 y 6 de enero y 24, 25 y 31 de diciembre.",
+			"services": "",
+			"organization-name": "Museo Geominero"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2075-museo-historico-minero-don-felipe-borbon-grecia.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2075",
+		"title": "Museo Histórico Minero Don Felipe de Borbón y Grecia",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=822bef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi/Barrio/RiosRosas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28003",
+			"street-address": "CALLE RIOS ROSAS 21"
+		},
+		"location": {
+			"latitude": 40.44209227424258,
+			"longitude": -3.7003734646151534
+		},
+		"organization": {
+			"organization-desc": "Ubicado en la Escuela Técnica Superior de Ingenieros de Minas de Madrid  Metro: Ríos Rosas (línea 1)  Bus: 3, 12, 37, 45, 149  Bicimad: Estación 130 (calle Santa Engracia, 127)",
+			"accesibility": "3",
+			"schedule": "Consultar.",
+			"services": "",
+			"organization-name": "Museo Histórico Minero Don Felipe de Borbón y Grecia"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/18176-museo-ico.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "18176",
+		"title": "Museo ICO",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=2886444a2951c010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Cortes"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28014",
+			"street-address": "CALLE ZORRILLA 3"
+		},
+		"location": {
+			"latitude": 40.41676546905435,
+			"longitude": -3.6977222605477635
+		},
+		"organization": {
+			"organization-desc": "  Metro: Sevilla (línea 2)  Bus: 53, 15, 20, 002, 51, M1, 150, 5  Bicimad: estación 28 (calle Alcalá, 27)  Aparcamiento: Cortes (46), Plaza de las Cortes / Hub de Movilidad Canalejas 360 (1239), Calle de Alcalá, 17 / Sevilla (41), calle Sevilla y calle Alcalá",
+			"accesibility": "3",
+			"schedule": "De martes a sábados: de 11 a 20 horas.   Domingos y festivos: de 10 a 14 horas.    Cerrado: Todos los lunes del año.  Horarios especiales: 24 y 31 de diciembre de 10 a 14 horas. 1 de enero, 1 de mayo y 25 de diciembre cerrado.",
+			"services": "",
+			"organization-name": "Museo ICO"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/6019032-museo-canos-peral-estacion-metro-opera.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "6019032",
+		"title": "Museo Los Caños del Peral. Estación de Metro Ópera",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=435950262d50f210VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Palacio"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28013",
+			"street-address": "PLAZA ISABEL II 1"
+		},
+		"location": {
+			"latitude": 40.41775560280743,
+			"longitude": -3.709202070089538
+		},
+		"organization": {
+			"organization-desc": "A diez metros bajo la plaza de Isabel II, la estación de Metro Ópera (L2, L5 y Ramal Norte) alberga la recreación museística de la histórica fuente de los Caños del Peral. La visita nos permite conocer la fuente que recogía el agua de manantial junto al arroyo del Arenal durante la segunda mitad del sigloXVI, y que tenía en origen 34 metros de longitud; la galería de abastecimiento en bóveda de cañón y la alcantarilla de la zona; y el acueducto que, salvando al barranco del arroyo del Arenal, surtió de agua al Palacio Real desde el siglo XVII hasta prácticamente el siglo XX.  Metro: Ópera (líneas 2, 5 y Ramal).   Bicimad: Estación 24 (calle Carlos III, 1).    Aparcamiento: Descalzas (20), plaza Descalzas y plaza San Martín.",
+			"accesibility": "1",
+			"schedule": "Previa reserva en la página museosmetromadrid.es.  Viernes: de 16 a 20 horas. Sábados: de 10 a 14 horas y de 16 a 20 horas. Domingos: de 10 a 14 horas.",
+			"services": "",
+			"organization-name": "Museo Los Caños del Peral. Estación de Metro Ópera"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2053-museo-lazaro-galdiano.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "2053",
+		"title": "Museo Lázaro Galdiano",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=7d1aef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca/Barrio/Castellana"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28006",
+			"street-address": "CALLE SERRANO 122"
+		},
+		"location": {
+			"latitude": 40.43675593917329,
+			"longitude": -3.6861820403705816
+		},
+		"organization": {
+			"organization-desc": "  Metro: Gregorio Marañón (líneas 7 y 10), Ruben Darío (línea 5), Nuñez de Balboa (líneas 5 y 9)  Bus: 16, 19, 51, 9, 12, 61  Bicimad: Estaciones 140 (calle Velázquez, 130), 141 (paseo de la Castellana, 43)  Aparcamiento: Serrano I (62) calle Serrano entre Hermanos Becquer y Marqués de Villamejor",
+			"accesibility": "1",
+			"schedule": "Martes a domingo, de 9:30 a 15 horas. Lunes cerrado.",
+			"services": "",
+			"organization-name": "Museo Lázaro Galdiano"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/5349304-museo-nacional-centro-arte-reina-sofia-mncars-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "5349304",
+		"title": "Museo Nacional Centro de Arte Reina Sofía (MNCARS)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=69d8275bad5a1210VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Embajadores"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28012",
+			"street-address": "CALLE SANTA ISABEL 52"
+		},
+		"location": {
+			"latitude": 40.40864029339671,
+			"longitude": -3.6939504103293244
+		},
+		"organization": {
+			"organization-desc": "Edificio Sabatini: calle Santa Isabel 52.  Edificio Nouvel (ampliación): ronda de Atocha, esquina a plaza del Emperador Carlos V.  Espacios en el parque del Retiro: Palacio de Velázquez y Palacio de Cristal.  Metro: Estación del Arte (línea 1).  Bus: 27, 34, C03, C1, 26, 32, 6, 59, 85, E1, C2, 119, 36, 41, 001, 10, 14, 37, 45.  Cercanías Renfe: Atocha (líneas C1, C2, C3, C4, C4a, C4b, C5, C7, C8, C10).  Bicimad: Estación 50 (calle Santa Isabel, 57), 51 (Ronda de Atocha, 2).  Aparcamiento: Sánchez Bustillo (37), calle Sánchez Bustillo.",
+			"accesibility": "1",
+			"schedule": "Lunes y de miércoles a sábado, de 10 a 21 horas. Martes cerrado (incluso festivos). Domingos de 10 a 14:30 horas. Días de cierre 1 y 6 de enero, 1 de mayo, 15 de mayo, 9 de noviembre, 24, 25 y 31 de diciembre.",
+			"services": "",
+			"organization-name": "Museo Nacional Centro de Arte Reina Sofía (MNCARS)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2099-museo-nacional-thyssen-bornemisza.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "2099",
+		"title": "Museo Nacional Thyssen-Bornemisza",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=0b8079262ef5d010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Cortes"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28014",
+			"street-address": "PASEO PRADO 8"
+		},
+		"location": {
+			"latitude": 40.41601631762229,
+			"longitude": -3.694738346891257
+		},
+		"organization": {
+			"organization-desc": "El palacio donde se ubica la colección fue el antiguo palacio del duque de Villahermosa. Edificación neoclásica. Posteriormente se adapta como entidad bancaria perdiento sus espacios interiores. Más tarde, pasó a formar parte de los edificios del Museo del Prado. Desde principios de los 90 alberga la Colección Thyssen. El museo ofrece un recorrido por la historia de la pintura europea desde sus inicios en el siglo XIII, hasta finales del siglo XX. Arquitecto: Antonio López Aguado (1805 - 1806).  Adecuación: Rafael Moneo (1989 - 1992).  Ampliación: BOPBAA (1999 - 2004). Metro: Banco de España (línea 2).  Bus: 001, 10, 14, 27, 34, 37, 45, C03.   Bicimad:   Estación 29 (calle Marqués de Cubas, 25).   Aparcamiento: Cortes (46), Plaza de las Cortes.",
+			"accesibility": "1",
+			"schedule": "Colecciones permanentes:  lunes de 12 a 16 horas (acceso gratuito gracias al patrocinio de MasterCard). Martes a domingo de 10 a 19 horas.   Exposiciones temporales: consultar horario específico en la web del museo.  Avisos y aperturas extraordinarias: los días 1 de enero, 1 de mayo y 25 de diciembre el Museo permanecerá cerrado. El 24 y el 31 de diciembre el horario de apertura del Museo será de 10 a 15 horas.  El desalojo de las salas tendrá lugar 5 minutos antes del cierre.",
+			"services": "",
+			"organization-name": "Museo Nacional Thyssen-Bornemisza"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2057-museo-nacional-antropologia.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2057",
+		"title": "Museo Nacional de Antropología",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=456079262ef5d010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Retiro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Retiro/Barrio/LosJeronimos"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28014",
+			"street-address": "CALLE ALFONSO XII 68"
+		},
+		"location": {
+			"latitude": 40.407887537677716,
+			"longitude": -3.688862923660605
+		},
+		"organization": {
+			"organization-desc": "El Museo está instalado en el edificio de estilo clasicista construido por el Marqués de Cubas en 1875 por encargo del Doctor González Velasco, fundador de la institución.  Metro: Estación del Arte (línea 1).  Bus: 19, C1, 10, 14, 26, 32, 102, 37, 001, C2, 59, SE760, 203, 85, 141, 54, 57.  Cercanías Renfe: Atocha (líneas C1, C2, C3, C4, C4a, C4b, C5, C7, C8, C10 y Regional)  Bicimad: Estaciones 80 a y b (paseo Infanta Isabel, 3), 69 (avenida de Alfonso XII, 54).",
+			"accesibility": "1,6",
+			"schedule": "De martes a sábado de 9:30 a 20 horas. Domingos: de 10 a 15 horas. Cerrado todos los lunes del año y los días 1 y 6 de enero, 1 de mayo, 24, 25 y 31 de diciembre y un festivo local. La taquilla se cerrará 15 minutos antes del cierre.",
+			"services": "",
+			"organization-name": "Museo Nacional de Antropología"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2055-museo-nacional-artes-decorativas.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "2055",
+		"title": "Museo Nacional de Artes Decorativas",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=287079262ef5d010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Retiro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Retiro/Barrio/LosJeronimos"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28014",
+			"street-address": "CALLE MONTALBAN 12"
+		},
+		"location": {
+			"latitude": 40.417896616053866,
+			"longitude": -3.689754509701677
+		},
+		"organization": {
+			"organization-desc": "Inaugurado en 1912, su sede es un típico palacete madrileño del último tercio del siglo XIX. El museo posee muebles, cerámicas, vidrios, joyas, tejidos, arte oriental, y hasta 30 000 objetos distintos que a lo largo de la historia han servido para embellecer las casas, palacios y los monumentos de distintas culturas. El museo posee muestras como el Jarrón de Sevres regalo de Napoleón III, la Cocina Valenciana del siglo XVIII compuesta por más de 1500 azulejos de Manises, la Mesa de plata del siglo XVI o la colección de alfombras españolas de los siglos XV al XVII. El Museo dispone de una rampa de acceso al edificio en la calle Montalbán. Para su uso, es necesario avisar con antelación al personal del Museo.El acceso a las diferentes plantas, puede realizarse mediante ascensor. Debido a las dimensiones del mismo, es necesario emplear en él las sillas de ruedas que el Museo pone a su disposición, previa solicitud. Metro: Banco de España (Línea 2)  Bus: 19, E1, 203, 14, 27, 37, 45, C03, 1, 146, 15, 2, 20, 51, 52, 74, 9, 10, 34, 001  Bicimad: Estación 86 (Plaza Cibeles)  Aparcamiento: Montalbán (49), calle Montalbán (entre calle Alfonso XI y paseo Prado)",
+			"accesibility": "2,6",
+			"schedule": "Martes a sábados de 9:30 a 15 horas. Domingo y festivos: de 10 a 15 horas. Jueves tarde de 17 a 20 horas (excepto julio y agosto).  Cerrado:  todos los lunes, 1 y 6 de enero, 1 y 15 de mayo, 24, 25 y 31 de diciembre.    La venta de entradas finalizará 30 minutos antes del cierre.",
+			"services": "",
+			"organization-name": "Museo Nacional de Artes Decorativas"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2056-museo-nacional-ciencias-naturales.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "2056",
+		"title": "Museo Nacional de Ciencias Naturales",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8edbef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamartin"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamartin/Barrio/ElViso"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28006",
+			"street-address": "CALLE JOSE GUTIERREZ ABASCAL 2"
+		},
+		"location": {
+			"latitude": 40.44042600324054,
+			"longitude": -3.690212174964136
+		},
+		"organization": {
+			"organization-desc": "  Metro: Gregorio Marañón (líneas 7, 10)  Bus: 12, 45, 14, 147, 150, 27, 40, 7  Bicimad: Estación 139 (Calle José Gutiérrez Abascal, 2)",
+			"accesibility": "1,6",
+			"schedule": "De martes a viernes de 10 a 17 horas. Sábados, domingos y festivos de 10 a 20 horas. Agosto,de 10 a 15 horas. Cerrado los lunes (excepto los festivos). Cerrado el 1 y 6 de enero, el 1 de mayo y el 25 de diciembre. Los días 24 y 31 de diciembre el museo permanecerá abierto de 10 a 15 horas.",
+			"services": "",
+			"organization-name": "Museo Nacional de Ciencias Naturales"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2076-museo-naval.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2076",
+		"title": "Museo Naval",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=a30cef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Retiro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Retiro/Barrio/LosJeronimos"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28014",
+			"street-address": "PASEO PRADO 3"
+		},
+		"location": {
+			"latitude": 40.417817776538435,
+			"longitude": -3.6927096854547727
+		},
+		"organization": {
+			"organization-desc": "  Metro: Banco de España (línea 2)  Bus: 002, M1, SE712, 26, 32, 6  Bicimad: Estación 86 (plaza de Cibeles)    Aparcamiento: Montalbán (49), calle Montalbán entre calle Alfonso XI y paseo del Prado",
+			"accesibility": "1",
+			"schedule": "De martes a domingo de 10 a 19 horas. Durante el mes de agosto, horario reducido de 10 a 15 horas. Cerrados lunes, 1 y 6 de enero, 1 de mayo, 24, 25 y 31 de diciembre.",
+			"services": "",
+			"organization-name": "Museo Naval"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2085-museo-postal-telegrafico.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2085",
+		"title": "Museo Postal y Telegráfico",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c82cef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca/Barrio/Valdemarin"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28023",
+			"street-address": "CALLE TAPIA DE CASARIEGO 6"
+		},
+		"location": {
+			"latitude": 40.46772394620028,
+			"longitude": -3.7690769512163045
+		},
+		"organization": {
+			"organization-desc": "El  Museo Postal y Telegráfico ofrece al visitante un recorrido temático y cronológico a través  de la historia de las comunicaciones, desde la más tradicional, la carta, hasta las comunicaciones por satélite. En este museo se conservan y exhiben los fondos postales y de telecomunicación desde los primeros hitos conocidos hasta nuestros días.  ",
+			"accesibility": "1",
+			"schedule": "Consultar",
+			"services": "Bus: 161",
+			"organization-name": "Museo Postal y Telegráfico"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4997114-museo-sorolla.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "4997114",
+		"title": "Museo Sorolla",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=6dd05e93aad9c110VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi/Barrio/Almagro"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28010",
+			"street-address": "PASEO GENERAL MARTINEZ CAMPOS 37"
+		},
+		"location": {
+			"latitude": 40.43525811195212,
+			"longitude": -3.69257053914393
+		},
+		"organization": {
+			"organization-desc": "  Metro: Rubén Darío (línea 5), Gregorio Marañón (líneas 7 y 10), Iglesia (línea 1).  Bus: 16, 5, 61, 147, 40, 7.  Bicimad: Estaciones 125 (calle Fernández de la Hoz, 29), 198 (Glorieta Rubén Darío, 2), 141 (paseo de la Castellana, 43).",
+			"accesibility": "2",
+			"schedule": "De martes a sábado: de 9:30 a 20 horas. Domingos y festivos: de 10 a 15 horas. Cerrado: todos los lunes del año, 1 y 6 de enero, 1 de mayo, 9 noviembre, 24, 25 y 31 de diciembre .",
+			"services": "",
+			"organization-name": "Museo Sorolla"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2077-museo-taurino-comunidad-madrid.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2077",
+		"title": "Museo Taurino de la Comunidad de Madrid",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=958cef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca/Barrio/Guindalera"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28028",
+			"street-address": "CALLE ALCALA 237"
+		},
+		"location": {
+			"latitude": 40.431581087036655,
+			"longitude": -3.6628632167710227
+		},
+		"organization": {
+			"organization-desc": "  Metro: Ventas (líneas 2 y 5).  Bus: 106, 110, 146, 21, 210, 38, 53.  Bicimad: Estaciones 187 (calle Alejandro González, 1) y 193 (avenida de los Toreros, 49).",
+			"accesibility": "3",
+			"schedule": "Todos los días del año de 10 a 15 horas, excepto el 25 de diciembre y el 1 de enero. Los días que se celebren festejos de cualquier tipo en el recinto, las visitas terminarán 2 horas antes del comienzo del espectáculo.​​",
+			"services": "",
+			"organization-name": "Museo Taurino de la Comunidad de Madrid"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2101-museo-tiflologico.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2101",
+		"title": "Museo Tiflológico",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=baacef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Tetuan"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Tetuan/Barrio/CuatroCaminos"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28020",
+			"street-address": "CALLE LA CORU&amp;Ntilde;A 18"
+		},
+		"location": {
+			"latitude": 40.45525267846033,
+			"longitude": -3.700169379369277
+		},
+		"organization": {
+			"organization-desc": "Edificio con una superficie de 1.500 m2 dividido en tres zonas con maquetas de monumentos nacionales e internacionales realizadas por invidentes e instrumentos utilizados por los invidentes desde hace 200 años. Es un espacio concebido para que sus visitantes puedan ver y tocar las piezas expuestas.  Metro: Estrecho (línea 1)  Bus: 3, 43, 124, 124, 126, 128",
+			"accesibility": "1,5",
+			"schedule": "Martes a viernes, de 10 a 15 horas y de 16 a 19 horas. Sábados de 10 a 14 horas. Cerrado: lunes, domingos y festivos. Consultar cierres especiales en https://museo.once.es/",
+			"services": "",
+			"organization-name": "Museo Tiflológico"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2068-museo-aeronautica-astronautica.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2068",
+		"title": "Museo de Aeronáutica y Astronáutica",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=90aaef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Latina"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Latina/Barrio/CuatroVientos"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28024",
+			"street-address": "AUTOVIA A-5 10.700 Km. 10,5"
+		},
+		"location": {
+			"latitude": 40.37362,
+			"longitude": -3.80843
+		},
+		"organization": {
+			"organization-desc": "El museo tiene por finalidad la adquisición, conservación y exposición de los bienes que constituyen el Patrimonio Histórico de la Aeronáutica Española. Dispone de una exposición exterior y siete hangares que albergan aeronaves, uniformes, condecoraciones, motores, maquetas y otros fondos relacionados con la aviación. Terminada la Guerra Civil y una vez creado el Ejército del Aire, se concibe la idea de crear un museo que reflejara la evolución e historia de nuestra aeronáutica. Desde 1975 el Museo está en Cuatro Vientos y se han sucedido varias ampliaciones que le convierten en un referente europeo de la aeronáutica.  ",
+			"accesibility": "3",
+			"schedule": "De martes a domingo de 10 a 14 horas. Cerrado: 1 y 6 de enero, jueves y viernes Santos, 10 de diciembre (patrona de la aviación), 24, 25 y 31 de diciembre y días establecidos en el calendario anual.",
+			"services": "Aparcamiento: gratuito, de 10 a 14 horas. Cafetería: de 10 a 13:30 horas. Punto de venta: de 10 a 13:30 horas.  Visitas guiadas para grupos: de martes a domingo de 10 a 14 horas. Previa petición de autorización por carta o correo electrónico ( museodelaire@ea.mde.es  ). Se recomienda anticipar las peticiones por teléfono de lunes a viernes.",
+			"organization-name": "Museo de Aeronáutica y Astronáutica"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2091-museo-america.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2091",
+		"title": "Museo de América",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c929ef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca/Barrio/CiudadUniversitaria"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28040",
+			"street-address": "AVENIDA REYES CATOLICOS 6"
+		},
+		"location": {
+			"latitude": 40.43793725485899,
+			"longitude": -3.7218544182655786
+		},
+		"organization": {
+			"organization-desc": "  Metro: Moncloa (líneas 3 y 6), Islas Filipinas (línea 7).  Autobús: 160, 161, A, 132, 133, 162, 46, 82, 83, G, U.  Bicimad: Estaciones, 110 (paseo de Moret, 2); 244 (calle Isaac Peral, 44); 128 (calle Cea Bermúdez, 59).",
+			"accesibility": "1,6",
+			"schedule": "De martes a sábado, de 9:30 a 15 horas. Jueves, apertura continuada de 9:30 a 19 horas. Domingos y festivos de 10 a 15 horas.   Cerrado todos los lunes del año, 1 de enero, 1 de mayo, 24, 25 y 31 de diciembre, 6 de enero y un festivo local.",
+			"services": "",
+			"organization-name": "Museo de América"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/83922-museo-arte-contemporaneo-madrid.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "83922",
+		"title": "Museo de Arte Contemporáneo de Madrid",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=84a55c2cdc41c010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Centro"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28015",
+			"street-address": "CALLE CONDE DUQUE 9"
+		},
+		"location": {
+			"latitude": 40.42737760210632,
+			"longitude": -3.7106116887809817
+		},
+		"organization": {
+			"organization-desc": "Al igual que otros museos de arte contemporáneo, nacionales o extranjeros, se ha utilizado un edificio histórico para albergar las colecciones: el Cuartel del Conde Duque. El Museo de Arte Contemporáneo recupera para los madrileños el despacho del escritor vanguardista Ramón Gómez de la Serna, como parte de su colección permanente.  Metro: Ventura Rodríguez, Plaza de España, San Bernardo, Noviciado.  Bus: 1, 2, 21, 44, 74, 133, C, M2  Bicimad: Estación 13, Calle Conde Duque n&amp;ordm;22.  Parking:  Plaza de España",
+			"accesibility": "1,6",
+			"schedule": "De martes a viernes / Tuesday to Friday:  mañanas de 10 a 14 horas tardes de 15 a 21 horas    Sábados/ Saturday   mañanas de 10 a 14 horas tardes de 17:30 a 21 horas   Domingos y festivos/Sunday &amp;amp; Holidays: 10:30 a 14:30 horas   Cierres:  Todos los lunes /Every Monday, 1 y 6 de enero/January, 1 de mayo/ May, 24, 25 y 31 de diciembre/ December.  Las salas se desalojan 15 minutos antes del cierre/ Gallery will be clear 15 minutes before closing.",
+			"services": "",
+			"organization-name": "Museo de Arte Contemporáneo de Madrid"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2092-museo-astronomia-geodesia.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2092",
+		"title": "Museo de Astronomía y Geodesia",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ee49ef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca/Barrio/CiudadUniversitaria"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28040",
+			"street-address": "PLAZA CIENCIAS 3"
+		},
+		"location": {
+			"latitude": 40.44945850908754,
+			"longitude": -3.7259383636708434
+		},
+		"organization": {
+			"organization-desc": "El museo de Astronomía y Geodesia de la Universidad Complutense de Madrid agrupa una importante colección de instrumentos de Astronomía, Geodesia y Topografía, reunidos con el afán didáctico de dar a conocer la evolución de los métodos utilizados en estas disciplinas durante los últimos 150 años.  Metro: Ciudad Universitaria (línea 6).  Bus: 132, F, 82, G, U.  Bicimad: Estación 260 (calle José Antonio Novais, frente al número 12).",
+			"accesibility": "3",
+			"schedule": "Visita con cita previa.",
+			"services": "",
+			"organization-name": "Museo de Astronomía y Geodesia"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2090-museo-calcografia-nacional.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2090",
+		"title": "Museo de Calcografía Nacional",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=7169ef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Sol"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28014",
+			"street-address": "CALLE ALCALA 13"
+		},
+		"location": {
+			"latitude": 40.4176555144213,
+			"longitude": -3.7006500629589394
+		},
+		"organization": {
+			"organization-desc": "La institución posee la más importante colección de láminas de grabado calcográfico de España. El número de matrices metálicas supera las ocho mil obras, abarcando un amplio periodo cronológico, desde el siglo XVI al XXI.  Metro: Sol (líneas 1, 2, 3), Sevilla (línea 2), Gran Vía (líneas 1 y 5).  Bus: M1, 002, 52, 46, 002, 51, 150, 5, 15, 20.  Cercanías Renfe: Sol (líneas C3, C4 y Regional).  Bicimad: Estaciones 1a y 1b (Puerta del Sol, 1) y 28 (calle Alcalá, 27).  Aparcamiento: Sevilla (41), calle Sevilla y calle Alcalá.",
+			"accesibility": "3",
+			"schedule": "Consultar en la web.",
+			"services": "",
+			"organization-name": "Museo de Calcografía Nacional"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2084-museo-cera.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2084",
+		"title": "Museo de Cera",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=9689ef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Justicia"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28004",
+			"street-address": "PASEO RECOLETOS 41"
+		},
+		"location": {
+			"latitude": 40.42448764583997,
+			"longitude": -3.6913807191328303
+		},
+		"organization": {
+			"organization-desc": "  Metro: Colón (línea 4)  Bus: 14, 150, 27, 45, 5, 53, 21, 37, C03  Cercanías Renfe: Recoletos (líneas C1, C2, C7, C10)  Bicimad: Estación 10 (Calle Marqués de la Ensenada, 16) / estación 94 (Paseo de Recoletos, 20)  Aparcamiento: Colón (2), Plaza de Colón",
+			"accesibility": "2",
+			"schedule": "Lunes a domingo, de 11 a 19 horas.",
+			"services": "",
+			"organization-name": "Museo de Cera"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2071-museo-escultura-al-aire-libre-castellana.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "2071",
+		"title": "Museo de Escultura al Aire Libre de la Castellana",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=eca9ef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca/Barrio/Castellana"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28046",
+			"street-address": "PASEO CASTELLANA 40"
+		},
+		"location": {
+			"latitude": 40.433219398671156,
+			"longitude": -3.6876122680805956
+		},
+		"organization": {
+			"organization-desc": "El Museo de Escultura al Aire Libre de La Castellana, está situado bajo el paso elevado que une las calles de Juan Bravo y Eduardo Dato, contiene una excelente colección de escultura abstracta española.  Transporte público más próximo   Metro: Rubén Darío (línea 5)  Bus: 5, 14, 27, 45, 150  BICIMAD: Estación 142 (Paseo de la Castellana n&amp;ordm;42)",
+			"accesibility": "1",
+			"schedule": "Entrada libre. Espacio urbano abierto Abierto 24 horas al día los 365 días del año.",
+			"services": "",
+			"organization-name": "Museo de Escultura al Aire Libre de la Castellana"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2054-museo-historia-madrid.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "2054",
+		"title": "Museo de Historia de Madrid",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8f3079262ef5d010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Justicia"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28004",
+			"street-address": "CALLE FUENCARRAL 78"
+		},
+		"location": {
+			"latitude": 40.42577054821346,
+			"longitude": -3.700845660719608
+		},
+		"organization": {
+			"organization-desc": "Fue creado como museo municipal en 1929 y rebautizado como Museo de Historia de Madrid en 2007. En el año 2014 se hace una profunda remodelación y reabre sus puertas con un montaje moderno y una puesta al día de sus colecciones. Accesibilidad física:   Rampa de acceso a la entrada. Ascensores. Aseos adaptados. Silla de ruedas. Metro: Tribunal, Bilbao y Alonso Martínez. Bus: 3, 21, 37, 40, 147 y 149. BICIMAD: Estación 54 (Calle Barceló 7) Aparcamiento público: Barceló.",
+			"accesibility": "1,6",
+			"schedule": "De martes a domingos de 10 a 20 horas.  Verano: de martes a domingos de 10 a 19 horas.  Cerrado: lunes y los días 1 y 6 de enero, 1 de mayo,  24, 25 y 31 de diciembre.   El desalojo de las salas se hará diez minutos antes del cierre.",
+			"services": "Biblioteca de investigación Servicio de documentación Guardarropa Zona wifi",
+			"organization-name": "Museo de Historia de Madrid"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4545827-museo-historia-comunidad-judia-madrid.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "4545827",
+		"title": "Museo de Historia de la Comunidad Judía de Madrid",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8f2a4a659ee71110VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi/Barrio/Trafalgar"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28010",
+			"street-address": "CALLE BALMES 3"
+		},
+		"location": {
+			"latitude": 40.43543567370733,
+			"longitude": -3.7000203622984
+		},
+		"organization": {
+			"organization-desc": "  Metro: Iglesia (línea 1)  Bus: 16, 61, 3, 37, 149, 5  Bicimad: Estación 246 (calle Santa Engracia, 87)",
+			"accesibility": "1",
+			"schedule": "",
+			"services": "Visitas: info@cjmadrid.org",
+			"organization-name": "Museo de Historia de la Comunidad Judía de Madrid"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2095-museo-mineralogia.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2095",
+		"title": "Museo de Mineralogía",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=255aef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo/Barrio/ElGoloso"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28049",
+			"street-address": "CALLE FRANCISCO TOMAS Y VALIENTE 7 Facultad de Ciencias - Departamento Geología y Geoquímica"
+		},
+		"location": {
+			"latitude": 40.54537941407227,
+			"longitude": -3.6951833197962536
+		},
+		"organization": {
+			"organization-desc": "  Cercanías Renfe: Cantoblanco (líneas C4, C4a y Cb).",
+			"accesibility": "1",
+			"schedule": "Lunes a viernes, de 10:30 a 14:30 horas (concertar previamente).",
+			"services": "",
+			"organization-name": "Museo de Mineralogía"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2112-museo-san-isidro-origenes-madrid.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2112",
+		"title": "Museo de San Isidro. Los Orígenes de Madrid",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=7b7aef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Palacio"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28005",
+			"street-address": "PLAZA SAN ANDRES 2"
+		},
+		"location": {
+			"latitude": 40.41207900253883,
+			"longitude": -3.7108161027466378
+		},
+		"organization": {
+			"organization-desc": "Este espacio museográfico propone un viaje por la historia de la ciudad de Madrid desde la Prehistoria hasta el establecimiento de la Corte, a través de distintas salas como la de San Isidro, el Patio renacentista, el Jardín arqueobotánico o el Almacén visitable.  Metro: Latina , Tirso de Molina Bus: 3 , 17 , 18 , 23 , 35 , 60 , 65 , 148 BICIMAD: Estación 38 (Carrera de San Francisco 1)",
+			"accesibility": "2,6",
+			"schedule": "De martes a domingo y festivos de 10 a 20 horas.  Último pase de visita 15 minutos antes del cierre.    Verano, del 15 de junio al 15 de septiembre: de martes a domingo de 10 a 19 horas.  Cerrado todos los lunes, el 1 y 6 de enero, el 1 de mayo y los días 24, 25 y 31 de diciembre.",
+			"services": "Sala de investigadores. Biblioteca especializada en arqueología e historia madrileña. Archivo documental. Almacén visitable con más de 600 piezas arqueológicas. Jardín arqueobotánico, con información documentada sobre las especies de la ciudad.  Investigadores: los fondos del Museo están a disposición de la comunidad científica y los investigadores podrán acceder tramitando su correspondiente solicitud. Visitas guiadas por voluntarios culturales de CEATE Talleres didácticos para grupos escolares. Zona wifi.",
+			"organization-name": "Museo de San Isidro. Los Orígenes de Madrid"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/85301-museo-sanidad-higiene-publica.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "85301",
+		"title": "Museo de Sanidad e Higiene Pública",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=3e755c2cdc41c010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo/Barrio/LaPaz"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28029",
+			"street-address": "AVENIDA MONFORTE DE LEMOS 5"
+		},
+		"location": {
+			"latitude": 40.47546597881768,
+			"longitude": -3.6900603941123107
+		},
+		"organization": {
+			"organization-desc": "El Museo de Sanidad e Higiene Pública se comenzó a desarrollar en el año 1995 y es un centro único en su especialidad en España. Está ubicado en el Pabellón 14 del campus de Chamartín en el Instituto de Salud Carlos III, que albergaba los laboratorios del Hospital Nacional de Enfermedades Infecciosas, conocido como Hospital del Rey. El objetivo es gestionar para su difusión y conservación las colecciones de objetos, libros y documentos que reflejan los aspectos más significativos de la historia y evolución de la salud pública en nuestro país. De ese modo se busca la promoción de la investigación en este campo facilitando a los investigadores, profesores y técnicos que lo necesiten, apoyo técnico especializado.  Metro: Chamartín (líneas 1, 10).  Bus: 124, 134, 135, 67, 147.  Cercanías Renfe: Chamartín (líneas C1, C2, C3, C3a, C4, C4a, C4b, C7, C8 y C10).",
+			"accesibility": "3",
+			"schedule": "Visitas guiadas de grupo con cita previa: de lunes a viernes laborables, a las 10 horas.",
+			"services": "Solicitud de cita previa enviando formulario a museodesanidad@isciii.es.",
+			"organization-name": "Museo de Sanidad e Higiene Pública"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4566286-museo-catedral-almudena.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "4566286",
+		"title": "Museo de la Catedral de la Almudena",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=82cb8d0e78d22110VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Palacio"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28013",
+			"street-address": "CALLE BAILEN 10"
+		},
+		"location": {
+			"latitude": 40.4155496711662,
+			"longitude": -3.7136674233151394
+		},
+		"organization": {
+			"organization-desc": " Para solicitar reserva de visita guiada, escriba a reservasmuseo@catedraldelaalmudena.es. Metro: Ópera (Líneas 2, 5 y Ramal Ópera Príncipe Pío).  Bus: 148, 3.  Bicimad: Estaciones 36 (plaza Ramales), 166 (calle Segovia, 26).",
+			"accesibility": "1",
+			"schedule": "De lunes a sábado de 10 a 14:30 horas.   Cerrado los domingos, fiestas de precepto y días de actos de culto especiales en la Catedral. Consultar  Agenda .",
+			"services": "",
+			"organization-name": "Museo de la Catedral de la Almudena"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2073-museo-farmacia-hispana.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2073",
+		"title": "Museo de la Farmacia Hispana",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=58f9ef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca/Barrio/CiudadUniversitaria"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28040",
+			"street-address": "PLAZA RAMON Y CAJAL Facultad de Farmacia"
+		},
+		"location": {
+			"latitude": 40.4445328804645,
+			"longitude": -3.7262160043788155
+		},
+		"organization": {
+			"organization-desc": "  Metro: Ciudad Universitaria (línea 6).  Bus: 132, 82, G, U, I  Bicimad: Estaciones 258 y 259 (avenida de la Complutense (Metro Ciudad Universitaria).",
+			"accesibility": "2",
+			"schedule": "El Museo de la Farmacia Hispana solo puede visitarse realizando una reserva con antelación.La visita es gratuita, guiada y tiene una duración aproximada de 1 hora y media. Se realizan durante el curso lectivo, de lunes a viernes y en horario de mañana.",
+			"services": "",
+			"organization-name": "Museo de la Farmacia Hispana"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2107-museo-guardia-civil.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2107",
+		"title": "Museo de la Guardia Civil",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=003aef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Chamberi/Barrio/Vallehermoso"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28003",
+			"street-address": "CALLE GUZMAN EL BUENO 110"
+		},
+		"location": {
+			"latitude": 40.44438523242585,
+			"longitude": -3.712300118990835
+		},
+		"organization": {
+			"organization-desc": "  Metro: Guzmán el Bueno (líneas 6 y 7).  Bus: 2, 45, 44.  Bicimad: Estaciones 256 (calle Beatriz de Bobadilla, 2) y 203 (calle General Ampudia, 2).",
+			"accesibility": "3",
+			"schedule": "Horario: de lunes a viernes de 9 a 13:30 horas con cita previa.",
+			"services": "",
+			"organization-name": "Museo de la Guardia Civil"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2114-museo-real-academia-bellas-artes-san-fernando.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "2114",
+		"title": "Museo de la Real Academia de Bellas Artes de San Fernando",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=924aef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Sol"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28014",
+			"street-address": "CALLE ALCALA 13"
+		},
+		"location": {
+			"latitude": 40.4176555144213,
+			"longitude": -3.7006500629589394
+		},
+		"organization": {
+			"organization-desc": "Construido inicialmente para palacio de Don Juan de Goyeneche, el edificio fue adquirido por la Academia de Bellas Artes en 1773 y reformado bajo la dirección de Fernando Chueca Goitia en 1973 y la fachada por Diego de Villanueva en 1774.  Metro: Sol (líneas 1, 2, 3), Sevilla (línea 2), Gran Vía (líneas 1 y 5).  Bus: M1, 002, 52, 46, 002, 51, 150, 5, 15, 20.  Cercanías Renfe: Sol (líneas C3, C4 y Regional).  Bicimad: Estaciones 1a y 1b (Puerta del Sol, 1) y 28 (calle Alcalá, 27).  Aparcamiento: Sevilla (41), calle Sevilla y calle Alcalá.",
+			"accesibility": "1",
+			"schedule": "Colección permanente: De martes a domingos, de 10 a 15 horas. Exposiciones temporales: consultar el apartado específico de la exposición temporal. Días cerrados: 1 y 6 de enero; 1 y 30 de mayo; 9 de noviembre; 24, 25 y 31 de diciembre.",
+			"services": "",
+			"organization-name": "Museo de la Real Academia de Bellas Artes de San Fernando"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/5727435-museo-cuerpo-bomberos-madrid.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "5727435",
+		"title": "Museo del Cuerpo de Bomberos de Madrid",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=9f0966a8bba49210VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/PuenteDeVallecas/Barrio/Numancia"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28038",
+			"street-address": "CALLE BOADA 4"
+		},
+		"location": {
+			"latitude": 40.39453171263195,
+			"longitude": -3.6539313207612207
+		},
+		"organization": {
+			"organization-desc": "  Metro: L1- Buenos Aires Bus: 141 y 143",
+			"accesibility": "1",
+			"schedule": "Horario habitual:  Lunes, miércoles, jueves y viernes, pase: 12:00 horas. (martes cerrado).    SEMANA SANTA   31 marzo, 3, 4, 5 y 10 abril: 10:00, 11:15 y 12:30 horas 1 abril: 10:00 y 12:30 horas",
+			"services": "El acceso se realizará mediante RESERVA en el que aparecerán las sesiones y plazas disponibles.    Visitas guiadas    El personal del museo mostrará al visitante la exposición permanente, que cuenta con una interesante colección de vehículos y otros materiales que han formado parte de la Historia del Cuerpo de Bomberos de Madrid.      Actividades del Grupo Pedagógico con visitas de colegios    Se realizan visitas guiadas a colegios, demostraciones prácticas y charlas de prevención    Sala polivalente     Puede ser utilizada para la organización de charlas, encuentros y otras actividades culturales.",
+			"organization-name": "Museo del Cuerpo de Bomberos de Madrid"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2066-museo-ferrocarril-madrid.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "2066",
+		"title": "Museo del Ferrocarril de Madrid",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=091c4291ae91f010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Arganzuela"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Arganzuela/Barrio/Delicias"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28045",
+			"street-address": "PASEO DELICIAS 61"
+		},
+		"location": {
+			"latitude": 40.40029003332906,
+			"longitude": -3.6938050319544646
+		},
+		"organization": {
+			"organization-desc": "Edificio de carácter monumental. Proyectada por el ingeniero francés Émile Cacheliévre e inaugurada el 30 de marzo de 1880, la estación de Delicias fue la primera gran estación con carácter definitivo de Madrid.  Metro: Delicias (línea 3)  Bus: 19, 247, 45, 47, 59, 85, 86, 8, 55, 6  Cercanías Renfe: Delicias (líneas C1, C7, C10 y Regional)  Bicimad: Estación 172 (Bustamante, 1)",
+			"accesibility": "1",
+			"schedule": "De octubre a mayo:   Lunes a viernes, de 9:30 a 15 horas. Sábados y festivos, de 10 a 19 horas. Domingo, de 10 a 15 horas.   De junio a septiembre:   Lunes a domingo, de 10 a 15 horas.   Cerrado: 25 de diciembre, 1 y 6 de enero.",
+			"services": "Mercado de Motores : segundo fin de semana del mes (excepto agosto), de 11 a 21 horas. El Museo cierra en su actividad ordinaria y el acceso es gratuito (www.mercadodemotores.es).",
+			"organization-name": "Museo del Ferrocarril de Madrid"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2058-museo-prado.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2058",
+		"title": "Museo del Prado",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=060079262ef5d010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Cortes"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28014",
+			"street-address": "PASEO PRADO "
+		},
+		"location": {
+			"latitude": 40.41398191337691,
+			"longitude": -3.692164652993688
+		},
+		"organization": {
+			"organization-desc": "  Metro: Estación del Arte (línea 1), Banco de España (línea 2).  Bus: 001, 10, 14, 27, 34, 37, 45, C03.  Cercanías Renfe: Atocha (líneas C1, C2, C3, C4, C5, C7 y C10).  Bicimad: Estaciones 68 (calle Espalter, 1), 27 (calle Jesús, 1).",
+			"accesibility": "1,4,6",
+			"schedule": "De lunes a sábado, de 10 a 20 horas. Domingos y festivos, de 10 a 19 horas. Cerrado los días 1 de enero, 1 de mayo y 25 de diciembre. Horario reducido, de 10 a 14 horas (6 de enero y 24 y 31 de diciembre).  Horario de gratuidad:  De lunes a sábado, de 18 a 20 horas. Domingos y festivos, de 17 a 19 horas.  Acceso al Museo hasta 30 minutos antes del cierre.",
+			"services": "",
+			"organization-name": "Museo del Prado"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2086-museo-reloj-grassy.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2086",
+		"title": "Museo del Reloj Grassy",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=daeaef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Cortes"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28013",
+			"street-address": "CALLE GRAN VIA 1"
+		},
+		"location": {
+			"latitude": 40.41914770731552,
+			"longitude": -3.69806583195521
+		},
+		"organization": {
+			"organization-desc": "Arquitecto: Eladio Laredo Carranza (1916 - 1917).  Metro: Banco de España (línea 2), Sevilla (línea 2), Gran Vía (Líneas 1 y 5).  Bus: 002, 15, 150, 20, 5, 53, 9, 51, 001, 1, 146, 2, 3, 46, 74, 52.  Bicimad: Estación 28 (calle Alcalá, 27).  Aparcamiento: Plaza del Rey (54).",
+			"accesibility": "3",
+			"schedule": "Visitas guiadas:   Miércoles 12 horas. Jueves 17:30 horas.",
+			"services": "",
+			"organization-name": "Museo del Reloj Grassy"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2059-museo-romanticismo.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2059",
+		"title": "Museo del Romanticismo",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=706cef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Justicia"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28004",
+			"street-address": "CALLE SAN MATEO 13"
+		},
+		"location": {
+			"latitude": 40.42585510296794,
+			"longitude": -3.6987835425963063
+		},
+		"organization": {
+			"organization-desc": " Descripción monumental  Construido para casa palacio del Marqués de Matallana por el arquitecto Manuel Rodríguez, dentro de unas líneas clasicistas, tiene algunas leves reminiscencias del barroco, como las molduras en forma de orejeras en los balcones. Las estancias nobles se organizan en torno a dos patios cuadrados. Conserva un interesante jardín romántico. A finales del siglo XVIII el inmueble pasó a estar habitado por los Condes de la Puebla del Maestre y después, desde junio de 1921, fue sede de la Comisaría Regia de Turismo, organismo creado por el II Marqués de la Vega-Inclán. En 1924 se convirtió en Museo Romántico y desde entonces ha sido restaurado e intervenido en diversas ocasiones con motivo de su funcionamiento como museo.  Desde 2001 a 2009 el Museo fue reformado y puesto a punto, en aplicación de un plan museológico consistente en su renovación, ampliando su ámbito temático desde lo meramente literario hasta lo histórico, político, artístico y decorativo, para dar una visión de conjunto de esta etapa de la vida española. Muestra la ambientación de una casa romántica. Posee obras de los pintores más importantes del siglo XIX (Goya, Madrazo y otros) junto a esculturas, muebles, porcelanas, abanicos y todo tipo de complementos decorativos que nos recuerdan la forma de vida de una familia burguesa del siglo XIX. Metro: Tribunal (líneas 1 y 10), Alonso Martínez (líneas 4, 5 y 10).  Bus: 37, 149, 40, 3.  Cercanías Renfe: Recoletos (líneas C1, C2, C7, C10 y Regional).  Bicimad: Estaciones 7 (calle Hortaleza, 75), 54 (calle Barceló, 7).  Aparcamiento: Barceló (69) calle Barceló, s/n; Aparcamiento Escuelas de San Antón (91).",
+			"accesibility": "1,6",
+			"schedule": "Horario de invierno (de noviembre a abril): De martes a sábado: de 9:30 a 18:30. Domingos y festivos: de 10 a 15 horas.  Horario de verano (de mayo a octubre): De martes a sábado: de 9:30 a 20:30. Domingos y festivos: de 10 a 15 horas.  Cerrado: Todos los lunes, 1 y 6 enero, 1 mayo, 9 noviembre, 24, 25 y 31 diciembre.",
+			"services": "",
+			"organization-name": "Museo del Romanticismo"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/6337393-museo-seguro-fundacion-mapfre.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "6337393",
+		"title": "Museo del Seguro. Fundación Mapfre",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=479b95f8c72d5310VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Justicia"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28004",
+			"street-address": "CALLE BARBARA DE BRAGANZA 14"
+		},
+		"location": {
+			"latitude": 40.423266511964854,
+			"longitude": -3.692277196470883
+		},
+		"organization": {
+			"organization-desc": "  Metro: Colón (línea 4).  Bus: 37, 14, 150, 27, 45, 5, 53, C03.  Cercanías Renfe: Recoletos (Líneas C1, C2, C7, C10 y Regional).  Bicimad: Estaciones 26 (plaza de las Salesas, 7), 94 (paseo Recoletos, 20), 10 (calle Marqués de la Ensenada, 16).  Aparcamientos: Garaje Piamonte (96), calle Piamonte, 16; Colón (2), plaza de Colón; Villa de Paríz (67) plaza Villa de París.",
+			"accesibility": "3",
+			"schedule": "De lunes a viernes de 9 a 17 horas. Cerrado festivos y mes de agosto.  Visitas en grupo previa reserva en su página web.",
+			"services": "",
+			"organization-name": "Museo del Seguro. Fundación Mapfre"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2115-museo-traje-centro-investigacion-patrimonio-etnologico-cipe-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "2115",
+		"title": "Museo del Traje. Centro de Investigación del Patrimonio Etnológico (CIPE)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=053c4291ae91f010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca/Barrio/CiudadUniversitaria"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28040",
+			"street-address": "AVENIDA JUAN DE HERRERA 2"
+		},
+		"location": {
+			"latitude": 40.439664788611644,
+			"longitude": -3.727822373257623
+		},
+		"organization": {
+			"organization-desc": "Edificio de carácter monumental, construido por Jaime López de Asiaín en 1969.  Metro: Ciudad Universitaria (línea 6).  Bus: 160, 161, 46, U, 132, 82, G, 133, 162, 83.  Bicimad: Estación 257 (avenida Juan Herrera frente a la calle Paul Guinard).",
+			"accesibility": "1,4,6",
+			"schedule": "Salas de exposiciones   Martes a sábado, de 9:30 a 19:00 horas. Domingos y festivos, de 10 a 15:00 horas.  La taquilla finaliza su actividad de venta de entradas 30 minutos antes de la hora del cierre de la exposición.  Noches de verano - Verano en el Museo   Los jueves de julio y agosto, apertura extraordinaria: 19:30 - 22:30 horas.",
+			"services": "",
+			"organization-name": "Museo del Traje. Centro de Investigación del Patrimonio Etnológico (CIPE)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2061-palacio-real-pardo.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "2061",
+		"title": "Palacio Real de El Pardo",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=9f9def4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo/Barrio/ElPardo"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28048",
+			"street-address": "CALLE MANUEL ALONSO 8"
+		},
+		"location": {
+			"latitude": 40.520535786694516,
+			"longitude": -3.7762260009975077
+		},
+		"organization": {
+			"organization-desc": "Recinto en el que se conserva el Palacio, construido sobre el castillo del siglo XV, la Casita del Príncipe, del siglo XVIII y la Quinta del Duque de Arco (Palacete que fue Casa de Labor y sus tierras). Desde 1983 ha sido adecuado para residencia de Jefes de Estado extranjeros en visita oficial.  Bus: 601 (Madrid - Colonia Mingorrubio)",
+			"accesibility": "1",
+			"schedule": "Martes a domingo, de 10 a 18 horas.",
+			"services": "Casa del Príncipe Don Carlos, reserva previa en teléfono 913 761 500.",
+			"organization-name": "Palacio Real de El Pardo"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2062-palacio-real-madrid.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "2062",
+		"title": "Palacio Real de Madrid",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=47ddef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Palacio"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28013",
+			"street-address": "CALLE BAILEN"
+		},
+		"location": {
+			"latitude": 40.42075212551193,
+			"longitude": -3.712699107286406
+		},
+		"organization": {
+			"organization-desc": "Construido sobre el solar del antiguo Alcázar tras un incendio en 1734. Proyectado por Juvara en 1735 y construido por Sachet de 1738 a 1764 bajo las influencias del clasicismo barroco. A partir de 1770, Sabatini añadió el ala sudeste y realizó la gran escalera. Es de destacar el gran patio que articula el edificio y la fachada principal que aloja el balcón y Escudo Real.  Metro: Ópera (líneas 2, 5 y Ramal Ópera Norte)  Bus: 3, 25, 39, 148, 46, 62, 75, 138  Cercanías: Príncipe Pío  Bicimad: Estación 36 (Plaza de Ramales, 1)  Aparcamiento: Plaza de España (53), Plaza de España / Calle de Isabel la Católica / Plaza de España (53), Plaza de España",
+			"accesibility": "1",
+			"schedule": "Lunes a sábado, de 10 a 18 horas. Domingos, de 10 a 16 horas (octubre a marzo). Luns a sábado, de 10 a 19 horas. Domingos, de 10 a 16 horas (abril a septiembre).  Para cierres durante el año o motivados por la celebración de actos oficiales o festividad en el municipio consultar la web.  Jardines del Campo del Moro   Todos los días, de 10 a 18 horas.",
+			"services": "Relevo solemne de la Guardia en el Palacio Real de Madrid  La Guardia Real realiza este relevo los primeros miércoles de cada mes, a las 12 horas (excepcionalmente puede haber cambios, consultar en http://www.guardiareal.org/. El acto tiene una duración aproximada de 50 minutos, y se desarrolla en la Plaza de la Armería, finalizando con un concierto de la Unidad de Música en la Puerta del Príncipe (calle Bailén). La entrada es libre y gratuita, hasta completar aforo. Se accede por el Arco de Santiago (calle Bailén esquina con Requena). No se celebra en enero, agosto y septiembre, ni cuando coincide con actos oficiales.   Relevo de la Guardia en la Puerta del Príncipe del Palacio Real de Madrid  El acto se lleva a cabo todos los miércoles y sábados del mes, desde las 11 hasta las 14 horas, exceptuando del 19 de junio al 18 de septiembre que será desde las 10 hasta las 12 horas, siempre y cuando los actos oficiales o la climatología lo permitan. Tiene lugar en la calle Bailén.",
+			"organization-name": "Palacio Real de Madrid"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2079-panteon-espana.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "2079",
+		"title": "Panteón de España",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=361cef4d7f71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Retiro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Retiro/Barrio/Pacifico"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28014",
+			"street-address": "CALLE JULIAN GAYARRE 3"
+		},
+		"location": {
+			"latitude": 40.40622617519116,
+			"longitude": -3.683413041846525
+		},
+		"organization": {
+			"organization-desc": "La construcción de este edificio responde a dos de las constantes de fines de siglo: la arquitectura historicista y la escultura funeraria. En él reposan trece personajes ilustres de la historia política y militar española.  Metro: Estación del Arte (Atocha) (línea 1)  Bus: 10, 14, 24, 32, 37, 54, 57, 141, 26, C1, C2, 102  Renfe: Atocha",
+			"accesibility": "1",
+			"schedule": "De martes a sábado de 10 a 14 y de 16 a 18:30 horas Domingos y festivos de 10 a 15 horas Cerrado todos los lunes del año",
+			"services": "",
+			"organization-name": "Panteón de España"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/3362-parroquia-santa-cruz.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "3362",
+		"title": "Parroquia Santa Cruz",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=40e0b069a541f010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Sol"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28012",
+			"street-address": "CALLE ATOCHA 6"
+		},
+		"location": {
+			"latitude": 40.414608558946085,
+			"longitude": -3.705255882048698
+		},
+		"organization": {
+			"organization-desc": "  Metro: Sol (líneas 1, 2 y 3), Tirso de Molina (línea 1).  Bus: 50, 26, 32, 6, 65, 18, 23, 17, 002, M1, 31.  Cercanías Renfe: Sol (líneas C3, C4 y Regional).  Bicimad: Estaciones 32 (plaza de la Provincia, 1), 34 (plaza de Jacinto Benavente), 40 (plaza del Conde Romanones, 9).  Aparcamientos: Plaza Mayor (55) y Jacinto Benavente (15) plaza Jacinto Benavente.",
+			"accesibility": "3",
+			"schedule": "",
+			"services": "",
+			"organization-name": "Parroquia Santa Cruz"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2213-planetario-madrid.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Planetarios",
+		"id": "2213",
+		"title": "Planetario de Madrid",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c9c5b069a541f010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Arganzuela"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Arganzuela/Barrio/Legazpi"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28045",
+			"street-address": "AVENIDA PLANETARIO 16"
+		},
+		"location": {
+			"latitude": 40.392279999540044,
+			"longitude": -3.684956957448299
+		},
+		"organization": {
+			"organization-desc": "Inaugurado el 29 de septiembre de 1986, es un centro dependiente del Área de Cultura, Turismo y Deporte del Ayuntamiento de Madrid. Durante los años 2016/2017 fue sometido a una profunda renovación tanto tecnológica como de las instalaciones y edificio, posible en virtud de un acuerdo de colaboración entre el Ayuntamiento de Madrid y la Obra Social &amp;ldquo;la Caixa&amp;rdquo; &amp;ndash; que incluye dotación de contenidos, renovación de exposiciones y la realización de actividades varias en el campo de la divulgación científica. Siempre con el fin de contribuir a la difusión de la astronomía y de la ciencia en general, tanto entre escolares como entre el público de cualquier edad y condición, posee una variada oferta de proyecciones audiovisuales, exposiciones y actividades (talleres, cursos, conferencias, observaciones públicas...). Las proyecciones que se ofrecen en el Planetario de Madrid se renuevan periódicamente y tienen una duración aproximada de 30 minutos. Existen dos programaciones básicas diferentes: una activa durante el verano y época de vacaciones escolares, y otra durante el curso escolar. Durante el curso escolar, las proyecciones de las mañanas de los días lectivos se reservan a escolares.   Video de presentación del centro  Planetario en  Google Maps  Metro: Méndez Álvaro (línea 6). Bus: 148, 156. BICIMAD: Estación 177 (Calle Bolívar 3).  Planetario en  Google Maps",
+			"accesibility": "1,6",
+			"schedule": "Horario del centro: De martes a viernes, de 17 a 19:30 h (mañanas reservadas a escolares).   Sábados y domingos, de 10 a 13:30 h y de 17 a 19:30 h.     Cerrado: Todos los lunes del año. Días 1 y 6 de enero; 1 de mayo; 24, 25 y 31 de diciembre.   Horario de proyecciones .",
+			"services": "Sala de Proyección. Planta calle. Para acceder a ella es necesario adquirir una entrada.   Cuatro áreas expositivas de acceso gratuito, distribuidas en dos plantas:   Sala de Astrónomos. Planta baja. Vestíbulo de la planta baja. Vestíbulo de la planta calle. Zona Audiovisual con pantalla de retroproyección. Planta calle.      Sala de Video. Planta baja, en donde se desarrollan los talleres ofertados.",
+			"organization-name": "Planetario de Madrid"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/3359-real-basilica-san-francisco-grande.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "3359",
+		"title": "Real Basílica San Francisco el Grande",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=ef8d0713fb71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Palacio"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28005",
+			"street-address": "CALLE SAN BUENAVENTURA 1"
+		},
+		"location": {
+			"latitude": 40.41084698628934,
+			"longitude": -3.714492963837602
+		},
+		"organization": {
+			"organization-desc": "Conjunto conventual que sustituyó al monasterio franciscano medieval, construido por Francisco de las Cabezas entre 1761 y 1768, que fue relevado por Antonio Polo y que concluye Francisco Sabatini en 1784 donde se exponen colecciones de pinturas de los siglos XVII al XIX. Reservas para grupos en teléfono 669 892 313 de 10:30 a 13:30 horas. Metro: La Latina (línea 5), Puerta de Toledo (línea 5).  Bus: 148, 3, 60.  Bicimad: Estación 37 (Plaza San Francisco, 5).  Aparcamiento: Parking VOT (97), Ventosa.",
+			"accesibility": "1",
+			"schedule": "Visita Guiada Museo:    De martes a sábado de 10:30 a 13:30 y de 16 a 17:30 horas.  Julio, agosto y septiembre: de martes a viernes de 10:30 a 14:30 horas.",
+			"services": "",
+			"organization-name": "Real Basílica San Francisco el Grande"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2087-real-fabrica-tapices.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "2087",
+		"title": "Real Fábrica de Tapices",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=53cbff632081c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Retiro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Retiro/Barrio/Pacifico"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28014",
+			"street-address": "CALLE FUENTERRABIA 2"
+		},
+		"location": {
+			"latitude": 40.406094596697045,
+			"longitude": -3.6825092130232404
+		},
+		"organization": {
+			"organization-desc": "  Metro: Menéndez Pelayo (línea 1).  Bus: 10, 14, 26, 32, C1, C2, 141, 24, 37, 54, 57, 152.  Bicimad: Estación 79 (avenida de menéndez Pelayo, 38).  Cercanías Renfe: Atocha (líneas C1, C2, C3, C4, C4a, C4b, C5, C7, C10 y Regional).",
+			"accesibility": "3",
+			"schedule": "Lunes a viernes, de 10 a 14 horas.",
+			"services": "",
+			"organization-name": "Real Fábrica de Tapices"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4707297-real-monasterio-santa-isabel.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "4707297",
+		"title": "Real Monasterio de Santa Isabel",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=545b544a249c6110VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Embajadores"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28012",
+			"street-address": "CALLE SANTA ISABEL 48"
+		},
+		"location": {
+			"latitude": 40.409468201532654,
+			"longitude": -3.696232255860979
+		},
+		"organization": {
+			"organization-desc": "El Real Monasterio de Santa Isabel está situado en Madrid, dentro de la ciudad histórica, en una gran manzana, próxima a Atocha. Santa Isabel agrupa dos fundaciones, un colegio de niñas, establecido por Felipe II, y un convento de clausura de monjas agustinas recoletas, fundado por la esposa de Felipe III, doña Margarita de Austria. La arquitectura de la iglesia se debe a Gómez de Mora, de mediados del siglo XVIII. En la clausura se conservan numerosas obras pictóricas de los siglos XVII y XVIII.  Metro: Estación del Arte (Atocha) (línea 1)  Bus: 26, 32, 6, 27, 34, C1  Renfe: Atocha",
+			"accesibility": "3",
+			"schedule": "El acceso al templo sólo es posible en horario de culto.",
+			"services": "",
+			"organization-name": "Real Monasterio de Santa Isabel"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/3349-real-monasterio-encarnacion.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "3349",
+		"title": "Real Monasterio de la Encarnación",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=72ad0713fb71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Palacio"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28013",
+			"street-address": "PLAZA ENCARNACION 1"
+		},
+		"location": {
+			"latitude": 40.4196839293774,
+			"longitude": -3.7115609584031253
+		},
+		"organization": {
+			"organization-desc": "Edificio construído por Juan Gómez de Mora de 1611 a 1616 como monasterio anejo al Alcázar Real, modelo de lo que se ha dado en llamar barroco madrileño. Cuenta con la reliquia de San Pantaleón.  Metro: Ópera (líneas 2, 5 y Ramal Ópera Príncipe Pío), Plaza de España (líneas 3, 10)  Bus: 3, 25, 39, 148, 46, 62, 75  Bicimad: Estación 25 a y b (Plaza Celenque, 1)  Aparcamiento: Calle de Isabel la Católica",
+			"accesibility": "3",
+			"schedule": "Martes a sábado, de 10 a 14 y de 16 a 18:30 horas, Domingos y festivos, de 10 a 15 horas.",
+			"services": "",
+			"organization-name": "Real Monasterio de la Encarnación"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/3348-real-monasterio-descalzas-reales.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "3348",
+		"title": "Real Monasterio de las Descalzas Reales",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=12e113db5b71c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Centro/Barrio/Sol"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28013",
+			"street-address": "PLAZA DESCALZAS 3"
+		},
+		"location": {
+			"latitude": 40.4182401043926,
+			"longitude": -3.7062038988539387
+		},
+		"organization": {
+			"organization-desc": "Convento fundado por la Princesa Juana de Austria, transformando un antiguo palacio de su madre Isabel de Portugal.  Metro: Ópera (líneas 2, 5 y Ramal Ópera-Príncipe Pío).  Bus: SE712  Bicimad: Estación 25 a y b (Plaza de Celenque)  Aparcamiento: Descalzas (20), Plaza Descalzas y Plaza San Martín / El Corte Inglés Preciados (93), Calle Preciados",
+			"accesibility": "3",
+			"schedule": "Martes a sábado, de 10 a 14 y de 16 a 18:30 horas. Domingos y festivos, de 10 a 15 horas. Solo visitas guiadas.",
+			"services": "",
+			"organization-name": "Real Monasterio de las Descalzas Reales"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/20605-templo-debod.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/MonumentosEdificiosArtisticos",
+		"id": "20605",
+		"title": "Templo de Debod",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=13b432df1d51c010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca/Barrio/CasaCampo"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28008",
+			"street-address": "CALLE FERRAZ 1"
+		},
+		"location": {
+			"latitude": 40.42425096551599,
+			"longitude": -3.716531855540272
+		},
+		"organization": {
+			"organization-desc": "Templo egipcio dedicado a Amón de Debod y a Isis, construido entre 185 AC y el siglo I de la Era. Fue donado por Egipto a España en 1968, en agradecimiento por la ayuda en el salvamento de los templos de Abu Simbel.  Egyptian temple dedicated to Amun of Debod and Isis. It was built between 185 BC and the 1st century. It was donated by Egypt to Spain in 1968 for its help in the rescue of the temples of Abu Simbel. El templo de Debod no cuenta en la actualidad con accesos adaptados a personas con movilidad reducida y la circulación en su interior es igualmente difícil. Puedes consultar en el documento Templo de Debod. Turismo accesible  las características de su accesibilidad.  Debod temple has currently no access adapted for people with reduced mobility.    El templo es un monumento histórico de una antig&amp;uuml;edad de 2.200 años. Su estructura interna, que constituye el espacio de actual de exposición, está formada por distintas salas de dimensiones reducidas, con vanos estrechos y numerosas barreras, que responden a los fines y necesidades de los cultos religiosos que en él tuvieron lugar, pero que imposibilitan la circulación con sillas de ruedas convencionales.  La legislación sobre accesibilidad vigente en nuestra Comunidad (Ley 8/1993 de 22 de Junio de Promoción de la Accesibilidad y Supresión de Barreras Arquitectónicas), en su disposición adicional 7&amp;ordf;, exime de su aplicación en los inmuebles declarados Bien de Interés Cultural o en aquellos edificios de valor histórico-artístico. No obstante, se está trabajando en hacer accesibles las plataformas en las que se levanta el templo y sus dos portales. Metro: Plaza de España (líneas 3 y 10) y Ventura Rodríguez (línea 3) Bus: 1, 2, 3, 25, 39, 44, 46, 74, 75, 133, 138, 148, C1 y C2 Renfe: Príncipe Pío  Bus turístico: Ruta 1. PARADA 10 - Templo de Debod Otras formas de acceso:   Aparcamiento de coches: dentro del Área de Estacionamiento Regulado de la ciudad de Madrid.  BICIMAD (Servicio público de bicicletas de la ciudad de Madrid): Estación 115 (calle Evaristo San Miguel s/n.,entre Paseo Pintor Rosales y calle Ferraz)",
+			"accesibility": "0,6",
+			"schedule": "Martes a domingo y festivos, de 10 a 20  horas.  Cerrado todos los lunes (incluidos lunes festivos) y los días 1 y 6 de enero, 1 de mayo, 24, 25 y 31 de diciembre. Último pase de visita 30 minutos antes del cierre. El horario y la apertura de salas pueden sufrir modificaciones. Por favor, confírmelo en el teléfono de información del museo.",
+			"services": "Obtención de información sobre sus fondos y colecciones con fines de investigación, enseñanza o difusión.   Se pueden realizar fotografías o grabaciones de vídeo libremente en el exterior o en el interior del templo, siempre y cuando no se utilicen flash o trípode y su fin no sea comercial. Para la obtención de reproducciones de fotografías del archivo del templo de Debod con fines editoriales, de investigación, difusión o comerciales el interesado deberá cumplimentar la solicitud de Reproducciones Fotográficas. La realización de reportajes fotográficos y grabaciones profesionales en el recinto del templo de Debod (estanque delantero, plataformas y edificio) sólo será autorizada cuando los fines para los que se solicita sean la divulgación y difusión cultural del monumento o de las actividades museísticas que en él se desarrollen. Cualquier otra finalidad, gratuita o comercial, será desestimada. El horario de información telefónica y telemática del Templo de Debod es de lunes a viernes de 8 a 15 horas. Fuera de este horario puede utilizar el teléfono gratuito de Línea Madridl 010 (915 298 210, si llama desde fuera de la ciudad de Madrid, con el prefijo 34 si llama desde fuera de España).",
+			"organization-name": "Templo de Debod"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/7685664-the-robot-museum-museo-robot-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "7685664",
+		"title": "The Robot Museum (Museo del Robot)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e0b7b8dc8f719410VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Salamanca/Barrio/Castellana"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28006",
+			"street-address": "CALLE SERRANO 61 Centro Comercial ABC Serrano"
+		},
+		"location": {
+			"latitude": 40.43221485554042,
+			"longitude": -3.6869551422270077
+		},
+		"organization": {
+			"organization-desc": " Visita recomendada para mayores de 4 años. Metro: Ruben Darío (línea 5), Nuñez de Balboa (líneas 5 y 9).  Bus: 19, 51, 9, 14, 150, 27, 45, 5, 1, 74.  Bicimad: Estaciones 142 (paseo de la Castellana, 42), 103 (calle José Ortega y Gasset, 4).",
+			"accesibility": "3",
+			"schedule": "Martes, miércoes y jueves: De 16:20a 19:20.  Viernes:  De 16:20 a 20:20 horas.   Sábados: De 12:20 a 20:20 horas.",
+			"services": "",
+			"organization-name": "The Robot Museum (Museo del Robot)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/7071384-yacimiento-paleontologico-estacion-metro-carpetana.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "7071384",
+		"title": "Yacimiento paleontológico. Estación de Metro Carpetana",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=05fbb57fd3c70410VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel/Barrio/VistaAlegre"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28047",
+			"street-address": "CALLE VIA CARPETANA 141"
+		},
+		"location": {
+			"latitude": 40.39254099575156,
+			"longitude": -3.7413026173286053
+		},
+		"organization": {
+			"organization-desc": "Durante las obras de remodelación de la estación de Carpetana se descubrieron restos paleontológicos con valiosos hallazgos del Mioceno, lo que ha hecho posible una reconstrucción de los paleoambientes en dos yacimientos verticales.  Metro: Carpetana (línea 6).  Bus: 119, 55, 17, 25.",
+			"accesibility": "1",
+			"schedule": "Todos los días durante la apertura de la estación, de 6 a 1:30 horas.",
+			"services": "",
+			"organization-name": "Yacimiento paleontológico. Estación de Metro Carpetana"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/10873287-zapadores-ciudad-arte.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Museos",
+		"id": "10873287",
+		"title": "Zapadores Ciudad del Arte",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=c30ab3683ea58610VgnVCM2000001f4a900aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo/Barrio/Valverde"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28034",
+			"street-address": "CALLE ANTONIO DE CABEZON 70"
+		},
+		"location": {
+			"latitude": 40.49572804745456,
+			"longitude": -3.6818117500732046
+		},
+		"organization": {
+			"organization-desc": "  ",
+			"accesibility": "3",
+			"schedule": "Miércoles a domingo, de 12 a 18 horas.",
+			"services": "",
+			"organization-name": "Zapadores Ciudad del Arte"
+		}
+	}	  
+  ]
+}

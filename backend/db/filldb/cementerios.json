@@ -1,0 +1,773 @@
+{
+	"@context": {
+		"c": "http://www.w3.org/2002/12/cal#",
+		"dcterms": "http://purl.org/dc/terms/",
+		"geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+		"loc": "http://purl.org/ctic/infraestructuras/localizacion#",
+		"org": "http://purl.org/ctic/infraestructuras/organizacion#",
+		"vcard": "http://www.w3.org/2006/vcard/ns#",
+		"schema": "https://schema.org/",
+		"title": "vcard:fn",
+		"id": "dcterms:identifier",
+		"relation": "dcterms:relation",
+		"references": "dcterms:references",
+		"address": "vcard:adr",
+		"area": "loc:barrio",
+		"district": "loc:distrito",
+		"locality": "vcard:locality",
+		"postal-code": "vcard:postal-code",
+		"street-address": "vcard:street-address",
+		"location": "vcard:geo",
+		"latitude": "geo:lat",
+		"longitude": "geo:long",
+		"organization": "vcard:org",
+		"organization-desc": "dcterms:description",
+		"accesibility": "org:accesibilidad",
+		"services": "org:servicios",
+		"schedule": "org:horario",
+		"organization-name": "vcard:organization-name",
+		"description": "c:summary",
+		"link": "c:url",
+		"uid": "c:uid",
+		"dtstart": "c:dtstart",
+		"dtend": "c:dtend",
+		"time": "c:time",
+		"excluded-days": "c:exdate",
+		"event-location": "c:location",
+		"free": "schema:free",
+		"price": "c:resource",
+		"recurrence": "c:rrule",
+		"days": "c:byday",
+		"frequency": "c:freq",
+		"interval": "c:interval",
+		"audience": "dc:audience"
+	},
+	"@graph": [
+	
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9204-cementerio-britanico-british-cemetery-.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9204",
+		"title": "Cementerio Británico (British Cemetery)",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=a0307a7e0a61c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel/Barrio/SanIsidro"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28019",
+			"street-address": "CALLE COMANDANTE FONTANES 7"
+		},
+		"location": {
+			"latitude": 40.395212860537896,
+			"longitude": -3.722633997992097
+		},
+		"organization": {
+			"organization-desc": "  Metro: Urgel (línea 5).  Bus: 118, 119, 34, 35.",
+			"accesibility": "3",
+			"schedule": "Martes, jueves, sábados (excepto fiestas nacionales y locales) y 1 de noviembre: De 10:30 a 13 horas.",
+			"services": "",
+			"organization-name": "Cementerio Británico (British Cemetery)"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9189-cementerio-civil.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9189",
+		"title": "Cementerio Civil",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5e91f2d8c559f010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal/Barrio/Ventas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28017",
+			"street-address": "AVENIDA DAROCA 90"
+		},
+		"location": {
+			"latitude": 40.42751913746381,
+			"longitude": -3.6482030278949904
+		},
+		"organization": {
+			"organization-desc": " La Empresa Municipal de Servicios Funerarios y Cementerios de Madrid, ofrece un Servicio Funerario Integral que engloba todos los aspectos necesarios para la despedida de un ser querido, como los trámites administrativos, la recogida del fallecido, traslado, acondicionamiento y su velación entre otros servicios, poniendo a su disposición los dos Tanatorios Municipales (Tanatorio M30 y Tanatorio SUR). Así mismo, gestionamos la inhumación o incineración del fallecido en cualquiera de los 14 Cementerios Municipales de la ciudad de Madrid y de los dos Crematorios (Cementerio de La Almudena y Cementerio Sur). Metro: La Almudena (línea 2)  Bus: 70, 106, 109, 110",
+			"accesibility": "1",
+			"schedule": "Invierno: todos los días de 8 a 18:30 horas. Verano: todos los días de 8 a 19:30 horas. El periodo del horario  de verano comenzará el último domingo del mes marzo de cada año, a las 2 de la madrugada (momento en que la hora oficial española se adelantará 60 minutos) y terminará el último domingo del mes de octubre de cada año, a las tres de la madrugada (momento en que la hora oficial española se retrasará 60 minutos).",
+			"services": "La gestión integral realizada por parte de los Servicios Funerarios de Madrid (SFM), ofrece a las familias la posibilidad de disponer de un servicio de cementerios completo a través de una única gestión municipal de todos los servicios necesarios, tales como inhumación, exhumación, traslados o gestión del espacio de enterramiento entre otras. Sin oficinas propias. Tramitaciones en Cementerio de la Almudena. Instalación accesible para personas de movilidad reducida por las vías principales; dificultades por vías más estrechas y entre sepulturas.",
+			"organization-name": "Cementerio Civil"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9205-cementerio-cristo-pardo.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9205",
+		"title": "Cementerio Cristo de El Pardo",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=4d707a7e0a61c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo/Barrio/ElPardo"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28048",
+			"street-address": "CARRETERA CRISTO DE EL PARDO 11"
+		},
+		"location": {
+			"latitude": 40.519411567887154,
+			"longitude": -3.7886095756711633
+		},
+		"organization": {
+			"organization-desc": " Iglesia del Santo Cristo de El Pardo. La Empresa Municipal de Servicios Funerarios y Cementerios de Madrid, ofrece un Servicio Funerario Integral que engloba todos los aspectos necesarios para la despedida de un ser querido, como los trámites administrativos, la recogida del fallecido, traslado, acondicionamiento y su velación entre otros servicios, poniendo a su disposición los dos Tanatorios Municipales (Tanatorio M30 y Tanatorio SUR). Así mismo, gestionamos la inhumación o incineración del fallecido en cualquiera de los 14 Cementerios Municipales de la ciudad de Madrid y de los dos Crematorios (Cementerio de La Almudena y Cementerio Sur). Bus: 601, 602",
+			"accesibility": "1",
+			"schedule": "Martes, jueves, sábado y domingo, de 10 a 17 horas. Día de la Madre, Día del Padre y Semana de Todos los Santos, de 10 a 17 horas.",
+			"services": "La gestión integral realizada por parte de los Servicios Funerarios de Madrid (SFM), ofrece a las familias la posibilidad de disponer de un servicio de cementerios completo a través de una única gestión municipal de todos los servicios necesarios, tales como inhumación, exhumación, traslados o gestión del espacio de enterramiento entre otras. Sin oficinas propias. Tramitaciones en Cementerio de la Almudena. Instalación accesible para personas de movilidad reducida por las vías principales; dificultades por vías más estrechas y entre sepulturas.",
+			"organization-name": "Cementerio Cristo de El Pardo"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9193-cementerio-aravaca.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9193",
+		"title": "Cementerio de Aravaca",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=99c1f2d8c559f010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Moncloa-Aravaca/Barrio/Valdemarin"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28023",
+			"street-address": "CAMINO ZARZUELA 26"
+		},
+		"location": {
+			"latitude": 40.46574702347528,
+			"longitude": -3.7870732983676145
+		},
+		"organization": {
+			"organization-desc": " La Empresa Municipal de Servicios Funerarios y Cementerios de Madrid, ofrece un Servicio Funerario Integral que engloba todos los aspectos necesarios para la despedida de un ser querido, como los trámites administrativos, la recogida del fallecido, traslado, acondicionamiento y su velación entre otros servicios, poniendo a su disposición los dos Tanatorios Municipales (Tanatorio M30 y Tanatorio SUR). Así mismo, gestionamos la inhumación o incineración del fallecido en cualquiera de los 14 Cementerios Municipales de la ciudad de Madrid y de los dos Crematorios (Cementerio de La Almudena y Cementerio Sur). Bus: 161, 162",
+			"accesibility": "1",
+			"schedule": "Todo el año, de 10 a 17 horas.",
+			"services": "La gestión integral realizada por parte de los Servicios Funerarios de Madrid (SFM), ofrece a las familias la posibilidad de disponer de un servicio de cementerios completo a través de una única gestión municipal de todos los servicios necesarios, tales como inhumación, exhumación, traslados o gestión del espacio de enterramiento entre otras. Sin oficinas propias. Tramitaciones en Cementerio de la Almudena. Instalación accesible para personas de movilidad reducida por las vías principales; dificultades por vías más estrechas y entre sepulturas.",
+			"organization-name": "Cementerio de Aravaca"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9186-cementerio-barajas.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9186",
+		"title": "Cementerio de Barajas",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=9102f2d8c559f010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Barajas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Barajas/Barrio/Aeropuerto"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28042",
+			"street-address": "CARRETERA CEMENTERIO NUEVO 60"
+		},
+		"location": {
+			"latitude": 40.481990715777975,
+			"longitude": -3.58691492041717
+		},
+		"organization": {
+			"organization-desc": " La Empresa Municipal de Servicios Funerarios y Cementerios de Madrid, ofrece un Servicio Funerario Integral que engloba todos los aspectos necesarios para la despedida de un ser querido, como los trámites administrativos, la recogida del fallecido, traslado, acondicionamiento y su velación entre otros servicios, poniendo a su disposición los dos Tanatorios Municipales (Tanatorio M30 y Tanatorio SUR). Así mismo, gestionamos la inhumación o incineración del fallecido en cualquiera de los 14 Cementerios Municipales de la ciudad de Madrid y de los dos Crematorios (Cementerio de La Almudena y Cementerio Sur). Bus: 101, 105, 115, 151  Metro: Barajas (línea 8)",
+			"accesibility": "1",
+			"schedule": "Jueves y domingos, de 10 a 17 horas. Día de la Madre, Día del Padre y Semana de Todos los Santos: de 10 a 17 horas.",
+			"services": "La gestión integral realizada por parte de los Servicios Funerarios de Madrid (SFM), ofrece a las familias la posibilidad de disponer de un servicio de cementerios completo a través de una única gestión municipal de todos los servicios necesarios, tales como inhumación, exhumación, traslados o gestión del espacio de enterramiento entre otras. Sin oficinas propias. Tramitaciones en Cementerio de la Almudena. Instalación accesible para personas de movilidad reducida por las vías principales; dificultades por vías más estrechas y entre sepulturas.",
+			"organization-name": "Cementerio de Barajas"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9188-cementerio-canillas.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9188",
+		"title": "Cementerio de Canillas",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=8252f2d8c559f010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza/Barrio/Canillas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28043",
+			"street-address": "CALLE SILVANO 69"
+		},
+		"location": {
+			"latitude": 40.46119048092996,
+			"longitude": -3.6409071636750134
+		},
+		"organization": {
+			"organization-desc": " La Empresa Municipal de Servicios Funerarios y Cementerios de Madrid, ofrece un Servicio Funerario Integral que engloba todos los aspectos necesarios para la despedida de un ser querido, como los trámites administrativos, la recogida del fallecido, traslado, acondicionamiento y su velación entre otros servicios, poniendo a su disposición los dos Tanatorios Municipales (Tanatorio M30 y Tanatorio SUR). Así mismo, gestionamos la inhumación o incineración del fallecido en cualquiera de los 14 Cementerios Municipales de la ciudad de Madrid y de los dos Crematorios (Cementerio de La Almudena y Cementerio Sur). Metro: Esperanza (línea 4)  Bus: 120, 122",
+			"accesibility": "1",
+			"schedule": "Abierto todos los días del año de 10 a 17 horas.",
+			"services": "La gestión integral realizada por parte de los Servicios Funerarios de Madrid (SFM), ofrece a las familias la posibilidad de disponer de un servicio de cementerios completo a través de una única gestión municipal de todos los servicios necesarios, tales como inhumación, exhumación, traslados o gestión del espacio de enterramiento entre otras. Sin oficinas propias. Tramitaciones en Cementerio de la Almudena. Instalación accesible para personas de movilidad reducida por las vías principales; dificultades por vías más estrechas y entre sepulturas.",
+			"organization-name": "Cementerio de Canillas"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9187-cementerio-canillejas.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9187",
+		"title": "Cementerio de Canillejas",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=6a22f2d8c559f010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/SanBlas-Canillejas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/SanBlas-Canillejas/Barrio/Canillejas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28022",
+			"street-address": "CALLE NECTAR 34"
+		},
+		"location": {
+			"latitude": 40.443193889855884,
+			"longitude": -3.6103138628823834
+		},
+		"organization": {
+			"organization-desc": " La Empresa Municipal de Servicios Funerarios y Cementerios de Madrid, ofrece un Servicio Funerario Integral que engloba todos los aspectos necesarios para la despedida de un ser querido, como los trámites administrativos, la recogida del fallecido, traslado, acondicionamiento y su velación entre otros servicios, poniendo a su disposición los dos Tanatorios Municipales (Tanatorio M30 y Tanatorio SUR). Así mismo, gestionamos la inhumación o incineración del fallecido en cualquiera de los 14 Cementerios Municipales de la ciudad de Madrid y de los dos Crematorios (Cementerio de La Almudena y Cementerio Sur). Bus: 28, 48, 77, 105, 140, 153  Metro: Esperanza (línea 4)",
+			"accesibility": "1",
+			"schedule": "Jueves y domingo, de 10 a 17 horas. Día de la Madre, Día del Padre y Semana de Todos los Santos, de 10 a 17 horas.",
+			"services": "La gestión integral realizada por parte de los Servicios Funerarios de Madrid (SFM), ofrece a las familias la posibilidad de disponer de un servicio de cementerios completo a través de una única gestión municipal de todos los servicios necesarios, tales como inhumación, exhumación, traslados o gestión del espacio de enterramiento entre otras. Sin oficinas propias. Tramitaciones en Cementerio de la Almudena. Instalación accesible para personas de movilidad reducida por las vías principales; dificultades por vías más estrechas y entre sepulturas.",
+			"organization-name": "Cementerio de Canillejas"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9190-cementerio-carabanchel-alto.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9190",
+		"title": "Cementerio de Carabanchel Alto",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=6f417a7e0a61c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel/Barrio/Buenavista"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28054",
+			"street-address": "CALLE VIA LUSITANA 55"
+		},
+		"location": {
+			"latitude": 40.36733534193104,
+			"longitude": -3.740262790092704
+		},
+		"organization": {
+			"organization-desc": " La Empresa Municipal de Servicios Funerarios y Cementerios de Madrid, ofrece un Servicio Funerario Integral que engloba todos los aspectos necesarios para la despedida de un ser querido, como los trámites administrativos, la recogida del fallecido, traslado, acondicionamiento y su velación entre otros servicios, poniendo a su disposición los dos Tanatorios Municipales (Tanatorio M30 y Tanatorio SUR). Así mismo, gestionamos la inhumación o incineración del fallecido en cualquiera de los 14 Cementerios Municipales de la ciudad de Madrid y de los dos Crematorios (Cementerio de La Almudena y Cementerio Sur). Bus: 108, 118, 155",
+			"accesibility": "1",
+			"schedule": "Invierno: todos los días de 8 a 18:30 horas. Verano: todos los días de 8 a 19:30 horas. El periodo del horario  de verano comenzará el último domingo del mes marzo de cada año, a las 2 de la madrugada (momento en que la hora oficial española se adelantará 60 minutos) y terminará el último domingo del mes de octubre de cada año, a las tres de la madrugada (momento en que la hora oficial española se retrasará 60 minutos).",
+			"services": "La gestión integral realizada por parte de los Servicios Funerarios de Madrid (SFM), ofrece a las familias la posibilidad de disponer de un servicio de cementerios completo a través de una única gestión municipal de todos los servicios necesarios, tales como inhumación, exhumación, traslados o gestión del espacio de enterramiento entre otras. Sin oficinas propias. Tramitaciones en el Cementerio Sur. El Cementerio Hebreo se aloja en el espacio compartido con el Cementerio Sur. Instalación accesible para personas de movilidad reducida por las vías principales; dificultades por vías más estrechas y entre sepulturas.",
+			"organization-name": "Cementerio de Carabanchel Alto"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9195-cementerio-pardo.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9195",
+		"title": "Cementerio de El Pardo",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=9867b47a0559f010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo/Barrio/ElPardo"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28048",
+			"street-address": "CARRETERA EL PARDO A COLMENAR VIEJO 13"
+		},
+		"location": {
+			"latitude": 40.53679250322743,
+			"longitude": -3.7855425467019455
+		},
+		"organization": {
+			"organization-desc": " La Empresa Municipal de Servicios Funerarios y Cementerios de Madrid, ofrece un Servicio Funerario Integral que engloba todos los aspectos necesarios para la despedida de un ser querido, como los trámites administrativos, la recogida del fallecido, traslado, acondicionamiento y su velación entre otros servicios, poniendo a su disposición los dos Tanatorios Municipales (Tanatorio M30 y Tanatorio SUR). Así mismo, gestionamos la inhumación o incineración del fallecido en cualquiera de los 14 Cementerios Municipales de la ciudad de Madrid y de los dos Crematorios (Cementerio de La Almudena y Cementerio Sur). Bus: 601, 602",
+			"accesibility": "1",
+			"schedule": "Todos los días del año de 10 a 17 horas.",
+			"services": "La gestión integral realizada por parte de los Servicios Funerarios de Madrid (SFM), ofrece a las familias la posibilidad de disponer de un servicio de cementerios completo a través de una única gestión municipal de todos los servicios necesarios, tales como inhumación, exhumación, traslados o gestión del espacio de enterramiento entre otras. Sin oficinas propias. Tramitaciones en Cementerio de la Almudena. Instalación accesible para personas de movilidad reducida por las vías principales; dificultades por vías más estrechas y entre sepulturas.",
+			"organization-name": "Cementerio de El Pardo"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9185-cementerio-fuencarral.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9185",
+		"title": "Cementerio de Fuencarral",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=bf87b47a0559f010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Fuencarral-ElPardo/Barrio/ElGoloso"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28049",
+			"street-address": "AVENIDA MONTECARMELO 10"
+		},
+		"location": {
+			"latitude": 40.50638464823704,
+			"longitude": -3.700539259907993
+		},
+		"organization": {
+			"organization-desc": " La Empresa Municipal de Servicios Funerarios y Cementerios de Madrid, ofrece un Servicio Funerario Integral que engloba todos los aspectos necesarios para la despedida de un ser querido, como los trámites administrativos, la recogida del fallecido, traslado, acondicionamiento y su velación entre otros servicios, poniendo a su disposición los dos Tanatorios Municipales (Tanatorio M30 y Tanatorio SUR). Así mismo, gestionamos la inhumación o incineración del fallecido en cualquiera de los 14 Cementerios Municipales de la ciudad de Madrid y de los dos Crematorios (Cementerio de La Almudena y Cementerio Sur). Bus: 134, 178",
+			"accesibility": "1",
+			"schedule": "Todos los días del año de 10 a 17 horas.",
+			"services": "La gestión integral realizada por parte de los Servicios Funerarios de Madrid (SFM), ofrece a las familias la posibilidad de disponer de un servicio de cementerios completo a través de una única gestión municipal de todos los servicios necesarios, tales como inhumación, exhumación, traslados o gestión del espacio de enterramiento entre otras. Sin oficinas propias. Tramitaciones en el Cementerio de la Almudena. Instalación accesible para personas de movilidad reducida por las vías principales; dificultades por vías más estrechas y entre sepulturas.",
+			"organization-name": "Cementerio de Fuencarral"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9184-cementerio-almudena.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9184",
+		"title": "Cementerio de La Almudena",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=76b7b47a0559f010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal/Barrio/Ventas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28017",
+			"street-address": "AVENIDA DAROCA 90"
+		},
+		"location": {
+			"latitude": 40.42751913746381,
+			"longitude": -3.6482030278949904
+		},
+		"organization": {
+			"organization-desc": " La Empresa Municipal de Servicios Funerarios y Cementerios de Madrid, ofrece un Servicio Funerario Integral que engloba todos los aspectos necesarios para la despedida de un ser querido, como los trámites administrativos, la recogida del fallecido, traslado, acondicionamiento y su velación entre otros servicios, poniendo a su disposición los dos Tanatorios Municipales (Tanatorio M30 y Tanatorio SUR). Así mismo, gestionamos la inhumación o incineración del fallecido en cualquiera de los 14 Cementerios Municipales de la ciudad de Madrid y de los dos Crematorios (Cementerio de La Almudena y Cementerio Sur). Metro: la Elipa (línea 2), La Almudena (línea 2)  Bus: 15, 28, 106, 110, 113, 210",
+			"accesibility": "1",
+			"schedule": "Horario de invierno: todos los días de 8 a 18:30 horas. Horario de verano: todos los días de 8 a 19:30 horas. El periodo del horario  de verano comenzará el último domingo del mes marzo de cada año, a las 2 de la madrugada (momento en que la hora oficial española se adelantará 60 minutos) y terminará el último domingo del mes de octubre de cada año, a las tres de la madrugada (momento en que la hora oficial española se retrasará 60 minutos).",
+			"services": "La gestión integral realizada por parte de los Servicios Funerarios de Madrid (SFM), ofrece a las familias la posibilidad de disponer de un servicio de cementerios completo a través de una única gestión municipal de todos los servicios necesarios, tales como inhumación, exhumación, traslados o gestión del espacio de enterramiento entre otras. En su interior se encuentra el Crematorio de la Almudena. Dispone de Oficinas de Atención al público; las consultas presenciales solo se atenderán con cita previa, salvo las incidencias o consultas relacionadas con los servicios esenciales de inhumación. Información general: Lunes a jueves de 8:30 a 17:30, viernes de 8:30 a 14:30 horas / Del 1 de junio al 1 de octubre y del 15 de diciembre al 15 de enero, de lunes a viernes, de 8:30 a 14:30 horas. Trasmisiones de Titularidad: Lunes a viernes, de 8:30 a 14 horas. Reducciones y Traslados: Lunes a viernes, de 8:30 a 14 horas. Instalación accesible para personas de movilidad reducida por las vías principales; dificultades por vías más estrechas y entre sepulturas.",
+			"organization-name": "Cementerio de La Almudena"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9192-cementerio-vallecas.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9192",
+		"title": "Cementerio de Vallecas",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=83e7b47a0559f010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/VillaDeVallecas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/VillaDeVallecas/Barrio/CascoHVallecas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28031",
+			"street-address": "CALLE PICO DE LA CIERVA 6"
+		},
+		"location": {
+			"latitude": 40.377729803940355,
+			"longitude": -3.617874639300285
+		},
+		"organization": {
+			"organization-desc": " La Empresa Municipal de Servicios Funerarios y Cementerios de Madrid, ofrece un Servicio Funerario Integral que engloba todos los aspectos necesarios para la despedida de un ser querido, como los trámites administrativos, la recogida del fallecido, traslado, acondicionamiento y su velación entre otros servicios, poniendo a su disposición los dos Tanatorios Municipales (Tanatorio M30 y Tanatorio SUR). Así mismo, gestionamos la inhumación o incineración del fallecido en cualquiera de los 14 Cementerios Municipales de la ciudad de Madrid y de los dos Crematorios (Cementerio de La Almudena y Cementerio Sur). Bus: 54, 58, 103, 142, 143",
+			"accesibility": "1",
+			"schedule": "Todos los días del año de 10 a 17 horas.",
+			"services": "La gestión integral realizada por parte de los Servicios Funerarios de Madrid (SFM), ofrece a las familias la posibilidad de disponer de un servicio de cementerios completo a través de una única gestión municipal de todos los servicios necesarios, tales como inhumación, exhumación, traslados o gestión del espacio de enterramiento entre otras. Sin oficinas propias. Tramitaciones en el Cementerio de la Almudena. Instalación accesible para personas de movilidad reducida por las vías principales; dificultades por vías más estrechas y entre sepulturas.",
+			"organization-name": "Cementerio de Vallecas"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9194-cementerio-villaverde.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9194",
+		"title": "Cementerio de Villaverde",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=3d08f5177659f010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Villaverde/Barrio/SanAndres"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28041",
+			"street-address": "AVENIDA RAFAELA YBARRA 137"
+		},
+		"location": {
+			"latitude": 40.35542554813529,
+			"longitude": -3.7129764698434657
+		},
+		"organization": {
+			"organization-desc": " La Empresa Municipal de Servicios Funerarios y Cementerios de Madrid, ofrece un Servicio Funerario Integral que engloba todos los aspectos necesarios para la despedida de un ser querido, como los trámites administrativos, la recogida del fallecido, traslado, acondicionamiento y su velación entre otros servicios, poniendo a su disposición los dos Tanatorios Municipales (Tanatorio M30 y Tanatorio SUR). Así mismo, gestionamos la inhumación o incineración del fallecido en cualquiera de los 14 Cementerios Municipales de la ciudad de Madrid y de los dos Crematorios (Cementerio de La Almudena y Cementerio Sur). Bus: 131",
+			"accesibility": "1",
+			"schedule": "Jueves y domingos de 10 a 17 horas. Día de la Madre, Día del Padre y Semana de Todos los Santos, de 10 a 17 horas.",
+			"services": "La gestión integral realizada por parte de los Servicios Funerarios de Madrid (SFM), ofrece a las familias la posibilidad de disponer de un servicio de cementerios completo a través de una única gestión municipal de todos los servicios necesarios, tales como inhumación, exhumación, traslados o gestión del espacio de enterramiento entre otras. Sin oficinas propias. Tramitaciones en Cementerio Sur. Instalación accesible para personas de movilidad reducida por las vías principales; dificultades por vías más estrechas y entre sepulturas.",
+			"organization-name": "Cementerio de Villaverde"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9203-cementerio-parroquial-hortaleza.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9203",
+		"title": "Cementerio Parroquial de Hortaleza",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=14327a7e0a61c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Hortaleza/Barrio/PinarRey"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28033",
+			"street-address": "AVENIDA BUCARAMANGA 2"
+		},
+		"location": {
+			"latitude": 40.47201329604833,
+			"longitude": -3.638733299407961
+		},
+		"organization": {
+			"organization-desc": "  Metro: San Lorenzo (línea 4), Mar de Cristal (líneas 4 y 8).  Bus: 72, 87.",
+			"accesibility": "3",
+			"schedule": "",
+			"services": "",
+			"organization-name": "Cementerio Parroquial de Hortaleza"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/75675-cementerio-parroquial-san-pedro-apostol.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "75675",
+		"title": "Cementerio Parroquial de San Pedro Apostol",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=f7cf68540e41c010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Barajas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Barajas/Barrio/CascoHBarajas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28042",
+			"street-address": "CALLE ACUARIO 6"
+		},
+		"location": {
+			"latitude": 40.47426777581313,
+			"longitude": -3.578424572687106
+		},
+		"organization": {
+			"organization-desc": "  Metro: Barajas (línea 8).  Bus: 101, 105, 115.",
+			"accesibility": "3",
+			"schedule": "Consultar telefónicamente.",
+			"services": "",
+			"organization-name": "Cementerio Parroquial de San Pedro Apostol"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9202-cementerio-parroquial-santa-maria-antigua.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9202",
+		"title": "Cementerio Parroquial de Santa María La Antigua",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=a6427a7e0a61c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Vicalvaro"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Vicalvaro/Barrio/CascoHVicalvaro"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28032",
+			"street-address": "CALLE SAN CIPRIANO 74"
+		},
+		"location": {
+			"latitude": 40.403224757362324,
+			"longitude": -3.6009374823407354
+		},
+		"organization": {
+			"organization-desc": "  Metro: San Cipriano (línea 9).  Bus: 106, 4, 100, 71.  Cercanías Renfe: Vicálvaro (líneas C2, C7 y Regional).",
+			"accesibility": "3",
+			"schedule": "General: de martes a domingo de 9 a 14 horas. Lunes cerrado.",
+			"services": "",
+			"organization-name": "Cementerio Parroquial de Santa María La Antigua"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4832719-cementerio-parroquial-nuestra-senora-alameda.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "4832719",
+		"title": "Cementerio Parroquial Nuestra Señora de la Alameda",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5a4e692fd67a8110VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Barajas"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Barajas/Barrio/AlamedaOsuna"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28042",
+			"street-address": "AVENIDA LOGROÑO 48"
+		},
+		"location": {
+			"latitude": 40.46077405225064,
+			"longitude": -3.592309118272398
+		},
+		"organization": {
+			"organization-desc": "  Metro: Alameda de Osuna (línea 5).  Bus: 105, 112, 115, 151, 166.",
+			"accesibility": "3",
+			"schedule": "Consultar telefónicamente.",
+			"services": "",
+			"organization-name": "Cementerio Parroquial Nuestra Señora de la Alameda"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9200-cementerio-parroquial-san-sebastian-martir.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9200",
+		"title": "Cementerio Parroquial San Sebastián Mártir",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=81227a7e0a61c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel/Barrio/VistaAlegre"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28047",
+			"street-address": "CALLE MONSEÑOR OSCAR ROMERO 92"
+		},
+		"location": {
+			"latitude": 40.3824905560394,
+			"longitude": -3.752527715032225
+		},
+		"organization": {
+			"organization-desc": "  Metro: Eugenia de Montijo (línea 5).  Bus: 17.",
+			"accesibility": "3",
+			"schedule": "Visitas: de lunes a domingo de 8 a 15 horas. Oficina: de lunes a viernes de 8 a 14 horas.",
+			"services": "Ermita de Santa María la Antigua: de mediados del siglo XIV, estilo mudéjar. Es la capilla del viejo cementerio de Carabanchel Bajo. Su planta es rectangular, con ábside semicircular, unido a la nave por dos tramos rectos. Construida con ladrillos forma tres arcos rehundidos concéntricos. La torre es de forma rectangular con un primer cuerpo macizo de carpintería y con uno segundo de ladrillo.",
+			"organization-name": "Cementerio Parroquial San Sebastián Mártir"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9197-cementerio-sacramental-san-isidro.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9197",
+		"title": "Cementerio Sacramental de San Isidro",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=39527a7e0a61c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel/Barrio/SanIsidro"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28019",
+			"street-address": "PASEO ERMITA DEL SANTO 72"
+		},
+		"location": {
+			"latitude": 40.40061741587043,
+			"longitude": -3.725670113017977
+		},
+		"organization": {
+			"organization-desc": " Descripción monumental: declarado Bien de Interés Cultural, es el camposantomás antiguo conservado en Madrid (1811) y uno de los conjuntos artísticos,arquitectónicos, escultóricos y paisajísticos más importantes de España y más bellosde Europa. Metro: Marqués de Vadillo (línea 5).  Bus: 25, 50.  Bicimad: Estación 212 (glorieta Marqués de Vadillo, 9).",
+			"accesibility": "0",
+			"schedule": "De lunes a domingo de 9 a 15 horas. Cerrado el 15 de mayo.",
+			"services": "Se permite el acceso al interior del Cementerio de San Isidro con vehículo para personas de movilidad reducida.",
+			"organization-name": "Cementerio Sacramental de San Isidro"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9196-cementerio-sacramental-san-justo.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9196",
+		"title": "Cementerio Sacramental de San Justo",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=cb627a7e0a61c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel/Barrio/SanIsidro"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28011",
+			"street-address": "PASEO ERMITA DEL SANTO 70"
+		},
+		"location": {
+			"latitude": 40.40353167080908,
+			"longitude": -3.724962034139464
+		},
+		"organization": {
+			"organization-desc": "  Bus: 17, 25, 50.  Bicimad: Estación 223 (paseo de la Ermita del Santo, 48).",
+			"accesibility": "3",
+			"schedule": "De 8 a 15 horas, todos los días.",
+			"services": "",
+			"organization-name": "Cementerio Sacramental de San Justo"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9198-cementerio-sacramental-san-lorenzo-san-jose.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9198",
+		"title": "Cementerio Sacramental de San Lorenzo y San José",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5e727a7e0a61c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel/Barrio/Opanel"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28019",
+			"street-address": "CALLE VERDAD  sin número"
+		},
+		"location": {
+			"latitude": 40.39445055613288,
+			"longitude": -3.7180059223894872
+		},
+		"organization": {
+			"organization-desc": "  Metro: Marqués de Vadillo (línea 5).  Bus: 116, 118, 119, 34, 35.",
+			"accesibility": "3",
+			"schedule": "Vistas: De lunes a viernes de 8 a 15 horas. Sábados, domingos y festivos de 9 a 14 horas. Oficina: De lunes a domingo de 9 a 14 horas.",
+			"services": "",
+			"organization-name": "Cementerio Sacramental de San Lorenzo y San José"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9199-cementerio-sacramental-santa-maria.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9199",
+		"title": "Cementerio Sacramental de Santa María",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=e0927a7e0a61c010VgnVCM1000000b205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel/Barrio/SanIsidro"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28019",
+			"street-address": "CALLE COMUNEROS DE CASTILLA 13"
+		},
+		"location": {
+			"latitude": 40.39855470657746,
+			"longitude": -3.722716863463
+		},
+		"organization": {
+			"organization-desc": "  Metro: Marqués de Vadillo (línea 5).  Bus: 50, 25.",
+			"accesibility": "3",
+			"schedule": "De lunes a domingo de 8:30 a 17 horas. Del 15 de junio al 15 de septiembre de 8 a 15 horas.",
+			"services": "",
+			"organization-name": "Cementerio Sacramental de Santa María"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/9191-cementerio-sur.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "9191",
+		"title": "Cementerio Sur",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=5438f5177659f010VgnVCM2000000c205a0aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel/Barrio/Buenavista"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28054",
+			"street-address": "CALLE ILDEFONSO GONZALEZ VALENCIA 6 PUERTA PRINCIPAL"
+		},
+		"location": {
+			"latitude": 40.367902282318504,
+			"longitude": -3.7218357507795914
+		},
+		"organization": {
+			"organization-desc": " La Empresa Municipal de Servicios Funerarios y Cementerios de Madrid, ofrece un Servicio Funerario Integral que engloba todos los aspectos necesarios para la despedida de un ser querido, como los trámites administrativos, la recogida del fallecido, traslado, acondicionamiento y su velación entre otros servicios, poniendo a su disposición los dos Tanatorios Municipales (Tanatorio M30 y Tanatorio SUR). Así mismo, gestionamos la inhumación o incineración del fallecido en cualquiera de los 14 Cementerios Municipales de la ciudad de Madrid y de los dos Crematorios (Cementerio de La Almudena y Cementerio Sur). Bus: SE702",
+			"accesibility": "1",
+			"schedule": "Invierno: todos los días de 8 a 18:30 horas. Verano: todos los días de 8 a 19:30 horas. El periodo del horario  de verano comenzará el último domingo del mes marzo de cada año, a las 2 de la madrugada (momento en que la hora oficial española se adelantará 60 minutos) y terminará el último domingo del mes de octubre de cada año, a las tres de la madrugada (momento en que la hora oficial española se retrasará 60 minutos).",
+			"services": "La gestión integral realizada por parte de los Servicios Funerarios de Madrid (SFM), ofrece a las familias la posibilidad de disponer de un servicio de cementerios completo a través de una única gestión municipal de todos los servicios necesarios, tales como inhumación, exhumación, traslados o gestión del espacio de enterramiento entre otras. En su interior se encuentra el Crematorio Sur. Dispone de Oficinas de Atención al público; las consultas presenciales solo se atenderán con cita previa, salvo las incidencias o consultas relacionadas con los servicios esenciales de inhumación. Información General y Exhumación General: Lunes, Miércoles y Viernes de 8:15 a 14:15 / Martes y Jueves de 8:15 a 17:15 / Del 1 de Junio al 1 de Octubre y del 15 de Diciembre al 15 de Enero de lunes a viernes de 8:15 a 14:15 horas. Puerta Norte: Calle Halconero del Rey sin número.  El Cementerio Hebreo se aloja en el espacio compartido con el Cementerio de Carabanchel Alto. Instalación accesible para personas de movilidad reducida por las vías principales; dificultades por vías más estrechas y entre sepulturas.",
+			"organization-name": "Cementerio Sur"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11370039-crematorio-nuestra-senora-almudena.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "11370039",
+		"title": "Crematorio Nuestra Señora de la Almudena",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=9756430a759e8710VgnVCM2000001f4a900aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/CiudadLineal/Barrio/Ventas"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28017",
+			"street-address": "AVENIDA DAROCA 96"
+		},
+		"location": {
+			"latitude": 40.42751913746381,
+			"longitude": -3.6482030278949904
+		},
+		"organization": {
+			"organization-desc": " La Empresa Municipal de Servicios Funerarios y Cementerios de Madrid, ofrece un Servicio Funerario Integral que engloba todos los aspectos necesarios para la despedida de un ser querido, como los trámites administrativos, la recogida del fallecido, traslado, acondicionamiento y su velación entre otros servicios, poniendo a su disposición los dos Tanatorios Municipales (Tanatorio M30 y Tanatorio SUR). Así mismo, gestionamos la inhumación o incineración del fallecido en cualquiera de los 14 Cementerios Municipales de la ciudad de Madrid y de los dos Crematorios (Cementerio de La Almudena y Cementerio Sur). Metro: La Almudena (línea 2)  Bus: 15, 28, 106, 110, 113, 210",
+			"accesibility": "1",
+			"schedule": "Todo el año, de 9 a 19 horas.",
+			"services": "Estas instalaciones completan el servicio funerario ofrecido por Servicios Funerarios de Madrid (SFM). La gestión integral realizada por parte de SFM, ofrece a aquellas familias que opten por despedir a su ser querido con una incineración, la posibilidad de disponer del servicio de cremación completo a través de una única gestión municipal. El crematorio municipal de Nuestra Señora de la Almudena se encuentra en el interior del Cementerio de Nuestra Señora de la Almudena y ofrece a las familias un servicio de cremación que cumple con todos los requisitos ambientales y cuyas instalaciones disponen del certificado medioambiental EMAS.",
+			"organization-name": "Crematorio Nuestra Señora de la Almudena"
+		}
+	},
+	{
+		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/11370158-crematorio-sur.json",
+		"@type": "https://datos.madrid.es/egob/kos/entidadesYorganismos/Cementerios",
+		"id": "11370158",
+		"title": "Crematorio Sur",
+		"relation": "http://www.madrid.es/sites/v/index.jsp?vgnextchannel=bfa48ab43d6bb410VgnVCM100000171f5a0aRCRD&vgnextoid=6bc3cc6e989e8710VgnVCM2000001f4a900aRCRD",		
+		"address": {
+			"district": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel"
+			},
+			"area": {
+				"@id": "https://datos.madrid.es/egob/kos/Provincia/Madrid/Municipio/Madrid/Distrito/Carabanchel/Barrio/Buenavista"
+			},
+			"locality": "MADRID",			
+			"postal-code": "28054",
+			"street-address": "CALLE ILDEFONSO GONZALEZ VALENCIA 2"
+		},
+		"location": {
+			"latitude": 40.373252366971855,
+			"longitude": -3.7215898776398064
+		},
+		"organization": {
+			"organization-desc": " La Empresa Municipal de Servicios Funerarios y Cementerios de Madrid, ofrece un Servicio Funerario Integral que engloba todos los aspectos necesarios para la despedida de un ser querido, como los trámites administrativos, la recogida del fallecido, traslado, acondicionamiento y su velación entre otros servicios, poniendo a su disposición los dos Tanatorios Municipales (Tanatorio M30 y Tanatorio SUR). Así mismo, gestionamos la inhumación o incineración del fallecido en cualquiera de los 14 Cementerios Municipales de la ciudad de Madrid y de los dos Crematorios (Cementerio de La Almudena y Cementerio Sur). Metro: Pan Bendito (línea 11), Plaza Elíptica (línea 6)  Bus: 121, 131, 155, 116",
+			"accesibility": "1",
+			"schedule": "Todo el año, de 9 a 18 horas.",
+			"services": "Estas instalaciones completan el servicio funerario ofrecido por Servicios Funerarios de Madrid (SFM). La gestión integral realizada por parte de SFM, ofrece a aquellas familias que opten por despedir a su ser querido con una incineración, la posibilidad de disponer del servicio de cremación completo a través de una única gestión municipal. El Crematorio Municipal del Sur se encuentra en el interior del Cementerio Sur / Carabanchel y junto al Tanatorio Sur. Ofrece a las familias un servicio de cremación que cumple con todos los requisitos ambientales y cuyas instalaciones disponen del certificado medioambiental EMAS.",
+			"organization-name": "Crematorio Sur"
+		}
+	}	  
+  ]
+}

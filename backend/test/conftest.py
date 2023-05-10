@@ -27,6 +27,7 @@ def test_user():
     }
     return new_user
 
+
 @pytest.fixture()
 def test_user_updated():
     new_user = {

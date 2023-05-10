@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 
-from .settings import Settings
 from . import users
 
 

@@ -6,19 +6,12 @@ from fastapi import status, HTTPException
 
 from ..db.client import client
 from ..db.schemas import model_schema
-from .settings import Settings
-
-
-def get_db():
-    """Check if the data dump has to be in the test database"""
-    settings = Settings()
-    return settings._db
+from .settings import settings
 
 
 def search_element_in_db(collection: str, field: str, value: str | ObjectId):
-    db = get_db()
     try:
-        user = client[db][collection].find_one({field: value})
+        user = client[settings._db][collection].find_one({field: value})
         return user
     except AttributeError:
         return None
@@ -40,18 +33,16 @@ def id_is_valid_ObjectId(id: str):
 
 async def get_all(collection: str):
     """Given a collection, tries to return all the elements it contains."""
-    db = get_db()
-    elements = client[db][collection].find()
+    elements = client[settings._db][collection].find()
     return [model_schema(collection, _) for _ in elements]
 
 
 async def post_instance(collection: str, instance):
     """Given a collection, tries to insert a document into it."""
-    db = get_db()
     instance = instance.dict(exclude={'id'})
-    id = client[db][collection].replace_one(instance,
-                                            instance,
-                                            upsert=True).upserted_id
+    id = client[settings._db][collection].replace_one(instance,
+                                                      instance,
+                                                      upsert=True).upserted_id
 
     element = search_element_in_db(collection, "_id", id)
 
@@ -75,17 +66,15 @@ async def get_instance(collection: str, id: str):
 
 async def delete_instance(collection: str, id: str):
     """Given a collection, delete a document by it's id."""
-    db = get_db()
     id = id_is_valid_ObjectId(id)
-    client[db][collection].delete_one({"_id": id})
+    client[settings._db][collection].delete_one({"_id": id})
 
 
 async def put_instance(collection: str, id: str, instance):
     """Given a collection, update a document by it's id."""
-    db = get_db()
     id = id_is_valid_ObjectId(id)
-    client[db][collection].find_one_and_replace({"_id": id},
-                                                instance.dict(exclude={'id'}))
+    client[settings._db][collection].find_one_and_replace({"_id": id},
+                                                          instance.dict(exclude={'id'}))
     element = search_element_in_db(collection, "_id", id)
 
     if element:

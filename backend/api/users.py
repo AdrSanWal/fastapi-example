@@ -28,7 +28,7 @@ async def get_user(id: str):
 
 @router.delete("/{id}", status_code=status.HTTP_204_NO_CONTENT)
 async def delete_user(id: str):
-    delete_instance(collection, id)
+    await delete_instance(collection, id)
 
 
 @router.put("/{id}")

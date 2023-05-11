@@ -8,24 +8,22 @@ from db.models import Location, Address, Organization, Model
 from api.crud import post_instance
 
 
-file_name = 'aparcamientos publicos'
+async def add_to_db(model: Model, collection: str):
+    return await post_instance(collection, model)
 
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 files = filter(lambda x: x.split('.')[1] == 'json', os.listdir(dir_path))
 json_files = filter(lambda x: x.split('.')[1] == 'json', files)
 
+filenames = [_.split('.')[0] for _ in json_files]
 
-async def add_to_db(model: Model, collection: str):
-    return await post_instance(collection, model)
+for filename in filenames:
 
-for json_file in json_files:
-    file = json_file.split('.')[0]
-
-    with open(f'backend/db/filldb/{file}.json', 'r') as file:
+    with open(f'backend/db/filldb/{filename}.json', 'r') as file:
         data = load(file)
         new_elements = 0
-        print(f'Leyendo {json_file}')
+        print(f'Leyendo {filename}')
 
         for i, element in enumerate(data['@graph']):
 
@@ -48,14 +46,14 @@ for json_file in json_files:
                 organization = {
                     'name': element['organization']['organization-name'],
                     'description': element['organization']['organization-desc'],
-                    'schedule': element['organization']['schedule'],
-                    'services': element['organization']['services']
+                    'schedule': element.get('organization', None).get('schedule', None),
+                    'services': element.get('organization', None).get('services', None)
                 }
 
                 organization = Organization(**organization)
 
                 model = {
-                    'model': json_file,
+                    'model': filename,
                     'title': element['title'],
                     'relation': element['relation'],
                     'address': address,
@@ -68,7 +66,7 @@ for json_file in json_files:
                 print(f'Elementos comprobados: {i}', end="\r")
 
                 try:
-                    runasyncio(add_to_db(model, json_file))
+                    runasyncio(add_to_db(model, filename))
                     new_elements += 1
                 except HTTPException:
                     pass
@@ -76,57 +74,4 @@ for json_file in json_files:
             except KeyError:
                 continue
 
-        print(f'\nNuevas instancias en la colección {json_file}: {new_elements}', end="\n\n")
-
-
-
-# with open(f'backend/db/filldb/{file_name}.json', 'r') as file:
-#     data = load(file)
-#     new_elements = 0
-
-#     for i, element in enumerate(data['@graph']):
-
-#         address = {
-#             'locality': element['address']['locality'],
-#             'postal_code': element['address']['postal-code'],
-#             'street': element['address']['street-address']
-#         }
-
-#         address = Address(**address)
-
-#         location = {
-#             'lat': element['location']['latitude'],
-#             'lng': element['location']['longitude']
-#         }
-
-#         location = Location(**location)
-
-#         organization = {
-#             'name': element['organization']['organization-name'],
-#             'description': element['organization']['organization-desc'],
-#             'schedule': element['organization']['schedule'],
-#             'services': element['organization']['services']
-#         }
-
-#         organization = Organization(**organization)
-
-#         model = {
-#             'model': file_name,
-#             'title': element['title'],
-#             'relation': element['relation'],
-#             'address': address,
-#             'location': location,
-#             'organization': organization
-#         }
-
-#         model = Model(**model)
-
-#         print(f'Elementos comprobados: {i}', end="\r")
-
-#         try:
-#             runasyncio(add_to_db(model))
-#             new_elements += 1
-#         except HTTPException:
-#             pass
-
-#     print(f'\n\nNuevas instancias en la colección {file_name}: {new_elements}.')
+        print(f'\nNuevas instancias en la colección {filename}: {new_elements}', end="\n\n")

@@ -27,6 +27,7 @@ class Organization(BaseModel):
 
 
 class Model(BaseModel):
+    id: str | None
     model: str
     title: str
     relation: str  # link

@@ -3,12 +3,12 @@ from typing import List
 from fastapi import APIRouter, status
 
 from .crud import get_all, post_instance, get_instance, delete_instance, put_instance
-from ..db.models import User
+from db.models import User
 
 
 collection = 'users'
 
-router = APIRouter(prefix=f'/{collection}')
+router = APIRouter()
 
 
 @router.get("/")

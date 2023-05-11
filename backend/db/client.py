@@ -3,7 +3,7 @@ from pymongo.errors import ServerSelectionTimeoutError, OperationFailure
 
 from fastapi import APIRouter
 
-from ..api.settings import settings
+from api.settings import settings
 
 router = APIRouter()
 

@@ -2,8 +2,8 @@ version: '3'
 services:
 
   mongo:
-    container_name: mongodb
     image: mongo:5.0
+    container_name: mongodb
     restart: always
     env_file:
       - .env
@@ -13,7 +13,7 @@ services:
       MONGO_INITDB_DATABASE: "${MONGO_DB}"
     volumes:
       - ./data:/var/lib/data
-      - ./init.js:/docker-entrypoint-initdb.d/init.js
+      #- ./init.sh:/docker-entrypoint-initdb.d/init.sh
   mongo-express:
     image: mongo-express:0.54.0
     container_name: mongoexpress

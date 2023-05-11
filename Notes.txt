@@ -1,0 +1,8 @@
+test:
+docker exec -it fastapi pytest
+
+test only library collection:
+docker exec -it fastapi pytest -m library
+
+
+docker exec fastapi python3 backend/db/filldb/get_info.py

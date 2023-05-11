@@ -4,9 +4,9 @@ from typing import List
 
 from fastapi import status, HTTPException
 
-from ..db.client import client
-from ..db.schemas import model_schema
-from .settings import settings
+from db.client import client
+from db.schemas import model_schema
+from api.settings import settings
 
 
 def search_element_in_db(collection: str, field: str, value: str | ObjectId):
@@ -34,6 +34,7 @@ def id_is_valid_ObjectId(id: str):
 async def get_all(collection: str):
     """Given a collection, tries to return all the elements it contains."""
     elements = client[settings._db][collection].find()
+    print(settings._db, collection)
     return [model_schema(collection, _) for _ in elements]
 
 
@@ -61,7 +62,7 @@ async def get_instance(collection: str, id: str):
     if element:
         return model_schema(collection, element)
     raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
-                        detail="User not exists")
+                        detail="Element not exists")
 
 
 async def delete_instance(collection: str, id: str):

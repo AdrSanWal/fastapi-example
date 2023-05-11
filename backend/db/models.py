@@ -8,14 +8,14 @@ class User(BaseModel):
     age: int
 
 
-class Coord(BaseModel):
+class Location(BaseModel):
     lat: float
     lng: float
 
 
 class Address(BaseModel):
     locality: str
-    postal_code: int
+    postal_code: str
     street: str
 
 
@@ -31,5 +31,5 @@ class Model(BaseModel):
     title: str
     relation: str  # link
     address: Address
-    location: Coord
+    location: Location
     organization: Organization

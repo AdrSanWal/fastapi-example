@@ -4,9 +4,9 @@ from typing import List
 
 from fastapi import status, HTTPException
 
-from ..db.client import client
-from ..db.schemas import model_schema
-from .settings import settings
+from db.client import client
+from db.schemas import model_schema
+from api.settings import settings
 
 
 def search_element_in_db(collection: str, field: str, value: str | ObjectId):

@@ -44,7 +44,6 @@ async def post_instance(collection: str, instance):
     id = client[settings._db][collection].replace_one(instance,
                                                       instance,
                                                       upsert=True).upserted_id
-
     element = search_element_in_db(collection, "_id", id)
 
     if element:

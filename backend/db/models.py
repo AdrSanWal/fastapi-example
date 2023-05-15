@@ -1,4 +1,6 @@
+from os import PathLike
 from pydantic import BaseModel
+from typing import Union
 
 
 class User(BaseModel):

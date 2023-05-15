@@ -11,24 +11,32 @@ class TestUsers():
         assert response.status_code == 200
         assert isinstance(response.json(), list)
 
-    def test_post_user(self, test_client, test_user):
-        response = test_client.post(f"/{self.collection}", content=json.dumps(test_user))
+    def test_post_user(self, test_client, test_user, test_image):
+        response = test_client.post(f"/{self.collection}",
+                                    files=test_image,
+                                    data=test_user)
         assert response.status_code == 201
 
-    def test_post_existing_user(self, test_client, test_user):
-        test_client.post(f"/{self.collection}", content=json.dumps(test_user))
-        response = test_client.post(f"/{self.collection}", content=json.dumps(test_user))
+    def test_post_existing_user(self, test_client, test_user, test_image):
+        test_client.post(f"/{self.collection}",
+                         files=test_image,
+                         data=test_user)
+        response = test_client.post(f"/{self.collection}",
+                                    files=test_image,
+                                    data=test_user)
         assert response.status_code == 409
 
-    def test_get_existing_user(self, test_client, test_user):
-        response = test_client.post(f"/{self.collection}", content=json.dumps(test_user))
-        print(response.json())
+    def test_get_existing_user(self, test_client, test_user, test_image):
+        response = test_client.post(f"/{self.collection}",
+                                    files=test_image,
+                                    data=test_user)
         id = response.json()['id']
         response = test_client.get(f"/{self.collection}/{id}")
         assert response.status_code == 200
 
         response_user = dict(response.json())
         del response_user['id']
+        del response_user['image']
         assert response_user == test_user
 
     def test_fail_get_not_existing_user(self, test_client):
@@ -46,8 +54,10 @@ class TestUsers():
             + '12-byte input ora 24-character hex string'
         assert response.json()['detail'] == expected_msg
 
-    def test_delete_user(self, test_client, test_user):
-        response = test_client.post(f"/{self.collection}", content=json.dumps(test_user))
+    def test_delete_user(self, test_client, test_user, test_image):
+        response = test_client.post(f"/{self.collection}",
+                                    files=test_image,
+                                    data=test_user)
         id = response.json()['id']
         assert len(test_client.get(f"/{self.collection}").json()) == 1
 
@@ -56,8 +66,10 @@ class TestUsers():
 
         assert len(test_client.get(f"/{self.collection}").json()) == 0
 
-    def test_update_user(self, test_client, test_user, test_user_updated):
-        response = test_client.post(f"/{self.collection}", content=json.dumps(test_user))
+    def test_update_user(self, test_client, test_user, test_user_updated, test_image):
+        response = test_client.post(f"/{self.collection}",
+                                    files=test_image,
+                                    data=test_user)
         id = response.json()['id']
         response = test_client.put(f"/{self.collection}/{id}",
                                    content=json.dumps(test_user_updated))

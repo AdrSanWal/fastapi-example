@@ -16,15 +16,29 @@ def test_client():
         settings._db = db_name
 
 
+# @fixture()
+# def test_user():
+#     new_user = {
+#         "name": "Test user",
+#         "image": "default.jpg",
+#         "surname": "Test surname",
+#         "age": 40
+#     }
+#     return new_user
+
 @fixture()
 def test_user():
     new_user = {
         "name": "Test user",
-        "image": "default.jpg",
         "surname": "Test surname",
         "age": 40
     }
     return new_user
+
+
+@fixture()
+def test_image():
+    return {'upload_file': open('backend/test/test.jpg', 'rb')}
 
 
 @fixture()

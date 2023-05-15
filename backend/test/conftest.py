@@ -20,6 +20,7 @@ def test_client():
 def test_user():
     new_user = {
         "name": "Test user",
+        "image": "default.jpg",
         "surname": "Test surname",
         "age": 40
     }
@@ -30,6 +31,7 @@ def test_user():
 def test_user_updated():
     updated_user = {
         "name": "Test user updated",
+        "image": "default.jpg",
         "surname": "Test surname updated",
         "age": 50
     }

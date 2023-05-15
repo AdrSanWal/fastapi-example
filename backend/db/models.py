@@ -3,6 +3,7 @@ from pydantic import BaseModel
 
 class User(BaseModel):
     id: str | None
+    image: str = 'default.jpg'
     name: str
     surname: str
     age: int

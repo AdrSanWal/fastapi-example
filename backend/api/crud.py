@@ -25,8 +25,8 @@ def id_is_valid_ObjectId(id: str):
         id = ObjectId(id)
         return id
     except InvalidId:
-        e = f"{id} is not a valid ObjectId, it must be a 12-byte input or" \
-            + "a 24-character hex string"
+        e = f"{id} no es un ObjectId válido, debe ser un input (12-byte) o" \
+            + " una cadena hexadecimal (24-character)"
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
                             detail=e)
 
@@ -50,7 +50,7 @@ async def post_instance(collection: str, instance):
         return model_schema(collection, element)
 
     raise HTTPException(status_code=status.HTTP_409_CONFLICT,
-                        detail=f"Instance alredy exists in {collection}")
+                        detail=f"La instancia ya existe en {collection}")
 
 
 async def get_instance(collection: str, id: str):
@@ -61,7 +61,7 @@ async def get_instance(collection: str, id: str):
     if element:
         return model_schema(collection, element)
     raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
-                        detail="Element not exists")
+                        detail="La instancia no existe")
 
 
 async def delete_instance(collection: str, id: str):
@@ -80,4 +80,4 @@ async def put_instance(collection: str, id: str, instance):
     if element:
         return model_schema(collection, element)
     raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
-                        detail="Id not found")
+                        detail="No se ha encontrado el Id")

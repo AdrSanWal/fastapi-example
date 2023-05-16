@@ -1,7 +1,8 @@
 from pytest import fixture
 from fastapi.testclient import TestClient
 
-from api.main import app
+from api.main_auth import app
+# from api.main import app
 from api.settings import settings
 from db.client import client as mongoclient
 
@@ -16,24 +17,50 @@ def test_client():
         settings._db = db_name
 
 
-# @fixture()
-# def test_user():
-#     new_user = {
-#         "name": "Test user",
-#         "image": "default.jpg",
-#         "surname": "Test surname",
-#         "age": 40
-#     }
-#     return new_user
-
 @fixture()
 def test_user():
     new_user = {
         "name": "Test user",
         "surname": "Test surname",
-        "age": 40
+        "password": "password",
+        "password_confirm": "password",
+        "age": 40,
+        'is_active': True,
+        'is_admin': False
     }
     return new_user
+
+
+@fixture()
+def test_admin():
+    new_user = {
+        "name": "Test admin",
+        "surname": "Test surname",
+        "password": "password",
+        "password_confirm": "password",
+        "age": 40,
+        'is_active': True,
+        'is_admin': True
+    }
+    return new_user
+
+
+@fixture()
+def test_login_user():
+    login_user = {
+        "username": "Test user",
+        "password": "password"
+    }
+    return login_user
+
+
+@fixture()
+def test_login_admin():
+    login_user = {
+        "username": "Test admin",
+        "password": "password"
+    }
+    return login_user
 
 
 @fixture()

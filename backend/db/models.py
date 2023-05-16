@@ -9,6 +9,12 @@ class User(BaseModel):
     name: str
     surname: str
     age: int
+    is_active: bool = True
+    is_admin: bool = False
+
+
+class DBUser(User):
+    password: str
 
 
 class Location(BaseModel):

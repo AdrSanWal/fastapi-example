@@ -30,7 +30,7 @@ services:
   fastapi:
     build: .
     container_name: fastapi
-    command: bash -c "uvicorn backend.api.main:app --reload --host 0.0.0.0 --port 8000"
+    command: bash -c "uvicorn backend.api.main_auth:app --reload --host 0.0.0.0 --port 8000"
     restart: on-failure
     volumes:
       - .:/code

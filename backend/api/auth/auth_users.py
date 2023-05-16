@@ -69,6 +69,11 @@ async def login(form: utils.CustomOAuth2PasswordRequestForm = Depends()):
         return token
 
 
+@router.post("/logout")
+async def logout(user: User = Depends(utils.authenticated_user)):
+    pass  # TODO:
+
+
 @router.get("/me", status_code=status.HTTP_200_OK)
 async def me(user: User = Depends(utils.authenticated_user)):
     return user

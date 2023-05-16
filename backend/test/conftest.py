@@ -1,7 +1,8 @@
 from pytest import fixture
 from fastapi.testclient import TestClient
 
-from api.main import app
+from api.main_auth import app
+# from api.main import app
 from api.settings import settings
 from db.client import client as mongoclient
 
@@ -9,45 +10,64 @@ from db.client import client as mongoclient
 @fixture()
 def test_client():
     with TestClient(app) as client:
-        db_name = settings._db
-        settings._db = f"test_{db_name}"
+        db_name = settings.db
+        settings.db = f"test_{db_name}"
         yield client
         mongoclient.drop_database(f"test_{db_name}")
-        settings._db = db_name
+        settings.db = db_name
 
-
-# @fixture()
-# def test_user():
-#     new_user = {
-#         "name": "Test user",
-#         "image": "default.jpg",
-#         "surname": "Test surname",
-#         "age": 40
-#     }
-#     return new_user
 
 @fixture()
 def test_user():
     new_user = {
-        "name": "Test user",
-        "surname": "Test surname",
-        "age": 40
+        'user': {
+            "email": "test_user@test.com",
+            "name": "Test user",
+            "surname": "Test surname",
+            "password": "password",
+            "password_confirm": "password",
+            "age": 40,
+            'is_active': True,
+            'is_admin': False
+        },
+        'login': {
+            "email": "test_user@test.com",
+            "password": "password"
+        }
     }
     return new_user
 
 
 @fixture()
-def test_image():
-    return {'upload_file': open('backend/test/test.jpg', 'rb')}
+def test_admin():
+    new_admin = {
+        'user': {
+            "email": "test_admin@test.com",
+            "name": "Test admin",
+            "surname": "Test surname",
+            "password": "password",
+            "password_confirm": "password",
+            "age": 40,
+            'is_active': True,
+            'is_admin': True
+        },
+        'login': {
+            "email": "test_admin@test.com",
+            "password": "password"
+        }
+    }
+    return new_admin
 
 
 @fixture()
 def test_user_updated():
     updated_user = {
         "name": "Test user updated",
-        "image": "default.jpg",
         "surname": "Test surname updated",
-        "age": 50
+        "password": "password",
+        "age": 50,
+        'is_active': True,
+        'is_admin': False
     }
     return updated_user
 

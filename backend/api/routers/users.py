@@ -2,7 +2,7 @@ from os import path
 from shutil import copyfileobj
 from typing import Annotated, List, Optional
 
-from fastapi import APIRouter, File, Form, UploadFile, status
+from fastapi import APIRouter, Form, UploadFile, status
 
 from api.crud import get_all, post_instance, get_instance, delete_instance, put_instance
 from db.models import User

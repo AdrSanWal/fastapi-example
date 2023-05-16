@@ -4,14 +4,15 @@ from typing import List
 
 from fastapi import status, HTTPException
 
+from api import error_msg
+from api.settings import settings
 from db.client import client
 from db.schemas import model_schema
-from api.settings import settings
 
 
 def search_element_in_db(collection: str, field: str, value: str | ObjectId):
     try:
-        user = client[settings._db][collection].find_one({field: value})
+        user = client[settings.db][collection].find_one({field: value})
         return user
     except AttributeError:
         return None
@@ -25,32 +26,29 @@ def id_is_valid_ObjectId(id: str):
         id = ObjectId(id)
         return id
     except InvalidId:
-        e = f"{id} is not a valid ObjectId, it must be a 12-byte input or" \
-            + "a 24-character hex string"
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
-                            detail=e)
+                            detail=error_msg.invalid_id)
 
 
 async def get_all(collection: str):
     """Given a collection, tries to return all the elements it contains."""
-    elements = client[settings._db][collection].find()
-    print(settings._db, collection)
+    elements = client[settings.db][collection].find()
     return [model_schema(collection, _) for _ in elements]
 
 
 async def post_instance(collection: str, instance):
     """Given a collection, tries to insert a document into it."""
     instance = instance.dict(exclude={'id'})
-    id = client[settings._db][collection].replace_one(instance,
-                                                      instance,
-                                                      upsert=True).upserted_id
+    id = client[settings.db][collection].replace_one(instance,
+                                                     instance,
+                                                     upsert=True).upserted_id
     element = search_element_in_db(collection, "_id", id)
 
     if element:
         return model_schema(collection, element)
 
     raise HTTPException(status_code=status.HTTP_409_CONFLICT,
-                        detail=f"Instance alredy exists in {collection}")
+                        detail=error_msg.instance_already_exists)
 
 
 async def get_instance(collection: str, id: str):
@@ -61,23 +59,27 @@ async def get_instance(collection: str, id: str):
     if element:
         return model_schema(collection, element)
     raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
-                        detail="Element not exists")
+                        detail=error_msg.instance_not_exists)
 
 
 async def delete_instance(collection: str, id: str):
     """Given a collection, delete a document by it's id."""
     id = id_is_valid_ObjectId(id)
-    client[settings._db][collection].delete_one({"_id": id})
+    client[settings.db][collection].delete_one({"_id": id})
 
 
 async def put_instance(collection: str, id: str, instance):
     """Given a collection, update a document by it's id."""
     id = id_is_valid_ObjectId(id)
-    client[settings._db][collection].find_one_and_replace({"_id": id},
-                                                          instance.dict(exclude={'id'}))
+
+    print('-----instance-----', instance)
+    changes = dict(instance)
+    del changes['id']
+    client[settings.db][collection].find_one_and_update({"_id": id},
+                                                        {'$set': changes})
     element = search_element_in_db(collection, "_id", id)
 
     if element:
         return model_schema(collection, element)
     raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
-                        detail="Id not found")
+                        detail=error_msg.id_not_found)

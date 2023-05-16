@@ -5,10 +5,17 @@ from typing import Union
 
 class User(BaseModel):
     id: str | None
+    email: str
     image: str = 'default.jpg'
     name: str
     surname: str
     age: int
+    is_active: bool = True
+    is_admin: bool = False
+
+
+class DBUser(User):
+    password: str
 
 
 class Location(BaseModel):

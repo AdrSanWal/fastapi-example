@@ -12,9 +12,9 @@ class ConnectionMongoDB:
 
     def mongoclient(self):
         params = {
-            'host': f'{settings._hostname}:{settings._port}',
-            'username': settings._username,
-            'password': settings._password
+            'host': f'{settings.hostname}:{settings.port}',
+            'username': settings.username,
+            'password': settings.password
         }
 
         try:

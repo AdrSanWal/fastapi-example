@@ -41,4 +41,7 @@ async def delete_element(id: str, request: Request):
 @router.put("/{id}")
 async def put_element(id: str, model: Model, request: Request):
     collection = get_collection_from_url(request)
+    model.address = model.address.__dict__
+    model.location = model.location.__dict__
+    model.organization = model.organization.__dict__
     return await put_instance(collection, id, model)

@@ -1,4 +1,4 @@
-# fastapi-example
+# FastAPI-example
 
 Este repositorio es un CRUD de ejemplo con FastAPI, utilizando MongoDB como
 base de datos y desplegandolo mediante docker-compose.
@@ -33,24 +33,24 @@ Datos:
 
 Ahora mismo los servicios almacenados son:
 
-  -Cementerios
-  -Centros de enseñanza
-  -Parques de bomberos
-  -Librerías
-  -Monumentos
-  -Piscinas municipales
-  -Museos
-  -Parques
-  -Comisarías
-  -Parkings públicos
-  -Colegios públicos
-  -Puntos limpios
-  -Polideportivos
+<ul>
+  <li>Cementerios</li>
+  <li>Centros de enseñanza</li>
+  <li>Parques de bomberos</li>
+  <li>Librerías</li>
+  <li>Monumentos</li>
+  <li>Piscinas municipales</li>
+  <li>Museos</li>
+  <li>Parques</li>
+  <li>Comisarías</li>
+  <li>Parkings públicos</li>
+  <li>Colegios públicos</li>
+  <li>Puntos limpios</li>
+  <li>Polideportivos</li>
+</ul>
 
   Si quieres incorporar más sevicios a la base de datos, descarga el json
-  correspondiente de la API de datos abiertos de la comunidad de madrid:
-
-  https://datos.madrid.es/portal/site/egob/menuitem.214413fe61bdd68a53318ba0a8a409a0/?vgnextoid=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextchannel=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextfmt=default
+  correspondiente de la <a href='https://datos.madrid.es/portal/site/egob/menuitem.214413fe61bdd68a53318ba0a8a409a0/?vgnextoid=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextchannel=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextfmt=default'>API de datos abiertos de la comunidad de madrid</a>.
 
   Guardalo en backend/db/filldb y vuelve a ejecutar los pasos 2º y 3º.
 

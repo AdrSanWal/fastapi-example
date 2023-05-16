@@ -3,6 +3,7 @@ from fastapi.staticfiles import StaticFiles
 
 from .routers import tables
 from .auth import auth_users
+from .settings import STATIC_FOLDER_IMAGES
 
 
 app = FastAPI()
@@ -21,4 +22,4 @@ app.include_router(tables.router, prefix='/public-schools')
 app.include_router(tables.router, prefix='/public-parkings')
 app.include_router(tables.router, prefix='/recycling-points')
 
-app.mount('/static/images', StaticFiles(directory='/code/backend/static/images'), name='images')
+app.mount('/static/images', StaticFiles(directory=f'/code/{STATIC_FOLDER_IMAGES}'), name='images')

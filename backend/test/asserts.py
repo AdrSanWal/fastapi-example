@@ -1,5 +1,7 @@
 import json
 
+from api import error_msg
+
 
 def asserts_get_instances(test_client, collection):
     response = test_client.get(f"/{collection}")
@@ -26,8 +28,6 @@ def asserts_get_existing_instance(test_client, collection, test_collection):
 
     response_element = dict(response.json())
     del response_element['id']
-    print(response_element)
-    print(test_collection)
     assert response_element == test_collection
 
 
@@ -35,7 +35,7 @@ def asserts_fail_get_not_existing_instance(test_client, collection):
     id = '645b4d9e5f81141374088b6c'
     response = test_client.get(f"/{collection}/{id}")
     assert response.status_code == 400
-    assert response.json()['detail'] == 'Element not exists'
+    assert response.json()['detail'] == error_msg.instance_not_exists
 
 
 def asserts_fail_get_not_valid_id(test_client, collection):
@@ -43,9 +43,7 @@ def asserts_fail_get_not_valid_id(test_client, collection):
     response = test_client.get(f"/{collection}/{id}")
     assert response.status_code == 400
 
-    expected_msg = 'invalid id is not a valid ObjectId, it must be a 12-byte ' \
-        + 'input ora 24-character hex string'
-    assert response.json()['detail'] == expected_msg
+    assert response.json()['detail'] == error_msg.invalid_id
 
 
 def asserts_delete_instance(test_client, collection, test_collection):

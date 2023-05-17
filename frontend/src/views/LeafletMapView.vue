@@ -1,5 +1,7 @@
 <template>
-  <router-view/>
+  <div>
+    <h1>View del Mapa</h1>
+  </div>
 </template>
 
 <script setup>

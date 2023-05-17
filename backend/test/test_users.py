@@ -1,6 +1,6 @@
 from pytest import mark
 
-from backend.api.auth.utils import authenticated_user
+from api.auth.utils import authenticated_user
 from api import error_msg
 
 

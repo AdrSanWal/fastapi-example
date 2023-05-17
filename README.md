@@ -19,7 +19,7 @@ Instrucciones:
 
 3º Rellena la base de datos con algunos ejemplos:
 
-    docker exec fastapi python3 backend/db/filldb/get_info.py
+    docker exec fastapi python3 db/filldb/get_info.py
 
 Documentación:
 =

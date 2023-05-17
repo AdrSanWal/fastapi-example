@@ -20,7 +20,7 @@ filenames = [_.split('.')[0] for _ in json_files]
 
 for filename in filenames:
 
-    with open(f'backend/db/filldb/{filename}.json', 'r') as file:
+    with open(f'db/filldb/{filename}.json', 'r') as file:
         data = load(file)
         new_elements = 0
         print(f'Leyendo {filename}')

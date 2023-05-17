@@ -8,8 +8,8 @@ ENV PYTHONUNBUFFERED 1
 ENV PYTHONDONTWRITEBYTECODE 1
 
 # set the working directory in the container
-RUN mkdir /code
-WORKDIR /code/
+RUN mkdir -p /code/backend
+WORKDIR /code/backend
 
 # copy the dependencies file to the working directory
 COPY requirements.txt .
@@ -17,8 +17,9 @@ COPY requirements.txt .
 # install dependencies
 RUN pip3 install -r requirements.txt
 
-# copy the content of the local directory to the working directory
-COPY . .
+# # copy the content of the local directory to the working directory
+# COPY . .
+
 
 # add the root directory to the environment variables
 ENV PYTHONPATH "${PYTHONPATH}:/code/backend"

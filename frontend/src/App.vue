@@ -1,11 +1,13 @@
-<template>
-  <router-view/>
-</template>
-
 <script setup>
-
+import { RouterView } from 'vue-router'
 </script>
 
-<style scoped>
+<template>
+  <RouterView />
+</template>
 
+<style scoped>
+html, body {
+     min-height: 100%;
+}
 </style>

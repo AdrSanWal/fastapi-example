@@ -21,7 +21,7 @@ class AuthSettings():
         self.algorithm = os.getenv('AUTH_ALGORITHM')
 
 
-STATIC_FOLDER_IMAGES = 'backend/static/images'
+STATIC_FOLDER_IMAGES = 'static/images'
 
 
 settings = Settings()

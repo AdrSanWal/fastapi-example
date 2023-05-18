@@ -4,6 +4,7 @@ from fastapi.staticfiles import StaticFiles
 from .routers import tables
 from .auth import auth_users
 from .settings import STATIC_FOLDER_IMAGES
+from .routers.utils import get_collections_names
 
 
 app = FastAPI()
@@ -36,3 +37,9 @@ app.include_router(tables.router, prefix='/recycling-points',
                    tags=["recycling-points"])
 
 app.mount('/static/images', StaticFiles(directory=f'/code/{STATIC_FOLDER_IMAGES}'), name='images')
+
+
+@app.get("/services")
+def get_collections():
+    collections = get_collections_names()
+    return collections

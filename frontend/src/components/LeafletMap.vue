@@ -1,6 +1,7 @@
 <template>
   <div id="map-container"
        style="height:100vh">
+    {{ collectionStore.markerIcon }}
     <LMap id="map"
           ref="mymap"
           :use-global-leaflet="false"
@@ -15,24 +16,63 @@
         :name="lTileLayer.name">
       </LTileLayer>
 
-      <LControl>
+      <LControl
+          @mouseover="mouseover"
+          @mouseleave="mouseleave"
+          :position="'topright'"
+          class="service-selector">
+              <div class="active-service">
+                <img :src="lIcon.iconUrl"
+                  class="selector-icon">
+                <p class="service">{{ collectionStore.actualCollection }}</p>
+              </div>
+              <div v-if="isVisible">
+                <p class="service"
+                   v-for="collection,i in collections"
+                   :key="i"
+                   @click="collectionStore.changeCollection(collection)">
+                   {{ collection }}</p>
+              </div>
 
       </LControl>
 
+      <LMarker v-for="marker in data"
+               :key="marker.id"
+               :lat-lng="[marker.location.lat, marker.location.lng]"
+               :title="marker.title">
+        <LTooltip :content="marker.title" />
+        <LIcon
+          :iconUrl=lIcon.iconUrl
+          :iconSize=lIcon.iconSize
+          :iconAnchor=lIcon.iconAnchor>
+        </LIcon>
+      </LMarker>
+
     </LMap>
+
   </div>
+
+  {{ data }}
 </template>
 
 <script setup>
 import "leaflet/dist/leaflet.css";
-import { LMap, LTileLayer, LControl } from "@vue-leaflet/vue-leaflet";
-import { ref } from 'vue'
+import { LMap, LTileLayer, LControl, LMarker , LIcon, LTooltip } from "@vue-leaflet/vue-leaflet";
+import { ref, onMounted } from 'vue'
 import { useMapStore } from "@/stores/mapStore";
+import { useCollectionStore } from "@/stores/collectionStore";
+import CollectionService from '@/services/CollectionService'
 
 
 const mapStore = useMapStore()
+const collectionStore = useCollectionStore()
+const collectionService = new CollectionService()
+
+const collections = collectionService.getCollectionsNames()
+const data = collectionService.getCollectionData()
 
 const coords = ref([mapStore.map.coords.lat, mapStore.map.coords.lng])
+
 
 const lTileLayer = mapStore.tilelayer
 
@@ -46,12 +86,58 @@ const lMap = {
   zoom: 12
 }
 
-const lControl = {
-
+const lIcon = {
+  iconSize: [25, 25],
+  iconAnchor: [0, 0],
+  iconUrl: `src/assets/${collectionStore.markerIcon}.svg`
 }
+
+
+onMounted(async () => {
+     await collectionService.fetchCollectionsNames()
+     await collectionService.fetchData(collectionStore.actualCollection)
+  })
+
+let isVisible = ref(false)
+
+const mouseover = () => isVisible.value = true
+const mouseleave = () => isVisible.value = false
 
 </script>
 
 <style scoped>
+
+.selector-icon {
+  height: 15px;
+}
+
+.service-selector {
+  display:flex;
+  flex-direction: column;
+  background-color: gray;
+  color: whitesmoke;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: small;
+  border: 1px solid gray;
+  opacity: 0.6;
+
+}
+
+.service-selector:hover {
+  background-color: rgb(83, 83, 83);
+  opacity: 0.9;
+}
+
+.active-service {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.service {
+  cursor: pointer
+}
 
 </style>

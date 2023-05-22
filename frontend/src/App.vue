@@ -8,6 +8,6 @@ import { RouterView } from 'vue-router'
 
 <style scoped>
 html, body {
-     min-height: 100%;
+     width: 100%;
 }
 </style>

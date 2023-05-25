@@ -3,15 +3,11 @@ from typing import List
 from fastapi import APIRouter, status, Request
 
 from api.crud import get_all, post_instance, get_instance, delete_instance, put_instance
+from api.routers.utils import get_collection_from_url
 from db.models import Model
 
 
 router = APIRouter()
-
-
-def get_collection_from_url(request: Request):
-    collection = str(request.url).split('/')
-    return collection[-2]
 
 
 @router.get("/")

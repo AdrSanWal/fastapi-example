@@ -4,6 +4,7 @@ db.createCollection('users');
 
 db.camaras.insertOne([
  {
+  email: 'admin@admin.com',
   image: 'default.jpg',
   name: 'Admin',
   surname: 'Admin',

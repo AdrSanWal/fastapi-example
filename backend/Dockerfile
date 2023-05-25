@@ -17,8 +17,5 @@ COPY requirements.txt .
 # install dependencies
 RUN pip3 install -r requirements.txt
 
-# copy the content of the local directory to the working directory
-COPY . .
-
 # add the root directory to the environment variables
-ENV PYTHONPATH "${PYTHONPATH}:/code/backend"
+ENV PYTHONPATH "${PYTHONPATH}:/code"

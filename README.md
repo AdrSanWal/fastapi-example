@@ -19,7 +19,7 @@ Instrucciones:
 
 3º Rellena la base de datos con algunos ejemplos:
 
-    docker exec fastapi python3 backend/db/filldb/get_info.py
+    docker exec fastapi python3 db/filldb/get_info.py
 
 Documentación:
 =
@@ -33,21 +33,22 @@ Datos:
 
 Ahora mismo los servicios almacenados son:
 
-<ul>
-  <li>Cementerios</li>
-  <li>Centros de enseñanza</li>
-  <li>Parques de bomberos</li>
-  <li>Librerías</li>
-  <li>Monumentos</li>
-  <li>Piscinas municipales</li>
-  <li>Museos</li>
-  <li>Parques</li>
-  <li>Comisarías</li>
-  <li>Parkings públicos</li>
-  <li>Colegios públicos</li>
-  <li>Puntos limpios</li>
-  <li>Polideportivos</li>
-</ul>
+  -Aparcamientos publicos municipales
+  -Bibliotecas
+  -Cementerios
+  -Centros educativos
+  -Colegios públicos
+  -Comisarías
+  -Embajadas y consulados
+  -Mercados municipales
+  -Monumentos
+  -Museos
+  -Parques de bomberos
+  -Parques y jardines
+  -Piscinas municipales
+  -Polideportivos
+  -Puntos de informacion turistica
+  -Puntos limpios
 
   Si quieres incorporar más sevicios a la base de datos, descarga el json
   correspondiente de la <a href='https://datos.madrid.es/portal/site/egob/menuitem.214413fe61bdd68a53318ba0a8a409a0/?vgnextoid=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextchannel=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextfmt=default'>API de datos abiertos de la comunidad de madrid</a>.

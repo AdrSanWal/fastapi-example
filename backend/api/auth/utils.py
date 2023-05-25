@@ -10,7 +10,7 @@ from passlib.context import CryptContext
 
 from api.crud import search_element_in_db
 from api.settings import auth_settings
-from backend.db.schemas import model_schema
+from db.schemas import model_schema
 from db.models import User
 from api import error_msg
 

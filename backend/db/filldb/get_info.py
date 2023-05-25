@@ -20,7 +20,7 @@ filenames = [_.split('.')[0] for _ in json_files]
 
 for filename in filenames:
 
-    with open(f'backend/db/filldb/{filename}.json', 'r') as file:
+    with open(f'db/filldb/{filename}.json', 'r') as file:
         data = load(file)
         new_elements = 0
         print(f'Leyendo {filename}')
@@ -75,3 +75,13 @@ for filename in filenames:
                 continue
 
         print(f'\nNuevas instancias en la colección {filename}: {new_elements}', end="\n\n")
+
+        # add route to new collection
+
+        main_file = 'api/main.py'
+
+        with open(main_file, 'r+') as mainfile:
+            data = mainfile.read()
+            if filename not in data:
+                mainfile.write(f"app.include_router(tables.router, prefix='/{filename}',\n"
+                               + f"                   tags=['{filename}'])\n")

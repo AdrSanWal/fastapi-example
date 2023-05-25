@@ -14,30 +14,42 @@ services:
     volumes:
       - ./data:/var/lib/data
       #- ./init.sh:/docker-entrypoint-initdb.d/init.sh
-  mongo-express:
-    image: mongo-express:0.54.0
-    container_name: mongoexpress
-    env_file:
-      - .env
-    restart: always
-    ports:
-      - 8081:8081
-    environment:
-      ME_CONFIG_MONGODB_ADMINUSERNAME: "${MONGO_USER}"
-      ME_CONFIG_MONGODB_ADMINPASSWORD: "${MONGO_PASS}"
-      ME_CONFIG_MONGODB_URL: mongodb://${MONGO_USER}:${MONGO_PASS}@${MONGO_HOSTNAME}:${MONGO_PORT}/
+  # mongo-express:
+  #   image: mongo-express:0.54.0
+  #   container_name: mongoexpress
+  #   env_file:
+  #     - .env
+  #   restart: always
+  #   ports:
+  #     - 8081:8081
+  #   environment:
+  #     ME_CONFIG_MONGODB_ADMINUSERNAME: "${MONGO_USER}"
+  #     ME_CONFIG_MONGODB_ADMINPASSWORD: "${MONGO_PASS}"
+  #     ME_CONFIG_MONGODB_URL: mongodb://${MONGO_USER}:${MONGO_PASS}@${MONGO_HOSTNAME}:${MONGO_PORT}/
 
   fastapi:
-    build: .
+    build: ./backend
     container_name: fastapi
-    command: bash -c "uvicorn backend.api.main_auth:app --reload --host 0.0.0.0 --port 8000"
+    env_file:
+      - .env
+    command: bash -c "uvicorn api.main:app --reload --host 0.0.0.0 --port 8000"
     restart: on-failure
     volumes:
-      - .:/code
+      - ./backend:/code
     ports:
       - "8000:8000"
     depends_on:
       - mongo
-
+  vue:
+    build: ./frontend
+    container_name: vue
+    volumes:
+      - ./frontend:/app
+      # - /app/node_modules
+    restart: on-failure
+    depends_on:
+      - fastapi
+    ports:
+      - "5173:5173"
 volumes:
     data:

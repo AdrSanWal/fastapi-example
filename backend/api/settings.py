@@ -1,11 +1,9 @@
 import os
-from pydantic import BaseSettings
 
-from dotenv import load_dotenv
-from fastapi.testclient import TestClient
+# from dotenv import load_dotenv
 
 
-load_dotenv()
+# load_dotenv()
 
 
 class Settings():
@@ -23,7 +21,7 @@ class AuthSettings():
         self.algorithm = os.getenv('AUTH_ALGORITHM')
 
 
-STATIC_FOLDER_IMAGES = 'backend/static/images'
+STATIC_FOLDER_IMAGES = 'static/images'
 
 
 settings = Settings()

@@ -1,7 +1,7 @@
 from pytest import fixture
 from fastapi.testclient import TestClient
 
-from api.main_auth import app
+from api.main import app
 # from api.main import app
 from api.settings import settings
 from db.client import client as mongoclient

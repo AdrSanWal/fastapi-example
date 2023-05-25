@@ -33,22 +33,24 @@ Datos:
 
 Ahora mismo los servicios almacenados son:
 
-  -Aparcamientos publicos municipales
-  -Bibliotecas
-  -Cementerios
-  -Centros educativos
-  -Colegios públicos
-  -Comisarías
-  -Embajadas y consulados
-  -Mercados municipales
-  -Monumentos
-  -Museos
-  -Parques de bomberos
-  -Parques y jardines
-  -Piscinas municipales
-  -Polideportivos
-  -Puntos de informacion turistica
-  -Puntos limpios
+<ul>
+  <li>Aparcamientos publicos municipales</li>
+  <li>Bibliotecas</li>
+  <li>Cementerios</li>
+  <li>Centros educativos</li>
+  <li>Colegios públicos</li>
+  <li>Comisarías</li>
+  <li>Embajadas y consulados</li>
+  <li>Mercados municipales</li>
+  <li>Monumentos</li>
+  <li>Museos</li>
+  <li>Parques de bomberos</li>
+  <li>Parques y jardines</li>
+  <li>Piscinas municipales</li>
+  <li>Polideportivos</li>
+  <li>Puntos de informacion turistica</li>
+  <li>Puntos limpios</li>
+</ul>
 
   Si quieres incorporar más sevicios a la base de datos, descarga el json
   correspondiente de la <a href='https://datos.madrid.es/portal/site/egob/menuitem.214413fe61bdd68a53318ba0a8a409a0/?vgnextoid=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextchannel=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextfmt=default'>API de datos abiertos de la comunidad de madrid</a>.

@@ -1,7 +1,7 @@
 <template>
   <div id="map-container"
        style="height:100vh">
-    {{ collectionStore.markerIcon }}
+    {{ collectionStore.actualCollection}}
     <LMap id="map"
           ref="mymap"
           :use-global-leaflet="false"
@@ -30,7 +30,7 @@
                 <p class="service"
                    v-for="collection,i in collections"
                    :key="i"
-                   @click="collectionStore.changeCollection(collection)">
+                   @click="changeCollection">
                    {{ collection }}</p>
               </div>
 
@@ -80,8 +80,8 @@ const lMap = {
   options:  {
     doubleClickZoom: false,
     zoomControl: false,
-    zoomDelta: 0.25, //TODO: try to make this work
-    zoomSnap: 0, //TODO: try to make this work
+    zoomDelta: 0.25,
+    zoomSnap: 0,
   },
   zoom: 12
 }
@@ -89,19 +89,25 @@ const lMap = {
 const lIcon = {
   iconSize: [25, 25],
   iconAnchor: [0, 0],
-  iconUrl: `src/assets/${collectionStore.markerIcon}.svg`
+  iconUrl: `src/assets/${collectionStore.actualCollection}.svg`
 }
 
-
 onMounted(async () => {
-     await collectionService.fetchCollectionsNames()
-     await collectionService.fetchData(collectionStore.actualCollection)
-  })
+  await collectionService.fetchCollectionsNames()
+  await collectionService.fetchData(collectionStore.actualCollection)
+})
 
 let isVisible = ref(false)
 
 const mouseover = () => isVisible.value = true
 const mouseleave = () => isVisible.value = false
+
+const changeCollection = (e) => {
+  const newCollection = e.target.textContent
+  collectionStore.changeCollection(newCollection)
+  collectionService.fetchData(newCollection)
+  lIcon.iconUrl = `src/assets/${collectionStore.actualCollection}.svg`
+}
 
 </script>
 

@@ -33,19 +33,23 @@ Datos:
 
 Ahora mismo los servicios almacenados son:
 
+  -Aparcamientos publicos municipales
+  -Bibliotecas
   -Cementerios
-  -Centros de enseñanza
-  -Parques de bomberos
-  -Librerías
-  -Monumentos
-  -Piscinas municipales
-  -Museos
-  -Parques
-  -Comisarías
-  -Parkings públicos
+  -Centros educativos
   -Colegios públicos
-  -Puntos limpios
+  -Comisarías
+  -Embajadas y consulados
+  -Mercados municipales
+  -Monumentos
+  -Museos
+  -Parques de bomberos
+  -Parques y jardines
+  -Piscinas municipales
   -Polideportivos
+  -Puntos de informacion turistica
+  -Puntos limpios
+
 
   Si quieres incorporar más sevicios a la base de datos, descarga el json
   correspondiente de la API de datos abiertos de la comunidad de madrid:

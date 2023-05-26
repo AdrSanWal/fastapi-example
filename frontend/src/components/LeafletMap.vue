@@ -1,7 +1,10 @@
 <template>
   <div id="map-container"
        style="height:100vh">
-    {{ collectionStore.actualCollection}}
+
+    <ServiceDetail v-if="isDetailVisible"
+                   @close="isDetailVisible = false"
+                   :info="detailInfo"/>
     <LMap id="map"
           ref="mymap"
           :use-global-leaflet="false"
@@ -21,17 +24,22 @@
           @mouseleave="mouseleave"
           :position="'topright'"
           class="service-selector">
-              <div class="active-service">
+              <div class="icon-service">
                 <img :src="lIcon.iconUrl"
                   class="selector-icon">
                 <p class="service">{{ collectionStore.actualCollection }}</p>
               </div>
               <div v-if="isVisible">
+                <div v-for="collection,i in collections"
+                     :key="i"
+                     class="icon-service">
+                  <img :src="`src/assets/${collection}.svg`"
+                  class="selector-icon">
                 <p class="service"
-                   v-for="collection,i in collections"
-                   :key="i"
                    @click="changeCollection">
                    {{ collection }}</p>
+                </div>
+
               </div>
 
       </LControl>
@@ -39,7 +47,8 @@
       <LMarker v-for="marker in data"
                :key="marker.id"
                :lat-lng="[marker.location.lat, marker.location.lng]"
-               :title="marker.title">
+               :title="marker.title"
+               @click="loadDetail(marker)">
         <LTooltip :content="marker.title" />
         <LIcon
           :iconUrl=lIcon.iconUrl
@@ -51,8 +60,6 @@
     </LMap>
 
   </div>
-
-  {{ data }}
 </template>
 
 <script setup>
@@ -62,6 +69,7 @@ import { ref, onMounted } from 'vue'
 import { useMapStore } from "@/stores/mapStore";
 import { useCollectionStore } from "@/stores/collectionStore";
 import CollectionService from '@/services/CollectionService'
+import ServiceDetail from '@/components/ServiceDetail.vue'
 
 
 const mapStore = useMapStore()
@@ -69,9 +77,16 @@ const collectionStore = useCollectionStore()
 const collectionService = new CollectionService()
 
 const collections = collectionService.getCollectionsNames()
+
+//delete collections.
+
 const data = collectionService.getCollectionData()
 
 const coords = ref([mapStore.map.coords.lat, mapStore.map.coords.lng])
+
+const isDetailVisible = ref(false)
+
+const detailInfo = ref({})
 
 
 const lTileLayer = mapStore.tilelayer
@@ -109,6 +124,12 @@ const changeCollection = (e) => {
   lIcon.iconUrl = `src/assets/${collectionStore.actualCollection}.svg`
 }
 
+const loadDetail = (marker) => {
+  console.log(marker)
+  detailInfo.value = marker
+  isDetailVisible.value = true
+}
+
 </script>
 
 <style scoped>
@@ -135,7 +156,7 @@ const changeCollection = (e) => {
   opacity: 0.9;
 }
 
-.active-service {
+.icon-service {
   display:flex;
   flex-direction: row;
   align-items: center;

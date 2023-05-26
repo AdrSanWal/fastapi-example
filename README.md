@@ -73,4 +73,8 @@ Si quieres correr los test por separado de cada colección, por ejemplo:
 Frontend:
 =
 
-Aún está en desarrollo
+Aunque todavía está en desarrollo, se pueden consultar los diferentes mapas y servicios en:
+
+    http://localhost:5173
+    
+Falta hacer el registro de usuarios y formularios de edición de servicios.

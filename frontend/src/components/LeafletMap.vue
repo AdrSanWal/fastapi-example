@@ -12,12 +12,20 @@
           :center="coords"
           :zoom="lMap.zoom">
 
+      <LControlLayers  position="topleft"/>
+
       <LTileLayer
+        v-for="lTileLayer,i in lTileLayers"
+        :key="i"
         :url="lTileLayer.url"
+        :visible="lTileLayer.visible"
         :atribution="lTileLayer.atribution"
         :layer-type="lTileLayer.layerType"
+        :subdomains="lTileLayer.subdomains"
         :name="lTileLayer.name">
       </LTileLayer>
+
+
 
       <LControl
           @mouseover="mouseover"
@@ -64,7 +72,7 @@
 
 <script setup>
 import "leaflet/dist/leaflet.css";
-import { LMap, LTileLayer, LControl, LMarker , LIcon, LTooltip } from "@vue-leaflet/vue-leaflet";
+import { LMap, LTileLayer, LControl, LMarker , LIcon, LTooltip, LControlLayers } from "@vue-leaflet/vue-leaflet";
 import { ref, onMounted } from 'vue'
 import { useMapStore } from "@/stores/mapStore";
 import { useCollectionStore } from "@/stores/collectionStore";
@@ -78,7 +86,6 @@ const collectionService = new CollectionService()
 
 const collections = collectionService.getCollectionsNames()
 
-//delete collections.
 
 const data = collectionService.getCollectionData()
 
@@ -89,7 +96,7 @@ const isDetailVisible = ref(false)
 const detailInfo = ref({})
 
 
-const lTileLayer = mapStore.tilelayer
+const lTileLayers = mapStore.tilelayers
 
 const lMap = {
   options:  {

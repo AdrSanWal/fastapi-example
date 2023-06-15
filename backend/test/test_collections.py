@@ -5,9 +5,10 @@ from . import asserts
 
 @mark.libraries
 class TestLibrary:
-    collection = 'libraries'
+    collection = 'bibliotecas'
 
     def test_get_libraries(self, test_client):
+        print(test_client.__dict__)
         asserts.asserts_get_instances(test_client, self.collection)
 
     def test_post_library(self, test_client, test_collection):
@@ -45,7 +46,7 @@ class TestLibrary:
 
 @mark.cemeteries
 class TestCemeteries:
-    collection = 'cemeteries'
+    collection = 'cementerios'
 
     def test_get_cemeteries(self, test_client):
         asserts.asserts_get_instances(test_client, self.collection)
@@ -85,7 +86,7 @@ class TestCemeteries:
 
 @mark.educational_centers
 class TestEducationaCenters:
-    collection = 'educational-centers'
+    collection = 'centros-educativos'
 
     def test_get_educational_centers(self, test_client):
         asserts.asserts_get_instances(test_client, self.collection)
@@ -125,7 +126,7 @@ class TestEducationaCenters:
 
 @mark.fire_stations
 class TestFireStations:
-    collection = 'fire-stations'
+    collection = 'parques-de-bomberos'
 
     def test_get_fire_stations(self, test_client):
         asserts.asserts_get_instances(test_client, self.collection)
@@ -165,7 +166,7 @@ class TestFireStations:
 
 @mark.monuments
 class TestMonuments:
-    collection = 'monuments'
+    collection = 'monumentos'
 
     def test_get_monuments(self, test_client):
         asserts.asserts_get_instances(test_client, self.collection)
@@ -205,7 +206,7 @@ class TestMonuments:
 
 @mark.municipal_swimming_pools
 class TestMunicipalSwimmingPools:
-    collection = 'municipal-swimming-pools'
+    collection = 'piscinas-municipales'
 
     def test_get_municipal_swimming_pools(self, test_client):
         asserts.asserts_get_instances(test_client, self.collection)
@@ -248,7 +249,7 @@ class TestMunicipalSwimmingPools:
 
 @mark.museums
 class TestMuseums:
-    collection = 'museums'
+    collection = 'museos'
 
     def test_get_museums(self, test_client):
         asserts.asserts_get_instances(test_client, self.collection)
@@ -288,7 +289,7 @@ class TestMuseums:
 
 @mark.parks
 class TestParks:
-    collection = 'parks'
+    collection = 'parques-y-jardines'
 
     def test_get_parks(self, test_client):
         asserts.asserts_get_instances(test_client, self.collection)
@@ -328,7 +329,7 @@ class TestParks:
 
 @mark.police_stations
 class TestPoliceStations:
-    collection = 'police-stations'
+    collection = 'comisarias'
 
     def test_get_police_stations(self, test_client):
         asserts.asserts_get_instances(test_client, self.collection)
@@ -368,7 +369,7 @@ class TestPoliceStations:
 
 @mark.public_parkings
 class TestPublicParkings:
-    collection = 'public-parkings'
+    collection = 'aparcamientos-publicos-municipales'
 
     def test_get_public_parkings(self, test_client):
         asserts.asserts_get_instances(test_client, self.collection)
@@ -408,7 +409,7 @@ class TestPublicParkings:
 
 @mark.public_schools
 class TestPublicSchools:
-    collection = 'public-schools'
+    collection = 'colegios-publicos'
 
     def test_get_public_schools(self, test_client):
         asserts.asserts_get_instances(test_client, self.collection)
@@ -448,7 +449,7 @@ class TestPublicSchools:
 
 @mark.recycling_points
 class TestRecyclingPoints:
-    collection = 'recycling-points'
+    collection = 'puntos-limpios'
 
     def test_get_recycling_points(self, test_client):
         asserts.asserts_get_instances(test_client, self.collection)

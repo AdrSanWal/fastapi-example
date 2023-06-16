@@ -3,6 +3,8 @@
 Este repositorio es un CRUD de ejemplo con FastAPI, utilizando MongoDB como
 base de datos y desplegandolo mediante docker-compose.
 
+https://github.com/AdrSanWal/fastapi-example/assets/82061736/b59990f6-d014-4a3a-a8e0-f95dc7542b2c
+
 Recopila distintos servicios existentes en la comunidad de Madrid.
 
 Instrucciones:
